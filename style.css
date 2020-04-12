@@ -3,6 +3,9 @@
 
 .header {
     height: 150px;
+    background-color: black;
+    background-size: cover;
+    position: relative;
 }
 
 
@@ -20,25 +23,36 @@
 .hero-text {
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
 }
 
 .patient-img {
-    height: 500px;
-    background-color: blue;
-    /*background-image: url("img/patient.jpg")*/
+    height: 550px;
+    background-image: url("img/patient.jpg")
 }
 
 .driver-img {
-    height: 500px;
-    background-color: green;
-    /*background-image: url("img/driver.jpg")*/
+    height: 550px;
+    background-image: url("img/driver.jpg")
 }
 
 .logo-img {
-    height:100%;
-    background-image: url("img/logo_temp.jpg");
+    height:70%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo {
+  height:100%;
+}
+
+.signup-btn {
+  top: 85%;
+  font-size: 20px;
 }

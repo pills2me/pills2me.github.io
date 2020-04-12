@@ -4,12 +4,13 @@
 
     <!--      HEAD          -->
     <head>
-        <link rel="stylesheet" href="style.css"/>
+        
         <title>Pills2Me</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css"/>
     </head>
 
 
@@ -18,12 +19,11 @@
 
       <!-- Header for the Logo -->
       <div class="header">
-        <div class="hero-img logo-img">
-          <div class="hero-text">
-            <h1>Pills2Me</h1>
-          </div>
+        <div class="logo-img">
+          <img class="logo" src="img/logo.jpg" alt="Pills2Me">
         </div>
       </div>
+      
 
       <!-- Row for Columns of Driver vs Patient -->
       <div class="row">
@@ -31,35 +31,37 @@
         <!-- Patient Sign Up -->
         <div class="col-xs-6 hero-img patient-img ">
 
+          <!-- Text for Patients -->
           <div class="hero-text">
-            <!-- Text for Patients -->
             <h1>Are you a patient?</h1>
+          </div>
 
-            <!-- Button for Patient Sign Up -->
-            <a href="#" class="btn btn-default" role="button">Patient Sign Up</a>
+          <!-- Button for Patient Sign Up -->
+          <div class="hero-text signup-btn">
+            <a href="#" class="btn btn-success signup-btn" role="button">Patient Sign Up</a>
           </div>
 
         </div>
 
         <!-- Driver Sign Up -->
         <div class="col-xs-6 hero-img driver-img ">
+          
+          <!-- Text for Drivers -->
           <div class="hero-text">
-            <!-- Text for Drivers -->
             <h1>Are you a driver?</h1>
-
-            <!-- Button for Patient Driver Up -->
-            <a href="#" class="btn btn-default" role="button">Driver Sign Up</a>
           </div>
+
+          <!-- Button for Patient Driver Up -->
+          <div class="hero-text signup-btn">
+            <a href="#" class="btn btn-success signup-btn" role="button">Driver Sign Up</a>
+          </div>
+
         </div>
-      </div>
+      </div> 
 
 
     </body>
 
-
-    <!--      FOOTER          -->
-    <footer>
-    </footer>
 
 
 </html>
