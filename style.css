@@ -27,6 +27,8 @@ body {
   height: 130px;
 }
 
+/******* STYLING CLASSES ***********/
+
 .background-img {
   height: 570px;
 }
@@ -84,7 +86,6 @@ body {
   padding: 20px;
   text-align: center;
   filter: none;
-  height: 78%;
 }
 
 .signup-form {
