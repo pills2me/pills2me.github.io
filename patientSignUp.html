@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <!--      HEAD          -->
+  <head>
+    <title>Pills2Me</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!--      BODY          -->
+  <body>
+    <!-- Header for the Logo -->
+    <div class="header">
+      <div class="logo-img">
+        <img class="logo" src="img/logo.jpg" alt="Pills2Me" />
+      </div>
+    </div>
+
+    <!-- Sign Up Form -->
+    <div class="row">
+      <!-- Div for Background Image -->
+      <div class=" hero-img patient-img background-img blur-background"></div>
+      <!-- Box Around the Form -->
+      <div class="overlay">
+        <h2 class="text-format">Patient Sign Up</h2>
+
+        <!-- Form for Patients -->
+        <form class="form-horizontal text-format signup-form" action="#">
+          <!-- Enter Full Name-->
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="name">Full Name:</label>
+            <div class="col-sm-10">
+              <div class="form-row">
+                <div class="col col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="First name"
+                  />
+                </div>
+                <div class="col col-sm-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Last name"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enter Email -->
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Email:</label>
+            <div class="col-sm-10">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+
+          <!-- Enter Password -->
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Password:</label>
+            <div class="col-sm-10">
+              <div class="form-row">
+                <div class="col col-sm-6">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Password"
+                  />
+                </div>
+                <div class="col col-sm-6">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Confirm Password"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enter Phone Number -->
+          <div class="form-group">
+            <label class="control-label col-sm-2">Phone Number:</label>
+            <div class="col-sm-10">
+              <input
+                type="tel"
+                class="form-control"
+                placeholder="(XXX) XXX-XXXX"
+              />
+            </div>
+          </div>
+
+          <!-- Enter Birth Date -->
+          <div class="form-group">
+            <label class="control-label col-sm-2">Birthday:</label>
+            <div class="col-sm-10">
+              <input type="date" class="form-control" />
+            </div>
+          </div>
+
+          <!-- Enter Address -->
+          <div class="form-group">
+            <label class="control-label col-sm-2">Address:</label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="1234 Main St"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2"></label>
+            <div class="col-sm-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputCity"
+                placeholder="City"
+              />
+            </div>
+            <div class="col-sm-2">
+              <input
+                type="text"
+                class="form-control"
+                id="inputState"
+                placeholder="State"
+              />
+            </div>
+            <div class="col-sm-4">
+              <input
+                type="text"
+                class="form-control"
+                id="inputZip"
+                placeholder="Zip Code"
+              />
+            </div>
+          </div>
+
+          <!-- Checkbox for Disclaimers -->
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                I agree to the Terms & Conditions
+              </label>
+            </div>
+          </div>
+        </form>
+
+        <!-- Button for Patient Sign Up -->
+        <div>
+          <a href="#" class="btn btn-success signup-btn" role="button"
+            >Register</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

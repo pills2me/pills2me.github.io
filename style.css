@@ -1,23 +1,14 @@
-
 /*******************  GENERAL FORMATTING  **********************/
 
-.header {
-    height: 150px;
-    background-color: black;
-    background-size: cover;
-    position: relative;
+body {
+  height: 100%;
 }
 
-
-
-
-/******* Hero Images and Text ***********/
-
 .hero-img {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .hero-text {
@@ -29,30 +20,73 @@
   color: white;
 }
 
+.header {
+  background-color: black;
+  background-size: cover;
+  position: relative;
+  height: 130px;
+}
+
+.background-img {
+  height: 570px;
+}
+
+.blur-background {
+  filter: blur(4px);
+}
+
+.text-format {
+  color: white;
+  text-align: center;
+}
+
+/******* BACKGROUND IMAGES ***********/
+
 .patient-img {
-    height: 550px;
-    background-image: url("img/patient.jpg")
+  background-image: url("img/patient.jpg");
 }
 
 .driver-img {
-    height: 550px;
-    background-image: url("img/driver.jpg")
+  background-image: url("img/driver.jpg");
 }
 
+/******* OPENING SCREEN STYLING ***********/
+
 .logo-img {
-    height:70%;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  height: 70%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
-  height:100%;
+  height: 100%;
 }
 
 .signup-btn {
   top: 85%;
   font-size: 20px;
+}
+
+/******* PATIENT SIGN UP SCREEN STYLING ***********/
+
+.overlay {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.6); /* Black w/opacity/see-through */
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+  filter: none;
+  height: 78%;
+}
+
+.signup-form {
+  width: 90%;
 }
