@@ -69,10 +69,10 @@ body {
 
 .signup-btn {
   top: 85%;
-  font-size: 20px;
+  font-size: 14px;
 }
 
-/******* PATIENT SIGN UP SCREEN STYLING ***********/
+/******* SIGN UP SCREEN STYLING ***********/
 
 .overlay {
   background-color: rgb(0, 0, 0); /* Fallback color */
@@ -89,5 +89,26 @@ body {
 }
 
 .signup-form {
-  width: 90%;
+  width: 95%;
+}
+
+.nav-tabs {
+  text-align: center;
+  width: 100%;
+}
+
+.centered-tab {
+  width: 50%;
+}
+
+.nav-tabs a {
+  color: white;
+}
+
+.nav-tabs a:hover {
+  color: gray;
+}
+
+.form-group {
+  margin-bottom: 8px;
 }
