@@ -10,6 +10,8 @@ import DriverForm from './pages/DriverForm';
 import Submitted from './pages/Submitted';
 import About from './pages/About';
 import News from './pages/News';
+import Donate from './pages/Donate';
+import Contact from './pages/Contact';
 
 
 const App = () => (
@@ -26,6 +28,8 @@ const App = () => (
 		<Route path="/login" exact component={SignUp} />
 		<Route path="/about" exact component={About} />
 		<Route path="/news" exact component={News} />
+		<Route path="/donate" exact component={Donate} />
+		<Route path="/contact" exact component={Contact} />
 	</div>
 )
 

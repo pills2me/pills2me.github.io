@@ -157,6 +157,14 @@ div.logo {
     padding: 3.5em 1.5em 0;
     font-size: 20px;
   }
+
+  .menu-item {
+      color: white;
+  }
+
+  .menu-item:hover {
+      color: white;
+  }
   
   
   /* Styling of overlay */

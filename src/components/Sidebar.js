@@ -1,19 +1,20 @@
 import React from "react";
 import "../style.css";
 import { slide as Menu } from "react-burger-menu";
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
         <Menu>
-            <a className="menu-item" href="/">Home</a>
+            <Link className="menu-item" to="/">Home</Link>
 
-            <a className="menu-item" href="/about">About</a>
+            <Link className="menu-item" to="/about">About</Link>
 
-            <a className="menu-item" href="/news">News</a>
+            <Link className="menu-item" to="/news">News</Link>
 
-            <a className="menu-item" href="/donate">Donate</a>
+            <Link className="menu-item" to="/donate">Donate</Link>
 
-            <a className="menu-item" href="/contact">Contact Us</a>
+            <Link className="menu-item" to="/contact">Contact Us</Link>
 
         </Menu>
     );
