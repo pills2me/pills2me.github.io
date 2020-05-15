@@ -15,7 +15,6 @@ function buttonClickHandler() {
 const OpeningPage = () => (
     <div>
         <Header />
-        <Sidebar />
         <div class="pharm-background container center column-dir after-heading">
             <h2 class="logo">Free same-day medication delivery for the elderly and vulnerable during COVID-19</h2>
 

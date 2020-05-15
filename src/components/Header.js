@@ -2,10 +2,13 @@ import React, { Component } from "react";
 import "../style.css";
 import { Link } from 'react-router-dom';
 
+import Sidebar from './Sidebar';
+
 class Header extends Component {
     render() {
         return (
             <div class="header">
+                <Sidebar />
                 <div class="container center column-dir logo">
                     <Link to="/" className="logo">
                         <div class="container center">
