@@ -11,6 +11,10 @@
     
 }
 
+.btn {
+    padding:15px 25px 15px 25px;
+}
+
 .fixed-background {
     background-attachment: fixed;
 }
@@ -33,7 +37,7 @@ h2 {
 }
 .button-labels {
     font-size: 20px;
-    width: 50%
+    width: 30%
 }
 
 .round-button {
