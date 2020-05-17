@@ -3,7 +3,6 @@ import { Button, Col, Row } from 'react-bootstrap'
 import '../style.css';
 
 import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
 import DetailedFooter from '../components/DetailedFooter';
 
 import ceid from '../images/ceid.png';
@@ -11,7 +10,6 @@ import ceid from '../images/ceid.png';
 const News = () => (
     <div>
         <Header />
-        <Sidebar />
 
         <div class="pharm-background fixed-background container center column-dir after-heading">
             <div class="overlay-text-box container center column-dir">

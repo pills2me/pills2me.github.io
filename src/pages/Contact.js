@@ -9,7 +9,6 @@ import DetailedFooter from '../components/DetailedFooter';
 const Contact = () => (
     <div>
         <Header />
-        <Sidebar />
 
         <div class="pharm-background fixed-background container center column-dir after-heading">
             <div class="overlay-text-box container center column-dir">

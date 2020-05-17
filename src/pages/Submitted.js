@@ -4,12 +4,10 @@ import { Button, Card, Form, Jumbotron, Col } from 'react-bootstrap'
 import '../style.css';
 
 import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
 
 const Submitted = () => (
     <div>
         <Header />
-        <Sidebar />
         <div class="pharm-background container center column-dir after-heading">
             <Jumbotron>
                 <div class="submitted">

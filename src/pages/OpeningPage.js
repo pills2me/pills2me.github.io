@@ -37,7 +37,7 @@ const OpeningPage = () => (
 
                 </div>
                 <div class="container space">
-                    <h3 class="button-labels">Need your prescription delivered to your home?</h3>
+                    <h3 class="button-labels">You can also call our toll-free number (800)-475-7488 to make the prescription pickup request.</h3>
 
                     <h3 class="button-labels">Have free time to help deliver medication to patients?</h3>
 

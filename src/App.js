@@ -12,6 +12,7 @@ import About from './pages/About';
 import News from './pages/News';
 import Donate from './pages/Donate';
 import Contact from './pages/Contact';
+import Team from './pages/Team';
 
 
 const App = () => (
@@ -31,6 +32,7 @@ const App = () => (
 		<Route path="/news" exact component={News} />
 		<Route path="/donate" exact component={Donate} />
 		<Route path="/contact" exact component={Contact} />
+		<Route path="/team" exact component={Team} />
 	</div>
 )
 
