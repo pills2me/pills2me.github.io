@@ -34,7 +34,7 @@ export default class Sidebar extends Component {
             <>
 
                 <Navbar collapseOnSelect expand="lg" className="logo">
-                    <Link to="/" className="my-container">
+                    <Link to="/" className="my-container logo">
                         <img
                             alt=""
                             src={logo}

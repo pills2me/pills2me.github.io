@@ -13,7 +13,7 @@ const Contact = () => (
 
         <div class="pharm-background fixed-background container center column-dir after-heading">
             <Row className="my-container" style={{ paddingLeft: "5%", paddingRight: "5%" }}>
-                <Col className="container center column-dir">
+                <Col md={6} className="container center column-dir">
                     <h1>Please feel free to contact us with any questions or tell us how we can better serve you.</h1>
                     <div class="extra-margin">
                         <h6>Phone: (405) 436-0220</h6>
