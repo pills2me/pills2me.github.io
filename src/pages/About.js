@@ -23,10 +23,14 @@ const About = () => (
                     <Col md={6} className="container center">
                         <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
                     </Col>
-                    <Col md={6}>
+                    <Col lg={6}>
 
                         <div class="section-text">
-                            <p>Find news article about the story or something</p>
+                            <p>With COVID-19 spreading and endangering millions across the globe, it is of the utmost importance that we work to protect the most vulnerable populations.
+                                As a pharmacist and student at Yale School of Public Health, Leslie Asanga saw this urgent issue and took matters into his own hands to create an innovative solution.
+                                He founded Pills2Me to provide free home medication delivery for the elderly or vulnerable who are more likely to develop severe symptoms from COVID-19 per CDC guidelines.
+                                We hope that by connecting those in need with volunteer drivers, we can promote public health and help ensure the vulnerable are not at risk for contracting the virus.
+                                </p>
                         </div>
                         <Button variant="light" className="shadow"><Link class="logo" to="/news">Read about Pills2Me in the News</Link></Button>
                     </Col>
@@ -37,7 +41,7 @@ const About = () => (
                 <h1 >How Pills2Me Works</h1>
                 <hr class="colored-line" />
                 <Row>
-                    <Col md={6}>
+                    <Col lg={6}>
 
                         <div class="section-text">
                             <p>We partner with pharmacies to connect patients with volunteer drivers. Our goal is to promote public health and prevent the spread of coronavirus (COVID-19). </p>
@@ -46,7 +50,7 @@ const About = () => (
                             <p>We have also partenered with local pharmacies who are helping us and our patients by offering same-day pickup.</p>
                         </div>
                     </Col>
-                    <Col md={6} className="container center">
+                    <Col lg={6} className="container center">
                         <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
                     </Col>
                 </Row>
@@ -56,10 +60,10 @@ const About = () => (
                 <h1>How to Get Involved</h1>
                 <hr class="colored-line" />
                 <Row className="subsection">
-                    <Col md={5} className="container center">
+                    <Col lg={5} className="container center">
                         <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
                     </Col>
-                    <Col md={7}>
+                    <Col className="instructions" lg={7}>
                         <h3 class=" italics">Instructions for Patients</h3>
                         <div class="section-text">
                             <p>1. You or a caregiver needs to be home when the medication is delivered. </p>
@@ -74,7 +78,7 @@ const About = () => (
                 </Row>
                 <hr class="colored-line" />
                 <Row className="subsection">
-                    <Col md={7}>
+                    <Col className="instructions" lg={7}>
                         <h3 class=" italics">Instructions for Drivers</h3>
                         <div class="section-text">
                             <p>1. Use the pharmacy drive through if one is available.  </p>
@@ -86,16 +90,16 @@ const About = () => (
                         </div>
                         <Button variant="light" className="shadow"><a href="/driver-form">Register Now</a></Button>
                     </Col>
-                    <Col md={5} className="container center">
+                    <Col lg={5} className="container center">
                         <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
                     </Col>
                 </Row>
                 <hr class="colored-line" />
                 <Row>
-                    <Col md={5} className="container center">
+                    <Col lg={5} className="container center">
                         <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
                     </Col>
-                    <Col md={7}>
+                    <Col className="instructions" lg={7}>
                         <h3 class=" italics">Instructions for Pharmacies</h3>
                         <div class="section-text">
                             <p>1. Understand that volunteer drivers will be picking up medications for patients who are at home practicing social distancing.</p>

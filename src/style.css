@@ -295,7 +295,6 @@ text-align: center;
 
   .section-text {
     text-align: left;
-    text-indent: 20px;
     font-size:18px;
     margin-top:20px;
   }
@@ -430,6 +429,11 @@ li.nav {
 
 
   @media only screen and (max-width: 768px) {
+      .instructions {
+          margin-top:20px;
+          margin-bottom:20px;
+      }
+
       /* Elements */
 li.nav {
     padding: 10px 0;

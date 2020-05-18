@@ -9,6 +9,7 @@ import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 
 function DriverForm() {
+    const [redirect, setRedirect] = useState(false);
     const [validated, setValidated] = useState(false);
 
     const handleSubmit = (event) => {
@@ -16,12 +17,18 @@ function DriverForm() {
         if (form.checkValidity() === false) {
             event.stopPropagation();
             event.preventDefault();
+        } else {
+            setRedirect(true);
         }
-
         setValidated(true);
 
 
+
     };
+
+    if (redirect) {
+        return <Redirect to="/submission-complete" />;
+    }
     return (
 
         <div>
@@ -119,7 +126,8 @@ function DriverForm() {
                         </Form.Group>
 
                         <Button variant="light" type="submit">
-                            <Link to="/submission-complete">Submit</Link>
+                            Submit
+                            {/* <Link to="/submission-complete">Submit</Link> */}
                         </Button>
                     </Form>
                 </Jumbotron>

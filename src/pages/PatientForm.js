@@ -14,16 +14,25 @@ function PatientForm() {
     const [validated, setValidated] = useState(false);
     const [yesChecked, setYesChecked] = useState(false);
     const [noChecked, setNoChecked] = useState(false);
+    const [redirect, setRedirect] = useState(false);
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
             event.stopPropagation();
             event.preventDefault();
+        } else {
+            setRedirect(true);
         }
         setValidated(true);
 
+
+
     };
+
+    if (redirect) {
+        return <Redirect to="/submission-complete" />;
+    }
 
     const yesHandler = () => {
         setYesChecked(true);
