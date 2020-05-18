@@ -14,7 +14,7 @@ const Donate = () => (
                 <h1 class="overlay-text">Make a Donation</h1>
                 <h4 class="extra-margin">Pills2Me is currently run entirely by volunteers. Please feel free to make a donation to help us provide our volunteer drivers with gas and supplies. </h4>
                 <h4 class="extra-margin">Any amount will go a long way. We greatly appreciate your support. Thank you.</h4>
-                <Button variant="light" className="shadow extra-margin"><a class="logo" href="#donate">MAKE A DONATION</a></Button>
+                <a class="logo" href="#donate"><Button variant="light" className="shadow extra-margin">MAKE A DONATION</Button></a>
             </div>
 
             <div id="donate" class="section section-blue">
@@ -33,7 +33,7 @@ const Donate = () => (
             </div>
             <DetailedFooter />
         </div>
-    </div>
+    </div >
 );
 
 export default Donate;

@@ -16,7 +16,7 @@ const About = () => (
                 <h1 class="overlay-text">Meet the Team</h1>
                 <h4 class="overlay-descript">We are people who care about giving back to the communities we are in.
                  Seeing the issue of elderly and vulnerable needing to pick up their prescriptions, we wanted to use our platforms and skills to create this company to help those in need.</h4>
-                <Button variant="light" className="shadow"><Link to="about">LEARN ABOUT OUR STORY</Link></Button>
+                <Link to="about"><Button variant="light" className="shadow">LEARN ABOUT OUR STORY</Button></Link>
             </div>
 
             <div class="section section-blue">
