@@ -6,6 +6,11 @@ import '../style.css';
 import Header from '../components/Header';
 import DetailedFooter from '../components/DetailedFooter';
 
+import medicine from '../images/medicine.jpeg';
+import driver from '../images/driver.jpeg';
+import patient from '../images/patients.jpeg';
+import pharmacies from '../images/pharmacies.jpeg';
+
 const About = () => (
     <div>
         <Header />
@@ -21,7 +26,14 @@ const About = () => (
                 <hr class="colored-line" />
                 <Row>
                     <Col md={6} className="container center">
-                        <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
+                        <iframe src='https://www.nbcconnecticut.com/news/local/new-haven-home-pharmacy-delivery-service/2264731/'
+                            frameBorder='0'
+                            allow='autoplay; encrypted-media'
+                            allowFullScreen
+                            title='video'
+                            style={{ width: "100%", height: "100%" }}
+                        />
+                        {/* <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img> */}
                     </Col>
                     <Col lg={6}>
 
@@ -32,7 +44,7 @@ const About = () => (
                                 We hope that by connecting those in need with volunteer drivers, we can promote public health and help ensure the vulnerable are not at risk for contracting the virus.
                                 </p>
                         </div>
-                        <Button variant="light" className="shadow"><Link class="logo" to="/news">Read about Pills2Me in the News</Link></Button>
+                        <Button variant="light" className="shadow"><Link class="logo" to="/news">PILLS2ME IN THE NEWS</Link></Button>
                     </Col>
                 </Row>
             </div>
@@ -51,7 +63,7 @@ const About = () => (
                         </div>
                     </Col>
                     <Col lg={6} className="container center">
-                        <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
+                        <img class="col-img" src={medicine}></img>
                     </Col>
                 </Row>
             </div>
@@ -61,7 +73,7 @@ const About = () => (
                 <hr class="colored-line" />
                 <Row className="subsection">
                     <Col lg={5} className="container center">
-                        <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
+                        <img class="col-img" src={patient}></img>
                     </Col>
                     <Col className="instructions" lg={7}>
                         <h3 class=" italics">Instructions for Patients</h3>
@@ -91,13 +103,13 @@ const About = () => (
                         <Button variant="light" className="shadow"><a href="/driver-form">Register Now</a></Button>
                     </Col>
                     <Col lg={5} className="container center">
-                        <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
+                        <img class="col-img" src={driver}></img>
                     </Col>
                 </Row>
                 <hr class="colored-line" />
                 <Row>
                     <Col lg={5} className="container center">
-                        <img class="col-img" src="https://s3-alpha-sig.figma.com/img/a627/3a83/306a58a78d50527f96c4e9bf614ff332?Expires=1590364800&Signature=SUWTDE4ZwoXmJnoQ58uNsfZ5nX0qDBxVIMjyfflVWw0KNwDbwTt2iU8Wpb3x6blTE1YwOE1CEStCO~0WKT6lpECC-4vA0ywgZF-rob-tWW1b4eBy00n4KE00s02eAg-ERV83Tf6t4F42SolNdG0hXY8Ra9uUehJBId-tF~04mv36rjvyvVXvol6-IPFKXEJhotfORoGnC2RBN-Pmf2SFr5rcVeY0xXroEhmArDmVfTFrae72MHy7SVc8~W8zQLZDKvyPyaa2byDdglPsvRFcZ0yE6KVN4BVylsOS~Dzy4r5xfFWmB37aw-z5seMKEFcIARbmo5SLEPqIGkcBlssGfw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></img>
+                        <img class="col-img" src={pharmacies}></img>
                     </Col>
                     <Col className="instructions" lg={7}>
                         <h3 class=" italics">Instructions for Pharmacies</h3>
