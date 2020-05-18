@@ -1,28 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.557ffd81.chunk.css",
-    "main.js": "/static/js/main.d2b3c2b6.chunk.js",
-    "main.js.map": "/static/js/main.d2b3c2b6.chunk.js.map",
+    "main.css": "/static/css/main.68469d50.chunk.css",
+    "main.js": "/static/js/main.08eeb31f.chunk.js",
+    "main.js.map": "/static/js/main.08eeb31f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.65457b84.js",
     "runtime-main.js.map": "/static/js/runtime-main.65457b84.js.map",
     "static/css/2.69121389.chunk.css": "/static/css/2.69121389.chunk.css",
-    "static/js/2.a6ba86b0.chunk.js": "/static/js/2.a6ba86b0.chunk.js",
-    "static/js/2.a6ba86b0.chunk.js.map": "/static/js/2.a6ba86b0.chunk.js.map",
+    "static/js/2.d1da5283.chunk.js": "/static/js/2.d1da5283.chunk.js",
+    "static/js/2.d1da5283.chunk.js.map": "/static/js/2.d1da5283.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a3cb49310585dc074b202ac3b7994c03.js": "/precache-manifest.a3cb49310585dc074b202ac3b7994c03.js",
+    "precache-manifest.5f4caa639f1774669415ecbd3943a3fd.js": "/precache-manifest.5f4caa639f1774669415ecbd3943a3fd.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/static/css/2.69121389.chunk.css.map",
-    "static/css/main.557ffd81.chunk.css.map": "/static/css/main.557ffd81.chunk.css.map",
-    "static/js/2.a6ba86b0.chunk.js.LICENSE.txt": "/static/js/2.a6ba86b0.chunk.js.LICENSE.txt",
+    "static/css/main.68469d50.chunk.css.map": "/static/css/main.68469d50.chunk.css.map",
+    "static/js/2.d1da5283.chunk.js.LICENSE.txt": "/static/js/2.d1da5283.chunk.js.LICENSE.txt",
     "static/media/ceid.png": "/static/media/ceid.e102729d.png",
+    "static/media/driver.jpeg": "/static/media/driver.e54d4116.jpeg",
     "static/media/logo-blue.png": "/static/media/logo-blue.cdea3935.png",
+    "static/media/medicine.jpeg": "/static/media/medicine.d5e5d2c0.jpeg",
+    "static/media/patients.jpeg": "/static/media/patients.4355181d.jpeg",
+    "static/media/pharmacies.jpeg": "/static/media/pharmacies.ac231fe2.jpeg",
     "static/media/style.css": "/static/media/pharmacy.d8baeb5d.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.65457b84.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.a6ba86b0.chunk.js",
-    "static/css/main.557ffd81.chunk.css",
-    "static/js/main.d2b3c2b6.chunk.js"
+    "static/js/2.d1da5283.chunk.js",
+    "static/css/main.68469d50.chunk.css",
+    "static/js/main.08eeb31f.chunk.js"
   ]
 }
