@@ -28,7 +28,7 @@ const About = () => (
                         <div class="section-text">
                             <p>Find news article about the story or something</p>
                         </div>
-                        <Button variant="light" className="shadow"><a class="logo" href="/news">Read about Pills2Me in the News</a></Button>
+                        <Button variant="light" className="shadow"><Link class="logo" to="/news">Read about Pills2Me in the News</Link></Button>
                     </Col>
                 </Row>
             </div>
