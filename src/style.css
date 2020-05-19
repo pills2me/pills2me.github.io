@@ -308,12 +308,24 @@ text-align: center;
   }
 
   .section-ceid {
-      background-image: linear-gradient(rgba(255,255,255, 0.55), rgba(255,255,255, 0.5)), url("images/ceid.png");
-      color:black;
+      background-image: linear-gradient(rgba(0,0,0, 0.55), rgba(0,0,0, 0.5)), url("images/ceid.png");
+      color:white;
 
   }
+  .section-nbc {
+    background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url("images/nbc-ct.png");
+    background-size: 100%;
+    color:white;
+
+}
+.section-wtnh {
+    background-image: linear-gradient(rgba(0,0,0, 0.75), rgba(0,0,0, 0.75)), url("images/wtnh.png");
+    background-size: 100%;
+    color:white;
+
+}
   .news-heading {
-      font-size:70px;
+      font-size:60px;
       font-weight: bold;
   }
 
@@ -429,6 +441,22 @@ li.nav {
 
 
   @media only screen and (max-width: 768px) {
+
+    .news-heading {
+        font-size:20px;
+    }
+    .news-info {
+        font-size:15px;
+    }
+  
+    button.news-button {
+        font-size:10px;
+        padding:4px;
+        padding-right:20px;
+        padding-left:20px;
+        margin-top:5px;
+    }
+
       .instructions {
           margin-top:20px;
           margin-bottom:20px;
@@ -494,7 +522,7 @@ button.nav {
     }
 
     .button-labels {
-        width:70%;
+        font-size:14px;
     }
 
     .extra-margin {
