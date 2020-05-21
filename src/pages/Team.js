@@ -31,7 +31,7 @@ const About = () => (
                     <Col lg={6}>
                         <img class="person-img" src={Leslie}></img>
                         <div class="person-info container column-dir center">
-                            <h3>Dr. Leslie Asanga, PharmD, MBA, MPH</h3>
+                            <h3 class="bold">Dr. Leslie Asanga, PharmD, MBA, MPH</h3>
                             <h4>Founder</h4>
                             <hr class="colored-line" />
                             <p> Dr. Asanga is an experienced pharmacist and recently graduated from Yale University with a Master of Public Health degree.
@@ -45,7 +45,7 @@ const About = () => (
                     <Col lg={6}>
                         <img class="person-img" src="https://static.wixstatic.com/media/200fe1_06ce139451b6433d95342587d4542c01.png"></img>
                         <div class="person-info container column-dir center">
-                            <h3>Person Name</h3>
+                            <h3 class="bold">Person Name</h3>
                             <h4>Title</h4>
                             <hr class="colored-line" />
                             <p>Brief description and title</p>
@@ -56,8 +56,8 @@ const About = () => (
                     <Col lg={4}>
                         <img class="person-img" src={Angela}></img>
                         <div class="person-info container column-dir center">
-                            <h3>Angela Yoo</h3>
-                            <h4>UX/UI Intern</h4>
+                            <h3 class="bold">Angela Yoo</h3>
+                            <h4>UX/UI Design Intern</h4>
                             <hr class="colored-line" />
                             <p>Angela is a rising senior at Yale University studying Cognitive Science and practicing human-centered design.
                                 As a designer and design researcher, she has led projects and teams to design print, mobile, and web products intended for use by a variety of stakeholders;
@@ -71,7 +71,7 @@ const About = () => (
                     <Col lg={4}>
                         <img class="person-img" src={Anna}></img>
                         <div class="person-info container column-dir center" style={{ alignContent: 'top' }}>
-                            <h3>Anna Zhang</h3>
+                            <h3 class="bold">Anna Zhang</h3>
                             <h4>Software Engineer Intern</h4>
                             <hr class="colored-line" />
                             <p>Anna Zhang is a second year undergraduate student at Yale University studying computer science.
@@ -85,7 +85,7 @@ const About = () => (
                     <Col lg={4}>
                         <img class="person-img" src={Hassaan}></img>
                         <div class="person-info container column-dir center">
-                            <h3>Hassaan Qadir</h3>
+                            <h3 class="bold">Hassaan Qadir</h3>
                             <h4>Social Media Marketing Intern</h4>
                             <hr class="colored-line" />
                             <p>Hassaan Qadir is pursuing a Bachelor's of Science in Biomedical Engineering at Yale University.
