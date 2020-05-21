@@ -95,7 +95,51 @@ const About = () => (
                         </div>
                     </Col>
                 </Row>
+                <h1>Advisors</h1>
+                <hr class="colored-line" />
+                <Row className="team-row top-align">
+                    <Col lg={4}>
+                        <img class="person-img" src={Angela}></img>
+                        <div class="person-info container column-dir center">
+                            <h3 class="bold">Angela Yoo</h3>
+                            <h4>UX/UI Design Intern</h4>
+                            <hr class="colored-line" />
+                            <p>Angela is a rising senior at Yale University studying Cognitive Science and practicing human-centered design.
+                                As a designer and design researcher, she has led projects and teams to design print, mobile, and web products intended for use by a variety of stakeholders;
+                                she has also worked to create better service experiences for nonprofits as well as campus organizations.
+                                A leader and champion of user needs, she has spearheaded human-centered design practices and facilitated many design thinking workshops in many spaces unfamiliar with human-centered design.
+                                She is passionate about the intersection between design thinking and social impact, and ultimately hopes to use design and innovation to empower communities across the globe.
+                                    You can reach her at angela.yoo@yale.edu.</p>
+                        </div>
+                    </Col>
 
+                    <Col lg={4}>
+                        <img class="person-img" src={Anna}></img>
+                        <div class="person-info container column-dir center" style={{ alignContent: 'top' }}>
+                            <h3 class="bold">Anna Zhang</h3>
+                            <h4>Software Engineer Intern</h4>
+                            <hr class="colored-line" />
+                            <p>Anna Zhang is a second year undergraduate student at Yale University studying computer science.
+                                She aspires technology to give back to her communities and society as a whole, believing that computer science has the power to make significant social impact.
+                                In her studies at Yale College, she has also discovered an interest in natural language processing, artificial intelligence, and cognitive science as well.
+                                Aside from her passion for programming and AI, she is also an environmental activist and hopes to find a career in the overlap between technology and sustainability.
+                                Feel free to email her with any queries at anna.zhang@yale.edu
+                                </p>
+                        </div>
+                    </Col>
+                    <Col lg={4}>
+                        <img class="person-img" src={Hassaan}></img>
+                        <div class="person-info container column-dir center">
+                            <h3 class="bold">Hassaan Qadir</h3>
+                            <h4>Social Media Marketing Intern</h4>
+                            <hr class="colored-line" />
+                            <p>Hassaan Qadir is pursuing a Bachelor's of Science in Biomedical Engineering at Yale University.
+                                There, he combines studies from disparate fields to find new solutions to age-old problems.
+                                He is also the founder of the Bulldog Pageant, a charity built to focus on local issues.
+                                    In leading a small, dynamic group tackling large problems, he has come to appreciate the unique challenge of building something from the ground up, and he plans to continue with such ventures after he graduates.</p>
+                        </div>
+                    </Col>
+                </Row>
             </div>
 
             <DetailedFooter />
