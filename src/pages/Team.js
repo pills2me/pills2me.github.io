@@ -9,6 +9,7 @@ import DetailedFooter from '../components/DetailedFooter';
 
 import Leslie from '../images/team/leslie.jpg';
 import Anna from '../images/team/anna.png';
+import Angela from '../images/team/angela.jpeg';
 
 const About = () => (
     <div>
@@ -26,7 +27,7 @@ const About = () => (
                 <h1>Our Team</h1>
                 <hr class="colored-line" />
                 <Row className="team-row">
-                    <div class="container center">
+                    <div class="container center top-align">
                         <div class="person-card">
                             <img class="person-img" src={Leslie}></img>
                             <div class="person-info container column-dir center">
@@ -50,34 +51,41 @@ const About = () => (
                     </div>
                 </Row>
                 <Row className="team-row">
-                    <div class="container center">
-                        <Col>
-                            <img class="person-img" src="https://static.wixstatic.com/media/200fe1_06ce139451b6433d95342587d4542c01.png"></img>
+                    <div class="my-container center top-align">
+                        <div >
+                            <img class="person-img" src={Angela}></img>
                             <div class="person-info container column-dir center">
-                                <h3>Person Name</h3>
-                                <p>Brief description and title</p>
+                                <h3>Angela Yoo</h3>
+                                <h4>UX/UI Intern</h4>
+                                <p>Angela is a rising senior at Yale University studying Cognitive Science and practicing human-centered design.
+                                    As a designer and design researcher, she has led projects and teams to design print, mobile, and web products intended for use by a variety of stakeholders;
+                                    she has also worked to create better service experiences for nonprofits as well as campus organizations.
+                                    A leader and champion of user needs, she has spearheaded human-centered design practices and facilitated many design thinking workshops in many spaces unfamiliar with human-centered design.
+                                    She is passionate about the intersection between design thinking and social impact, and ultimately hopes to use design and innovation to empower communities across the globe.
+                                    You can reach her at angela.yoo@yale.edu.</p>
                             </div>
-                        </Col>
+                        </div>
 
-                        <Col>
+                        <div>
                             <img class="person-img" src={Anna}></img>
-                            <div class="person-info container column-dir center">
+                            <div class="person-info container column-dir center" style={{ alignContent: 'top' }}>
                                 <h3>Anna Zhang</h3>
-                                <h4>Web Developer and Software Engineer</h4>
+                                <h4>Software Engineer Intern</h4>
                                 <p>Anna Zhang is a second year undergraduate student at Yale University studying computer science.
                                     She aspires technology to give back to her communities and society as a whole, believing that computer science has the power to make significant social impact.
                                     In her studies at Yale College, she has also discovered an interest in natural language processing, artificial intelligence, and cognitive science as well.
                                     Aside from her passion for programming and AI, she is also an environmental activist and hopes to find a career in the overlap between technology and sustainability.
+                                    Feel free to email her with any queries at anna.zhang@yale.edu
                                 </p>
                             </div>
-                        </Col>
-                        <Col>
+                        </div>
+                        <div>
                             <img class="person-img" src="https://static.wixstatic.com/media/200fe1_06ce139451b6433d95342587d4542c01.png"></img>
                             <div class="person-info container column-dir center">
                                 <h3>Person Name</h3>
                                 <p>Brief description and title</p>
                             </div>
-                        </Col>
+                        </div>
                     </div>
                 </Row>
 
