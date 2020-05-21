@@ -12,6 +12,8 @@ const Sidebar = () => {
 
             <Link className="menu-item" to="/news">News</Link>
 
+            <Link className="menu-item" to="/donate">Partner with Us</Link>
+
             <Link className="menu-item" to="/donate">Donate</Link>
 
             <Link className="menu-item" to="/contact">Contact Us</Link>

@@ -23,7 +23,7 @@ const OpeningPage = () => (
 
             <div class="extra-margin">
                 <div class="container space">
-                    <Button variant="" onClick={buttonClickHandler}><Link to="/patient-form">
+                    <Button variant="" onClick={() => window.scrollTo(0, 0)}><Link to="/patient-form">
                         <div class="round-button container center column-dir">
                             <img class="logo" src={Patient}></img>
                             Request Delivery

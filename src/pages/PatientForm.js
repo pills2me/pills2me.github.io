@@ -174,7 +174,7 @@ function PatientForm() {
                             <Form.Control required type="text"></Form.Control>
                         </Form.Group>
                         <Button variant="light" type="submit">
-                            <Link to="/submission-complete">Submit</Link>
+                            <Link to="/submission-complete">SUBMIT</Link>
                         </Button>
                     </Form>
                 </Jumbotron>

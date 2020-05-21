@@ -12,6 +12,7 @@ import About from './pages/About';
 import News from './pages/News';
 import Donate from './pages/Donate';
 import Contact from './pages/Contact';
+import Partner from './pages/Partner';
 import Team from './pages/Team';
 
 import Favicon from 'react-favicon';
@@ -36,6 +37,7 @@ const App = () => (
 		<Route path="/donate" exact component={Donate} />
 		<Route path="/contact" exact component={Contact} />
 		<Route path="/team" exact component={Team} />
+		<Route path="/partner" exact component={Partner} />
 	</div>
 )
 

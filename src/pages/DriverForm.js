@@ -126,7 +126,7 @@ function DriverForm() {
                         </Form.Group>
 
                         <Button variant="light" type="submit">
-                            Submit
+                            SUBMIT
                             {/* <Link to="/submission-complete">Submit</Link> */}
                         </Button>
                     </Form>

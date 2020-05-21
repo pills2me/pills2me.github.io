@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import { Button, Card, Form, Jumbotron, Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import '../style.css';
@@ -10,6 +10,7 @@ import medicine from '../images/medicine.jpeg';
 import driver from '../images/driver.jpeg';
 import patient from '../images/patients.jpeg';
 import pharmacies from '../images/pharmacies.jpeg';
+
 
 const About = () => (
     <div>
@@ -44,7 +45,7 @@ const About = () => (
                                 We hope that by connecting those in need with volunteer drivers, we can promote public health and help ensure the vulnerable are not at risk for contracting the virus.
                                 </p>
                         </div>
-                        <Button variant="light" className="shadow"><Link class="logo" to="/news">PILLS2ME IN THE NEWS</Link></Button>
+                        <Button variant="light" className="shadow" onClick={() => window.scrollTo(0, 0)}><Link class="logo" to="/news">PILLS2ME IN THE NEWS</Link></Button>
                     </Col>
                 </Row>
             </div>
@@ -85,7 +86,7 @@ const About = () => (
                             <p>5. Follow all COVID-19 <a class="section-link" href="www.cdc.gov/coronavirus/2019-ncov/index.html">guidelines</a> provided by the CDC</p>
 
                         </div>
-                        <Button variant="light" className="shadow"><a href="/patient-form">Register Now</a></Button>
+                        <Button variant="light" className="shadow" onClick={() => window.scrollTo(0, 0)}><Link to="/patient-form">REGISTER NOW</Link></Button>
                     </Col>
                 </Row>
                 <hr class="colored-line" />
@@ -100,7 +101,7 @@ const About = () => (
                             <p>5. Follow all COVID-19 <a class="section-link" href="www.cdc.gov/coronavirus/2019-ncov/index.html">guidelines</a> provided by the CDC</p>
 
                         </div>
-                        <Button variant="light" className="shadow"><a href="/driver-form">Register Now</a></Button>
+                        <Button variant="light" className="shadow" onClick={() => window.scrollTo(0, 0)}><Link to="/driver-form">REGISTER NOW</Link></Button>
                     </Col>
                     <Col lg={5} className="container center">
                         <img class="col-img" src={driver}></img>
