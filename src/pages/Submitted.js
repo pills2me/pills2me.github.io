@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import { Button, Card, Form, Jumbotron, Col } from 'react-bootstrap'
+import { Button, Jumbotron } from 'react-bootstrap'
 import '../style.css';
 
 import Header from '../components/Header';

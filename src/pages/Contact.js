@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import { Button, Col, Row, Jumbotron, Form } from 'react-bootstrap'
-import { Link, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import emailjs from 'emailjs-com';
 import '../style.css';
 
 import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
 import DetailedFooter from '../components/DetailedFooter';
-import { render } from "@testing-library/react";
 
 
 

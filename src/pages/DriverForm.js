@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom';
 import { Redirect } from 'react-router';
-import { Button, Card, Form, Jumbotron, Col } from 'react-bootstrap'
+import { Button, Form, Jumbotron, Col } from 'react-bootstrap'
 import '../style.css';
 
 import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 
 function DriverForm() {

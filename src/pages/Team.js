@@ -1,7 +1,6 @@
 import React from "react";
-import { Button, Card, Form, Jumbotron, Col, Row } from 'react-bootstrap'
+import { Button, Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
-import { createBrowserHistory } from 'history';
 import '../style.css';
 
 import Header from '../components/Header';

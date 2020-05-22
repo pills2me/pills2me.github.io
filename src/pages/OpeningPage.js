@@ -3,9 +3,7 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import "../style.css";
 
-import OpeningLogo from '../components/OpeningLogo';
 import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 
 import Patient from '../images/patient.png';

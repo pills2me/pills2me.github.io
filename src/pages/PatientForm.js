@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { Button, Card, Form, Jumbotron, Col } from 'react-bootstrap'
+import { Button, Form, Jumbotron, Col } from 'react-bootstrap'
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import '../style.css';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Submitted from "./Submitted";
 
 
 

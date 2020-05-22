@@ -1,11 +1,9 @@
 import React from "react";
-import { Button, Col, Row } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import '../style.css';
 
 import Header from '../components/Header';
 import DetailedFooter from '../components/DetailedFooter';
-
-import ceid from '../images/ceid.png';
 
 const News = () => (
     <div>
