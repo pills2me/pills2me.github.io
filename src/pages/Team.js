@@ -11,6 +11,8 @@ import Leslie from '../images/team/leslie.jpg';
 import Anna from '../images/team/anna.png';
 import Angela from '../images/team/angela.jpeg';
 import Hassaan from '../images/team/hassaan.jpg';
+import Konstantine from '../images/team/konstantine.jpeg';
+import Fatema from '../images/team/fatema.jpeg';
 
 const About = () => (
     <div>
@@ -99,31 +101,29 @@ const About = () => (
                 <hr class="colored-line" />
                 <Row className="team-row top-align">
                     <Col lg={4}>
-                        <img class="person-img" src={Angela}></img>
+                        <img class="person-img" src={Konstantine}></img>
                         <div class="person-info container column-dir center">
-                            <h3 class="bold">Angela Yoo</h3>
-                            <h4>UX/UI Design Intern</h4>
+                            <h3 class="bold">Konstantine Drakonakis</h3>
+                            <h4>Mentor from Yale Tsai CITY</h4>
                             <hr class="colored-line" />
-                            <p>Angela is a rising senior at Yale University studying Cognitive Science and practicing human-centered design.
-                                As a designer and design researcher, she has led projects and teams to design print, mobile, and web products intended for use by a variety of stakeholders;
-                                she has also worked to create better service experiences for nonprofits as well as campus organizations.
-                                A leader and champion of user needs, she has spearheaded human-centered design practices and facilitated many design thinking workshops in many spaces unfamiliar with human-centered design.
-                                She is passionate about the intersection between design thinking and social impact, and ultimately hopes to use design and innovation to empower communities across the globe.
-                                    You can reach her at angela.yoo@yale.edu.</p>
+                            <p>Konstantine is an experienced early stage venture investor focused on proprietary IMPACT technologies within the software, med-tech and green-tech markets.
+                            He brings over 15 years of experience in Venture Capital and Project Finance to mentorship at CITY from his roles at LaunchCapital and the Connecticut Clean Energy Fund, as well as environmental management and consulting as a Professional Engineer.
+                            Konstantine opened the New Haven Office for LaunchCapital in 2008 and has led over 40 investments.
+                            He specializes in general entrepreneurship, early-stage investing, green-tech, biotech/medical devices, life science, physical science, venture capital, and project finance.
+                                </p>
                         </div>
                     </Col>
 
                     <Col lg={4}>
-                        <img class="person-img" src={Anna}></img>
+                        <img class="person-img" src={Fatema}></img>
                         <div class="person-info container column-dir center" style={{ alignContent: 'top' }}>
-                            <h3 class="bold">Anna Zhang</h3>
-                            <h4>Software Engineer Intern</h4>
+                            <h3 class="bold">Fatema Basrai, MBA</h3>
+                            <h4>Assistant Director from InnovateHealth Yale</h4>
                             <hr class="colored-line" />
-                            <p>Anna Zhang is a second year undergraduate student at Yale University studying computer science.
-                                She aspires technology to give back to her communities and society as a whole, believing that computer science has the power to make significant social impact.
-                                In her studies at Yale College, she has also discovered an interest in natural language processing, artificial intelligence, and cognitive science as well.
-                                Aside from her passion for programming and AI, she is also an environmental activist and hopes to find a career in the overlap between technology and sustainability.
-                                Feel free to email her with any queries at anna.zhang@yale.edu
+                            <p>Fatema serves as the Assistant Director of InnovateHealth Yale and as the Innovation Manager for the Sustainable Health Initiative at Yale University.
+                                In her role, she works with students, faculty, staff and community members to support social ventures in health and education across the globe.
+                                She is active in the educational equity community as has presented nationally and locally on panels including those for DreamWeek, The American Association for University Women, and Leadership for Educational Equity.
+                                Fatema was named to Forbes 30 Under 30 in Education list for 2018 and is dedicated to ensuring educational and health equity for students globally.
                                 </p>
                         </div>
                     </Col>
