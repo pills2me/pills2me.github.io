@@ -3,20 +3,15 @@ import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../style.css';
 
-import OpeningLogo from '../components/OpeningLogo';
-import Sidebar from '../components/Sidebar';
-
 function buttonClickHandler() {
     console.log("clicked");
 }
 
 const SignUp = (userType) => (
     <div>
-        <Sidebar />
         <div class="pharm-background container center column-dir">
 
 
-            <OpeningLogo />
 
             <div class="container column-dir extra-margin">
                 <Button variant="" size="lg" block onClick={buttonClickHandler}>

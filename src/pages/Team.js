@@ -12,6 +12,7 @@ import Angela from '../images/team/angela.jpeg';
 import Hassaan from '../images/team/hassaan.jpg';
 import Konstantine from '../images/team/konstantine.jpeg';
 import Fatema from '../images/team/fatema.jpeg';
+import Christina from '../images/team/christina.jpg';
 
 const About = () => (
     <div>
@@ -127,15 +128,16 @@ const About = () => (
                         </div>
                     </Col>
                     <Col lg={4}>
-                        <img class="person-img" src={Hassaan}></img>
+                        <img class="person-img" src={Christina}></img>
                         <div class="person-info container column-dir center">
-                            <h3 class="bold">Hassaan Qadir</h3>
+                            <h3 class="bold">Christina M. Madison, PharmD, FCCP, AAHIVP</h3>
                             <h4>Social Media Marketing Intern</h4>
                             <hr class="colored-line" />
-                            <p>Hassaan Qadir is pursuing a Bachelor's of Science in Biomedical Engineering at Yale University.
-                                There, he combines studies from disparate fields to find new solutions to age-old problems.
-                                He is also the founder of the Bulldog Pageant, a charity built to focus on local issues.
-                                    In leading a small, dynamic group tackling large problems, he has come to appreciate the unique challenge of building something from the ground up, and he plans to continue with such ventures after he graduates.</p>
+                            <p>Dr. Madison is a trusted and valued health care professional with 13 years of experience in Public Health and 16 years of experience as a pharmacy professional.
+                                She is the Founder and CEO of The Public Health Pharmacist, PLLC - a boutique consulting firm specializing in public health. Helping individuals and businesses navigate the current covid19 global pandemic and beyond.
+                                She is a healthcare media contributor who has been featured on KSNV-Channel 3 News (NBC), KVVU-TV-Fox-5 News (Fox), 8 News Now (CBS), KTNV-Action New 13 (ABC), Vegas-PBS, and Nevada Public Radio- KNPR for her public health expert commentary during the COVID19 pandemic.
+                                She has an intimate knowledge of the impact public health messaging, policy, and legislation can have on communities. She has received multiple awards and recognitions and was recently recognized in May 2020 by Pharmacy Times® one of the oldest pharmacy publications in the country founded in 1897 as a Pharmacy Hero for her uses of social medial platforms to educate patients and advocate for the profession of pharmacy during the COVID19 pandemic.
+                                Dr. Madison is also an Associate Professor of Pharmacy Practice with Roseman University of Health Sciences (RU). Advocating for change to improve the health and wellness of vulnerable populations and the underserved through public health awareness.</p>
                         </div>
                     </Col>
                 </Row>
