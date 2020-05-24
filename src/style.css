@@ -269,7 +269,7 @@ text-align: center;
   }
 
   .after-heading {
-      padding-top: 120px;
+      padding-top: 105px;
       position:relative;
   }
 
@@ -278,6 +278,10 @@ text-align: center;
       width: 100%;
       margin:0px;
       border-width: 0px;
+  }
+
+  .homescreen {
+      height: 590px;
   }
 
   .overlay-text-box {
