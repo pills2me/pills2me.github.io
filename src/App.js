@@ -14,6 +14,7 @@ import Donate from './pages/Donate';
 import Contact from './pages/Contact';
 import Partner from './pages/Partner';
 import Team from './pages/Team';
+import Pharmacy from './pages/PharmacyForm';
 
 import Favicon from 'react-favicon';
 
@@ -38,6 +39,7 @@ const App = () => (
 		<Route path="/contact" exact component={Contact} />
 		<Route path="/team" exact component={Team} />
 		<Route path="/partner" exact component={Partner} />
+		<Route path="/pharmacy-form" exact component={Pharmacy} />
 	</div>
 )
 

@@ -469,6 +469,10 @@ li.nav {
 
   @media only screen and (max-width: 768px) {
 
+    .jumbotron {
+        width:95%;
+    }
+
     .news-heading {
         font-size:20px;
     }
