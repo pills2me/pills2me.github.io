@@ -7,7 +7,7 @@ import Header from '../components/Header';
 import DetailedFooter from '../components/DetailedFooter';
 
 import Leslie from '../images/team/leslie.jpg';
-import Leo from '../images/team/leo.jpg';
+import Leo from '../images/team/leo.JPG';
 import Anna from '../images/team/anna.png';
 import Angela from '../images/team/angela.jpeg';
 import Hassaan from '../images/team/hassaan.jpg';
@@ -47,13 +47,13 @@ const About = () => (
                     </Col>
 
                     <Col lg={6}>
-                        <img class="person-img" src="https://static.wixstatic.com/media/200fe1_06ce139451b6433d95342587d4542c01.png"></img>
+                        <img class="person-img" src={Leo}></img>
                         <div class="person-info container column-dir center">
                             <h3 class="bold">Leonardo Lizbinski MPH, MSC</h3>
                             <h4>Founder, Chief Technology Officer</h4>
                             <hr class="colored-line" />
                             <p>Leo has experience in software developement and is a medical student at the Warren Alpert Medical School of Brown University.
-                            Leo was inspired to help and care for all our beloved patients during COVID-19, the elderly and vulnerable who cannot leave their home to receive their medications. 
+                            Leo was inspired to help and care for all our beloved patients during COVID-19, the elderly and vulnerable who cannot leave their home to receive their medications.
                             Leo is founder and former President of the Yale Innovation and Entreprenurship in Modern Health Care (IEMH), a graduate student group.
                             Leo graduated from Yale University with a Master of Public Health in Health Care Management.
                             Leo previously attended Brown University, where he graduated magna cum laude and Sigma Xi Honors with a BA in computer science and a MSC in pathobiology.</p>

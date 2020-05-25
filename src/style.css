@@ -384,6 +384,7 @@ text-align: center;
 
   .person-card {
       padding-left: 35px;
+
       padding-right: 35px;
   }
   .team-row {
@@ -468,6 +469,10 @@ li.nav {
 
 
   @media only screen and (max-width: 768px) {
+
+    .person-img {
+        padding-top:15px;
+    }
 
     .jumbotron {
         width:95%;
