@@ -18,9 +18,10 @@ class Footer extends Component {
                     <Col md={6} >
                         <h4>CONNECT AND FOLLOW</h4>
                         <div class="container space">
-                            <a href="https://www.facebook.com/" target="_blank" style={{ fontSize: "40px" }} class="container center fa fa-facebook"></a>
+                            <a href="https://www.facebook.com/pills2me/" target="_blank" style={{ fontSize: "40px" }} class="container center fa fa-facebook"></a>
                             <a href="https://twitter.com/" target="_blank" style={{ fontSize: "40px" }} class="container center fa fa-twitter"></a>
-                            <a href="https://www.instagram.com/" target="_blank" style={{ fontSize: "40px" }} class="container center fa fa-instagram"></a>
+                            <a href="https://www.instagram.com/pills2me/" target="_blank" style={{ fontSize: "40px" }} class="container center fa fa-instagram"></a>
+                            <a href="https://www.linkedin.com/company/pills2me-inc/" target="_blank" style={{ fontSize: "40px" }} class="container center fa fa-linkedin"></a>
                         </div>
                         <p>Copyright © Pills2Me. All rights reserved.</p>
                     </Col>
@@ -28,7 +29,7 @@ class Footer extends Component {
                         <h4>JOIN TODAY</h4>
                         <div>
                             <p><a class="section-link" href="/patient-form">Request Rx Pickup/Delivery</a></p>
-                            <p><a class="section-link" href="/patient-form">Volunteer to Drive</a></p>
+                            <p><a class="section-link" href="/driver-form">Volunteer to Drive</a></p>
                         </div>
                     </Col>
                 </Row>
