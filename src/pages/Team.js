@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import DetailedFooter from '../components/DetailedFooter';
 
 import Leslie from '../images/team/leslie.jpg';
+import Leo from '../images/team/leo.jpg';
 import Anna from '../images/team/anna.png';
 import Angela from '../images/team/angela.jpeg';
 import Hassaan from '../images/team/hassaan.jpg';
@@ -34,7 +35,7 @@ const About = () => (
                         <img class="person-img" src={Leslie}></img>
                         <div class="person-info container column-dir center">
                             <h3 class="bold">Dr. Leslie Asanga, PharmD, MBA, MPH</h3>
-                            <h4>Founder</h4>
+                            <h4>Founder, Chief Executive Officer</h4>
                             <hr class="colored-line" />
                             <p> Dr. Asanga is an experienced pharmacist and recently graduated from Yale University with a Master of Public Health degree.
                                 While at Yale, he took courses in Public Health Entrepreneurship, Startup Founder Studies, and Sustainable Innovations in Healthcare at the Yale School of Management.
@@ -48,11 +49,14 @@ const About = () => (
                     <Col lg={6}>
                         <img class="person-img" src="https://static.wixstatic.com/media/200fe1_06ce139451b6433d95342587d4542c01.png"></img>
                         <div class="person-info container column-dir center">
-                            <h3 class="bold">Person Name</h3>
-                            <h4>Title</h4>
+                            <h3 class="bold">Leonardo Lizbinski MPH, MSC</h3>
+                            <h4>Founder, Chief Technology Officer</h4>
                             <hr class="colored-line" />
-                            <p>Brief description and title</p>
-                            <Button className="linkedin"><a class="linkedin" href="">LinkedIn Profile</a></Button>
+                            <p>Leo has experience in software developement and is a medical student at the Warren Alpert Medical School of Brown University.
+                            Leo is founder and former President of the Yale Innovation and Entreprenurship in Modern Health Care (IEMH), a graduate student group.
+                            Leo graduated from Yale University with a Master of Public Health in Health Care Management.
+                            Leo previously attended Brown University, where he graduated magna cum laude and Sigma Xi Honors with a BA in computer science and a MSC in pathobiology.</p>
+                            <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/leonardolizbinski/">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
                 </Row>
