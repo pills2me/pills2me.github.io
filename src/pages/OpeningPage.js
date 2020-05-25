@@ -18,20 +18,20 @@ const OpeningPage = () => (
         <Header />
         <div class="pharm-background container center column-dir after-heading">
             <div class="homescreen center container column-dir">
-                <h2 class="logo">Free same-day medication delivery for the elderly and vulnerable during COVID-19</h2>
+                <h2 class="logo">Free same-day medication pick-up and delivery from any pharmacy for the elderly and vulnerable during COVID-19.</h2>
 
                 <div class="extra-margin">
                     <div class="container space">
                         <Button variant="" onClick={() => window.scrollTo(0, 0)}><Link to="/patient-form">
                             <div class="round-button container center column-dir">
-                                <img class="logo" src={Patient}></img>
+                                <img class="icon" src={Patient}></img>
                                 Request Delivery
         </div>
                         </Link></Button>
 
                         <Button variant="" onClick={buttonClickHandler}><Link to="/driver-form">
                             <div class="round-button container center column-dir">
-                                <img class="logo" src={Driver}></img>
+                                <img class="icon" src={Driver}></img>
                                 Volunteer to Drive
         </div>
                         </Link></Button>
@@ -52,7 +52,7 @@ const OpeningPage = () => (
                 <h1>What We Offer</h1>
                 <hr class="colored-line" />
                 <Row>
-                    <Col className="left-align">
+                    <Col lg={6} className="left-align">
                         <h3 class="center-text">Our Patients</h3>
 
 

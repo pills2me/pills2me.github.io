@@ -21,7 +21,7 @@ const About = () => (
         <div class="pharm-background fixed-background container center column-dir after-heading">
             <div class="overlay-text-box container center column-dir">
                 <h1 class="overlay-text">Meet the Team</h1>
-                <h4 class="overlay-descript">We are people who care about giving back to the communities we are in.
+                <h4 class="overlay-descript">We are Yale students and graduates who care about giving back to the communities we are in.
                  Seeing the issue of elderly and vulnerable needing to pick up their prescriptions, we wanted to use our platforms and skills to create this company to help those in need.</h4>
                 <Link to="about"><Button onClick={() => window.scrollTo(0, 0)} variant="light" className="shadow">LEARN ABOUT OUR STORY</Button></Link>
             </div>

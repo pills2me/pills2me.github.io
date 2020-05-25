@@ -110,6 +110,10 @@ h2 {
 }
 
 img.logo {
+    height:70px;
+    padding-right: 10px;
+}
+img.icon {
     height:90px
 }
 h1.logo {
@@ -118,6 +122,7 @@ h1.logo {
     line-height: 100%;
     vertical-align: top;
     color:#0084F4;
+    padding-top:8px;
 }
 h2.logo { 
     padding-top:20px;
@@ -295,7 +300,7 @@ text-align: center;
   }
 
   .homescreen {
-      height: 590px;
+      min-height: 590px;
   }
 
   .overlay-text-box {
@@ -525,7 +530,7 @@ button.nav {
     }
 
     img.logo {
-        height:40px;
+        height:35px;
     }
     
     h1.logo {
