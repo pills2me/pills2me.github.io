@@ -53,7 +53,8 @@ const About = () => (
                             <h4>Co-Founder, CTO</h4>
                             <hr class="colored-line" />
                             <p>Leo has experience in software developement and is a medical student at the Warren Alpert Medical School of Brown University.
-                            Leo was inspired to help and care for all our beloved patients during COVID-19, the elderly and vulnerable who cannot leave their home to receive their medications.
+                            Leo was inspired to help all our beloved patients during COVID-19, the elderly and vulnerable who cannot leave their homes to receive their medicine.
+                            Leo is a cofounder of ePharmHub, which won the Thorne Prize at Startup Yale 2020.
                             Leo is founder and former President of the Yale Innovation and Entreprenurship in Modern Health Care (IEMH), a graduate student group.
                             Leo graduated from Yale University with a Master of Public Health in Health Care Management.
                             Leo previously attended Brown University, where he graduated magna cum laude and Sigma Xi Honors with a BA in computer science and a MSC in pathobiology.</p>
