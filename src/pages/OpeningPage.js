@@ -60,17 +60,16 @@ const OpeningPage = () => (
                         <p>- Free same-day medication delivery from any pharmacy.</p>
                         <p>- We deliver within 2 hours of request.</p>
                         <p>- Free pharmacist consultation</p>
-                        <p> - Purchase over-the-counter items and have them delivered within a couple of hours.</p>
+                        <p>- Purchase over-the-counter items and have them delivered within a couple of hours.</p>
                         <p>- Enjoy special offers and discounts from our partner pharmacies.</p>
                     </Col>
                     <Col className="left-align">
                         <h3 class="center-text">Our Pharmacy Partners</h3>
 
-                        <p>- Free same-day medication delivery from any pharmacy.</p>
-                        <p>- We deliver within 2 hours of request.</p>
-                        <p>- Free pharmacist consultation</p>
-                        <p> - Purchase over-the-counter items and have them delivered within a couple of hours.</p>
-                        <p>- Enjoy special offers and discounts from our partner pharmacies.</p>
+                        <p>- Free same-day delivery for your elderly and immunocompromised patients.</p>
+                        <p>- Free promotion on our platforms.</p>
+                        <p>- Patients can purchase your OTC items using our platform.</p>
+                        <p>- And much more.....</p>
                     </Col>
                 </Row>
 

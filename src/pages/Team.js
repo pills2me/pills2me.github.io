@@ -41,6 +41,7 @@ const About = () => (
                                 He is the CEO and co-founder of ePharmHub which won the Thorne Prize at Startup Yale 2020.
                                 He also holds a Doctor of Pharmacy degree and an MBA with more than five years of healthcare experience.
                                     He is an innovator and passionate about creating healthcare ventures that create impact in vulnerable communities.</p>
+                            <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/leslie-asanga-134b48143/">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
 
@@ -51,6 +52,7 @@ const About = () => (
                             <h4>Title</h4>
                             <hr class="colored-line" />
                             <p>Brief description and title</p>
+                            <Button className="linkedin"><a class="linkedin" href="">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
                 </Row>
@@ -62,11 +64,11 @@ const About = () => (
                             <h4>UX/UI Design Intern</h4>
                             <hr class="colored-line" />
                             <p>Angela is a rising senior at Yale University studying Cognitive Science and practicing human-centered design.
-                                As a designer and design researcher, she has led projects and teams to design print, mobile, and web products intended for use by a variety of stakeholders;
-                                she has also worked to create better service experiences for nonprofits as well as campus organizations.
+                                As a designer and design researcher, she has led projects and teams to design print, mobile, and web products intended for use by a variety of stakeholders.
                                 A leader and champion of user needs, she has spearheaded human-centered design practices and facilitated many design thinking workshops in many spaces unfamiliar with human-centered design.
                                 She is passionate about the intersection between design thinking and social impact, and ultimately hopes to use design and innovation to empower communities across the globe.
-                                    You can reach her at angela.yoo@yale.edu.</p>
+                                </p>
+                            <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/angelamyoo/">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
 
@@ -77,11 +79,11 @@ const About = () => (
                             <h4>Software Engineer Intern</h4>
                             <hr class="colored-line" />
                             <p>Anna Zhang is a second year undergraduate student at Yale University studying computer science.
-                                She aspires technology to give back to her communities and society as a whole, believing that computer science has the power to make significant social impact.
+                                She aspires technology to give back to her communities and society as a whole, which is why she used her web development skills to program this entire Pills2Me website using ReactJS to help the elderly and vulnerable during the COVID-19 pandemic.
                                 In her studies at Yale College, she has also discovered an interest in natural language processing, artificial intelligence, and cognitive science as well.
                                 Aside from her passion for programming and AI, she is also an environmental activist and hopes to find a career in the overlap between technology and sustainability.
-                                Feel free to email her with any queries at anna.zhang@yale.edu
                                 </p>
+                            <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/annazhang2002/">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
                     <Col lg={4}>
@@ -94,23 +96,26 @@ const About = () => (
                                 There, he combines studies from disparate fields to find new solutions to age-old problems.
                                 He is also the founder of the Bulldog Pageant, a charity built to focus on local issues.
                                     In leading a small, dynamic group tackling large problems, he has come to appreciate the unique challenge of building something from the ground up, and he plans to continue with such ventures after he graduates.</p>
+                            <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/hassaan-qadir-2731891a5/">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
                 </Row>
-                <h1>Advisors</h1>
-                <hr class="colored-line" />
+
                 <Row className="team-row top-align">
+                    <h1 class="center-text">Advisors</h1>
+                    <hr class="colored-line" />
                     <Col lg={4}>
                         <img class="person-img" src={Konstantine}></img>
                         <div class="person-info container column-dir center">
                             <h3 class="bold">Konstantine Drakonakis</h3>
-                            <h4>Mentor from Yale Tsai CITY</h4>
+                            <h4>Venture/IMPACT Investor | Yale Tsai CITY Mentor</h4>
                             <hr class="colored-line" />
                             <p>Konstantine is an experienced early stage venture investor focused on proprietary IMPACT technologies within the software, med-tech and green-tech markets.
                             He brings over 15 years of experience in Venture Capital and Project Finance to mentorship at CITY from his roles at LaunchCapital and the Connecticut Clean Energy Fund, as well as environmental management and consulting as a Professional Engineer.
                             Konstantine opened the New Haven Office for LaunchCapital in 2008 and has led over 40 investments.
                             He specializes in general entrepreneurship, early-stage investing, green-tech, biotech/medical devices, life science, physical science, venture capital, and project finance.
                                 </p>
+                            <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/kdrakonakis/">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
 
@@ -125,19 +130,20 @@ const About = () => (
                                 She is active in the educational equity community as has presented nationally and locally on panels including those for DreamWeek, The American Association for University Women, and Leadership for Educational Equity.
                                 Fatema was named to Forbes 30 Under 30 in Education list for 2018 and is dedicated to ensuring educational and health equity for students globally.
                                 </p>
+                            <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/fatema-basrai-bb18561/">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
                     <Col lg={4}>
                         <img class="person-img" src={Christina}></img>
                         <div class="person-info container column-dir center">
                             <h3 class="bold">Christina M. Madison, PharmD, FCCP, AAHIVP</h3>
-                            <h4>Social Media Marketing Intern</h4>
+                            <h4>CEO at The Public Health Pharmacist</h4>
                             <hr class="colored-line" />
                             <p>Dr. Madison is a trusted and valued health care professional with 13 years of experience in Public Health and 16 years of experience as a pharmacy professional.
-                                She is the Founder and CEO of The Public Health Pharmacist, PLLC - a boutique consulting firm specializing in public health. Helping individuals and businesses navigate the current covid19 global pandemic and beyond.
-                                She is a healthcare media contributor who has been featured on KSNV-Channel 3 News (NBC), KVVU-TV-Fox-5 News (Fox), 8 News Now (CBS), KTNV-Action New 13 (ABC), Vegas-PBS, and Nevada Public Radio- KNPR for her public health expert commentary during the COVID19 pandemic.
-                                She has an intimate knowledge of the impact public health messaging, policy, and legislation can have on communities. She has received multiple awards and recognitions and was recently recognized in May 2020 by Pharmacy Times® one of the oldest pharmacy publications in the country founded in 1897 as a Pharmacy Hero for her uses of social medial platforms to educate patients and advocate for the profession of pharmacy during the COVID19 pandemic.
-                                Dr. Madison is also an Associate Professor of Pharmacy Practice with Roseman University of Health Sciences (RU). Advocating for change to improve the health and wellness of vulnerable populations and the underserved through public health awareness.</p>
+                                She is the Founder and CEO of The Public Health Pharmacist, PLLC - a boutique consulting firm specializing in public health.
+                                She has an intimate knowledge of the impact public health messaging, policy, and legislation can have on communities.
+                                She has received multiple awards and recognitions and was recently recognized in May 2020 by Pharmacy Times® one of the oldest pharmacy publications in the country.</p>
+                            <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/drchristinamadisonthepublichealthpharmacist/">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
                 </Row>

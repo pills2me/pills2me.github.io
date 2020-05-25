@@ -136,6 +136,20 @@ div.logo {
     background-color: #e9ecef;
 }
 
+button.linkedin {
+    background-color: transparent;
+    border-color:white;
+}
+button.linkedin:hover {
+    background-color: #0084F4;
+    border-color:#0084F4;
+}
+a.linkedin {
+    color: white;
+}
+a.linkedin:hover {
+   text-decoration: none;
+}
 /* Individual item */
 .bm-item {
     display: inline-block;
