@@ -6,7 +6,30 @@ import '../style.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+
+var firebaseConfig = {
+    apiKey: "AIzaSyCL77U2-Ydsxi3MmPlQqZLfkTq7EBAhhic",
+    authDomain: "pills2me-ac2b4.firebaseapp.com",
+    databaseURL: "https://pills2me-ac2b4.firebaseio.com",
+    projectId: "pills2me-ac2b4",
+    storageBucket: "pills2me-ac2b4.appspot.com",
+    messagingSenderId: "70010492478",
+    appId: "1:70010492478:web:fd5e94755a1511af57e36f",
+    measurementId: "G-BQDTNC1XZL"
+};
+
+firebase.initializeApp(firebaseConfig);
+firebase.analytics();
+
 function DriverForm() {
+    var Auth = firebase.auth(); 
+    var dbRef = firebase.database();
+    var userRef = dbRef.ref('drugs');
+    
+    var userid=firebase.auth().currentUser.uid;
     const [redirect, setRedirect] = useState(false);
     const [validated, setValidated] = useState(false);
 
@@ -125,7 +148,24 @@ function DriverForm() {
 
                         <Button variant="light" type="submit">
                             SUBMIT
-                            {/* <Link to="/submission-complete">Submit</Link> */}
+                            {/* <Link to="/submission-complete">Submit</Link> */
+//                               userRef 
+//                               .push({
+//                                 userid{
+//                                   birthday: birthday,
+//                                   city: city,
+//                                   email: EMAILVARIABLE
+//                                   id: userid,
+//                                   name: FIRSTNAME+LASTNAMEVARIABLES
+//                                   phone: PHONEVARIABLE
+//                                   state: STATEVARIABLE
+//                                   street: STREETVARIABLE
+//                                   terms: "true"
+//                                   welcome: "true"
+//                                   zip: ZIPVARIABLE
+//                                 }
+//                               })
+                            }
                         </Button>
                     </Form>
                 </Jumbotron>
