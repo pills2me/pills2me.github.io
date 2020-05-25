@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from 'react-bootstrap';
+import { Button, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import "../style.css";
 
@@ -50,6 +50,30 @@ const OpeningPage = () => (
 
             <div class="section section-blue">
                 <h1>What We Offer</h1>
+                <hr class="colored-line" />
+                <Row>
+                    <Col className="left-align">
+                        <h3 class="center-text">Our Patients</h3>
+
+
+
+                        <p>- Free same-day medication delivery from any pharmacy.</p>
+                        <p>- We deliver within 2 hours of request.</p>
+                        <p>- Free pharmacist consultation</p>
+                        <p> - Purchase over-the-counter items and have them delivered within a couple of hours.</p>
+                        <p>- Enjoy special offers and discounts from our partner pharmacies.</p>
+                    </Col>
+                    <Col className="left-align">
+                        <h3 class="center-text">Our Pharmacy Partners</h3>
+
+                        <p>- Free same-day medication delivery from any pharmacy.</p>
+                        <p>- We deliver within 2 hours of request.</p>
+                        <p>- Free pharmacist consultation</p>
+                        <p> - Purchase over-the-counter items and have them delivered within a couple of hours.</p>
+                        <p>- Enjoy special offers and discounts from our partner pharmacies.</p>
+                    </Col>
+                </Row>
+
             </div>
 
             <DetailedFooter />
