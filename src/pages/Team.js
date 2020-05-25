@@ -35,7 +35,7 @@ const About = () => (
                         <img class="person-img" src={Leslie}></img>
                         <div class="person-info container column-dir center">
                             <h3 class="bold">Dr. Leslie Asanga, PharmD, MBA, MPH</h3>
-                            <h4>Founder, Chief Executive Officer</h4>
+                            <h4>Co-Founder, CEO</h4>
                             <hr class="colored-line" />
                             <p> Dr. Asanga is an experienced pharmacist and recently graduated from Yale University with a Master of Public Health degree.
                                 While at Yale, he took courses in Public Health Entrepreneurship, Startup Founder Studies, and Sustainable Innovations in Healthcare at the Yale School of Management.
@@ -50,7 +50,7 @@ const About = () => (
                         <img class="person-img" src={Leo}></img>
                         <div class="person-info container column-dir center">
                             <h3 class="bold">Leonardo Lizbinski MPH, MSC</h3>
-                            <h4>Founder, Chief Technology Officer</h4>
+                            <h4>Co-Founder, CTO</h4>
                             <hr class="colored-line" />
                             <p>Leo has experience in software developement and is a medical student at the Warren Alpert Medical School of Brown University.
                             Leo was inspired to help and care for all our beloved patients during COVID-19, the elderly and vulnerable who cannot leave their home to receive their medications.
