@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.0635f331.chunk.css",
-    "main.js": "/static/js/main.4836c73c.chunk.js",
-    "main.js.map": "/static/js/main.4836c73c.chunk.js.map",
+    "main.css": "/static/css/main.7e2d4afc.chunk.css",
+    "main.js": "/static/js/main.649a6630.chunk.js",
+    "main.js.map": "/static/js/main.649a6630.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.65457b84.js",
     "runtime-main.js.map": "/static/js/runtime-main.65457b84.js.map",
     "static/css/2.69121389.chunk.css": "/static/css/2.69121389.chunk.css",
-    "static/js/2.b269b712.chunk.js": "/static/js/2.b269b712.chunk.js",
-    "static/js/2.b269b712.chunk.js.map": "/static/js/2.b269b712.chunk.js.map",
+    "static/js/2.6871a931.chunk.js": "/static/js/2.6871a931.chunk.js",
+    "static/js/2.6871a931.chunk.js.map": "/static/js/2.6871a931.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bc0de6738836bd409d4a20d0ffb7970d.js": "/precache-manifest.bc0de6738836bd409d4a20d0ffb7970d.js",
+    "precache-manifest.d24cabf1ec38e73eab4216eb2f7956f8.js": "/precache-manifest.d24cabf1ec38e73eab4216eb2f7956f8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/static/css/2.69121389.chunk.css.map",
-    "static/css/main.0635f331.chunk.css.map": "/static/css/main.0635f331.chunk.css.map",
-    "static/js/2.b269b712.chunk.js.LICENSE.txt": "/static/js/2.b269b712.chunk.js.LICENSE.txt",
+    "static/css/main.7e2d4afc.chunk.css.map": "/static/css/main.7e2d4afc.chunk.css.map",
+    "static/js/2.6871a931.chunk.js.LICENSE.txt": "/static/js/2.6871a931.chunk.js.LICENSE.txt",
     "static/media/angela.jpeg": "/static/media/angela.59264022.jpeg",
     "static/media/anna.png": "/static/media/anna.5b17249a.png",
     "static/media/berneys.png": "/static/media/berneys.2cf0a48e.png",
@@ -26,6 +26,7 @@
     "static/media/fatema.jpeg": "/static/media/fatema.8e2abe2c.jpeg",
     "static/media/hassaan.jpg": "/static/media/hassaan.9661d413.jpg",
     "static/media/konstantine.jpeg": "/static/media/konstantine.5c579127.jpeg",
+    "static/media/leo.JPG": "/static/media/leo.2e664c0a.JPG",
     "static/media/leslie.jpg": "/static/media/leslie.ad0714c8.jpg",
     "static/media/logo-blue.png": "/static/media/logo-blue.f414a155.png",
     "static/media/medicine.jpeg": "/static/media/medicine.d5e5d2c0.jpeg",
@@ -37,8 +38,8 @@
   "entrypoints": [
     "static/js/runtime-main.65457b84.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.b269b712.chunk.js",
-    "static/css/main.0635f331.chunk.css",
-    "static/js/main.4836c73c.chunk.js"
+    "static/js/2.6871a931.chunk.js",
+    "static/css/main.7e2d4afc.chunk.css",
+    "static/js/main.649a6630.chunk.js"
   ]
 }
