@@ -7,30 +7,30 @@ import '../style.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
-
-var firebaseConfig = {
-    apiKey: "AIzaSyCL77U2-Ydsxi3MmPlQqZLfkTq7EBAhhic",
-    authDomain: "pills2me-ac2b4.firebaseapp.com",
-    databaseURL: "https://pills2me-ac2b4.firebaseio.com",
-    projectId: "pills2me-ac2b4",
-    storageBucket: "pills2me-ac2b4.appspot.com",
-    messagingSenderId: "70010492478",
-    appId: "1:70010492478:web:fd5e94755a1511af57e36f",
-    measurementId: "G-BQDTNC1XZL"
-};
-
-firebase.initializeApp(firebaseConfig);
-firebase.analytics();
 
 
 function PatientForm() {
-    var Auth = firebase.auth(); 
+    const firebase = require('firebase');
+
+    var Auth = firebase.auth();
     var dbRef = firebase.database();
     var userRef = dbRef.ref('drugs');
-    var userid=firebase.auth().currentUser.uid;
+    var userid = firebase.auth().currentUser.uid;
+
+    const firebaseConfig = {
+        apiKey: "AIzaSyCL77U2-Ydsxi3MmPlQqZLfkTq7EBAhhic",
+        authDomain: "pills2me-ac2b4.firebaseapp.com",
+        databaseURL: "https://pills2me-ac2b4.firebaseio.com",
+        projectId: "pills2me-ac2b4",
+        storageBucket: "pills2me-ac2b4.appspot.com",
+        messagingSenderId: "70010492478",
+        appId: "1:70010492478:web:fd5e94755a1511af57e36f",
+        measurementId: "G-BQDTNC1XZL"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
 
     const [validated, setValidated] = useState(false);
     const [yesChecked, setYesChecked] = useState(false);
@@ -43,6 +43,31 @@ function PatientForm() {
             event.stopPropagation();
             event.preventDefault();
         } else {
+            userRef
+                .push({
+
+                    //EDIT THIS PLEASE, NEED TO REPLACE WITH THE CORRECT VARIABLE NAMES IN ALL CAPS
+                    // birthday: document.getElementsByName("birthday")[0].value,
+                    // city: CITYVARIABLE,
+                    // completed: "false",
+                    // copay: COPAYVARIABLE,
+                    // driverNotes: DRIVERNOTESVARIABLE,
+                    // id: userid,
+                    // name: FIRSTNAMELASTNAMECOMBINEDVARIABLES,
+                    // pharmacy: PHARMACYVARIABLE,
+                    // pharmacyCity: PHARMACYCITYVARIABLE,
+                    // pharmacyPhone: PHARMACYPHONEVARIABLE,
+                    // pharmacyState: PHARMACYSTATEVARIABLE,
+                    // pharmacyStreet: STREETVARIABLE,
+                    // pharmacyZip: ZIPVARIABLE,
+                    // phone: PATIENTPHONEVARIABLE,
+                    // queued: "false",
+                    // state: PATIENTSTATEVARIABLE,
+                    // street: PATIENTSTREETVARIABLE,
+                    // usNotes: USNOTESVARIABLE,
+                    // zip: PATIENTZIPVARIABLE,
+
+                })
             setRedirect(true);
         }
         setValidated(true);
@@ -195,32 +220,8 @@ function PatientForm() {
                             <Form.Control required type="text"></Form.Control>
                         </Form.Group>
                         <Button variant="light" type="submit">
-                            <Link to="/submission-complete">SUBMIT</Link>
-//                             userRef 
-//                               .push({
-//                                 userid{
-                         //EDIT THIS PLEASE, NEED TO REPLACE WITH THE CORRECT VARIABLE NAMES IN ALL CAPS
-//                                   birthday: document.getElementsByName("birthday")[0].value,
-//                                   city: CITYVARIABLE,
-//                                   completed: "false",
-//                                   copay: COPAYVARIABLE,
-//                                   driverNotes: DRIVERNOTESVARIABLE,
-//                                   id: userid,
-//                                   name: FIRSTNAMELASTNAMECOMBINEDVARIABLES,
-//                                   pharmacy: PHARMACYVARIABLE
-//                                   pharmacyCity: PHARMACYCITYVARIABLE
-//                                   pharmacyPhone: PHARMACYPHONEVARIABLE
-//                                   pharmacyState: PHARMACYSTATEVARIABLE
-//                                   pharmacyStreet: STREETVARIABLE
-//                                   pharmacyZip: ZIPVARIABLE
-//                                   phone: PATIENTPHONEVARIABLE
-//                                   queued: "false",
-//                                   state: PATIENTSTATEVARIABLE
-//                                   street: PATIENTSTREETVARIABLE
-//                                   usNotes: USNOTESVARIABLE
-//                                   zip: PATIENTZIPVARIABLE
-//                                 }
-//                               })
+                            {/* <Link to="/submission-complete">SUBMIT</Link> */}
+
                         </Button>
                     </Form>
                 </Jumbotron>

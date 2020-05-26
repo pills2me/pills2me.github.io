@@ -14,6 +14,7 @@ import Hassaan from '../images/team/hassaan.jpg';
 import Konstantine from '../images/team/konstantine.jpeg';
 import Fatema from '../images/team/fatema.jpeg';
 import Christina from '../images/team/christina.jpg';
+import Kaveh from '../images/team/Kaveh.jpeg';
 
 const About = () => (
     <div>
@@ -110,7 +111,7 @@ const About = () => (
                 <Row className="team-row top-align">
                     <h1 class="center-text">Advisors</h1>
                     <hr class="colored-line" />
-                    <Col lg={4}>
+                    <Col lg={6}>
                         <img class="person-img" src={Konstantine}></img>
                         <div class="person-info container column-dir center">
                             <h3 class="bold">Konstantine Drakonakis</h3>
@@ -125,7 +126,7 @@ const About = () => (
                         </div>
                     </Col>
 
-                    <Col lg={4}>
+                    <Col lg={6}>
                         <img class="person-img" src={Fatema}></img>
                         <div class="person-info container column-dir center" style={{ alignContent: 'top' }}>
                             <h3 class="bold">Fatema Basrai, MBA</h3>
@@ -139,7 +140,9 @@ const About = () => (
                             <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/fatema-basrai-bb18561/">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
-                    <Col lg={4}>
+                </Row>
+                <Row className="team-row top-align">
+                    <Col lg={6}>
                         <img class="person-img" src={Christina}></img>
                         <div class="person-info container column-dir center">
                             <h3 class="bold">Christina M. Madison, PharmD, FCCP, AAHIVP</h3>
@@ -150,6 +153,20 @@ const About = () => (
                                 She has an intimate knowledge of the impact public health messaging, policy, and legislation can have on communities.
                                 She has received multiple awards and recognitions and was recently recognized in May 2020 by Pharmacy Times® one of the oldest pharmacy publications in the country.</p>
                             <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/drchristinamadisonthepublichealthpharmacist/">LinkedIn Profile</a></Button>
+                        </div>
+                    </Col>
+                    <Col lg={6}>
+                        <img class="person-img" src={Kaveh}></img>
+                        <div class="person-info container column-dir center">
+                            <h3 class="bold">Kaveh Khoshnood, PhD, MPH</h3>
+                            <h4>Faculty Director of InnovateHealth Yale</h4>
+                            <hr class="colored-line" />
+                            <p>Kaveh is an Associate Professor in the Department of Epidemiology of Microbial Diseases and the Director of the BA-BS/MPH Program at the Yale School of Public Health.
+                                Kaveh’s research interests are the epidemiology and prevention of HIV/AIDS; ethical issues in research with vulnerable populations and the health of conflict-affected and forcibly displaced populations, particularly in the Middle East and North Africa region.
+                                 Kaveh teaches courses on public health ethics and global health.
+                                 Kaveh’s favorite part of his job is mentoring students who are committed to tackle public health issues, especially those affecting marginalized communities domestically and internationally. </p>
+
+                            <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/kaveh-khoshnood-34a11835/">LinkedIn Profile</a></Button>
                         </div>
                     </Col>
                 </Row>
