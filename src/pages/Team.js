@@ -35,7 +35,7 @@ const About = () => (
                     <Col lg={6}>
                         <img class="person-img" src={Leslie}></img>
                         <div class="person-info container column-dir center">
-                            <h3 class="bold">Dr. Leslie Asanga, PharmD, MBA, MPH</h3>
+                            <h3 class="bold">Leslie Asanga, PharmD, MBA, MPH</h3>
                             <h4>Co-Founder, CEO</h4>
                             <hr class="colored-line" />
                             <p> Dr. Asanga is an experienced pharmacist and recently graduated from Yale University with a Master of Public Health degree.
@@ -161,10 +161,10 @@ const About = () => (
                             <h3 class="bold">Kaveh Khoshnood, PhD, MPH</h3>
                             <h4>Faculty Director of InnovateHealth Yale</h4>
                             <hr class="colored-line" />
-                            <p>Kaveh is an Associate Professor in the Department of Epidemiology of Microbial Diseases and the Director of the BA-BS/MPH Program at the Yale School of Public Health.
-                                Kaveh’s research interests are the epidemiology and prevention of HIV/AIDS; ethical issues in research with vulnerable populations and the health of conflict-affected and forcibly displaced populations, particularly in the Middle East and North Africa region.
-                                 Kaveh teaches courses on public health ethics and global health.
-                                 Kaveh’s favorite part of his job is mentoring students who are committed to tackle public health issues, especially those affecting marginalized communities domestically and internationally. </p>
+                            <p>Dr. Khoshnood is an Associate Professor in the Department of Epidemiology of Microbial Diseases and the Director of the BA-BS/MPH Program at the Yale School of Public Health.
+                                His research interests are the epidemiology and prevention of HIV/AIDS; ethical issues in research with vulnerable populations and the health of conflict-affected and forcibly displaced populations, particularly in the Middle East and North Africa region.
+                                 He teaches courses on public health ethics and global health.
+                                 His favorite part of his job is mentoring students who are committed to tackle public health issues, especially those affecting marginalized communities domestically and internationally. </p>
 
                             <Button className="linkedin"><a class="linkedin" href="https://www.linkedin.com/in/kaveh-khoshnood-34a11835/">LinkedIn Profile</a></Button>
                         </div>
