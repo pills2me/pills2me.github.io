@@ -7,8 +7,9 @@ import '../style.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
 
-
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
 
 function PatientForm() {
     const firebase = require('firebase');
