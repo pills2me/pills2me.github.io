@@ -18,10 +18,8 @@ import Pharmacy from './pages/PharmacyForm';
 
 import Favicon from 'react-favicon';
 
-
 const App = () => (
 	<div class="center-text">
-		{/* <Favicon url="favicon.ico" /> */}
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
