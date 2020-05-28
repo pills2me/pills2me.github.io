@@ -89,7 +89,7 @@ class DriverForm extends Component {
             e.preventDefault();
         } else {
             // variables for the user data
-            var name = this.state.firstName + ", " + this.state.lastName;
+            var name = this.state.firstName + " " + this.state.lastName;
             // var birthday = this.state.birthday;
             var availability = this.state.availability;
             var miles = this.state.miles;
@@ -98,7 +98,7 @@ class DriverForm extends Component {
             var email = this.state.email;
             var phone = this.state.phone;
             var state = this.state.state;
-            var street = this.state.street + " " + this.state.street2;
+            var street = this.state.street + ", " + this.state.street2;
             var zip = this.state.zip;
             var hearaboutus = this.state.hearaboutus;
 
