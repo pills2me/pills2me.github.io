@@ -54,7 +54,7 @@ const OpeningPage = () => (
 				</div>
 			</div>
 
-			<div className="section section-blue">
+			<div className="section">
 				<h1>What We Offer</h1>
 				<hr className="colored-line" />
 				<Row>

@@ -103,6 +103,9 @@ h2 {
 	align-items: center;
 	align-content: space-around;
 }
+.my-container-95 {
+	width: 95%;
+}
 
 .container {
 	display: flex;
@@ -283,6 +286,14 @@ h3.form {
 	font-size: 15px;
 	padding: 20px;
 	text-align: center;
+	background-color: #3a3a3a;
+}
+.footer-link {
+	color: #f2f2f2;
+	text-decoration: underline;
+}
+.footer-link:hover {
+	color: white;
 }
 
 .left-align {
@@ -473,7 +484,7 @@ li.nav {
 
 .colored-line {
 	color: color;
-	background-color: white;
+	background-color: black;
 	height: 1;
 	width: 100%;
 }
