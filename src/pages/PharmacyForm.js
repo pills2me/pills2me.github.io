@@ -129,7 +129,7 @@ class Pharmacy extends Component {
 						notes: notes,
 						ownerEmail: ownerEmail,
 						ownerName: ownerName,
-						ownerPhone: ownerName
+						ownerPhone: ownerPhone
 					});
 				} else {
 					// User is signed out.
