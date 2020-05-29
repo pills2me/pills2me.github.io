@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 import logo from '../images/logo-blue.png';
 
-export default class Sidebar extends Component {
+export default class NavBar extends Component {
     state = {
         toggle: false
     }
@@ -17,26 +17,26 @@ export default class Sidebar extends Component {
         return (
             <>
 
-                <Navbar collapseOnSelect expand="lg" className="logo">
+                <Navbar collapseOnSelect expand="lg" className="logo" variant="">
                     <Link to="/" className="my-container logo">
                         <img
                             alt=""
                             src={logo}
                             className="d-inline-block align-top logo"
                         />{' '}
-                        <h1 class="logo">pills2me</h1>
+                        <h1 className="logo">pills2me</h1>
                     </Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                         </Nav>
                         <Nav>
-                            <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/" >Home</Link></Nav.Link>
-                            <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/about" >Our Mission</Link></Nav.Link>
-                            <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/team" >Meet the Team</Link></Nav.Link>
-                            <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/partner" >Partner with Us</Link></Nav.Link>
+                            <Link to="/" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Home</Link>
+                            <Link to="/about" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Our Mission</Link>
+                            <Link to="/team" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Meet the Team</Link>
+                            <Link to="/partner" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Partner with Us</Link>
                             {/* <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/donate" >Donate</Link></Nav.Link> */}
-                            <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/contact" >Contact</Link></Nav.Link>
+                            <Link to="/contact" className="nav-link" onClick={() => window.scrollTo(0, 0)}>Contact</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
@@ -47,7 +47,7 @@ export default class Sidebar extends Component {
                             src={logo}
                             className="d-inline-block align-top logo"
                         />{' '}
-                        <h1 class="logo">pills2me</h1>
+                        <h1 className="logo">pills2me</h1>
                     </Link>
                     <Nav className="links">
                         <Nav className="links">

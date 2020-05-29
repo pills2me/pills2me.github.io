@@ -9,14 +9,14 @@ function buttonClickHandler() {
 
 const SignUp = (userType) => (
     <div>
-        <div class="pharm-background container center column-dir">
+        <div className="pharm-background container center column-dir">
 
 
 
-            <div class="container column-dir extra-margin">
+            <div className="container column-dir extra-margin">
                 <Button variant="" size="lg" block onClick={buttonClickHandler}>
                     <Link to="/login">
-                        <div class="flat-button container center">Login</div>
+                        <div className="flat-button container center">Login</div>
                     </Link>
                 </Button>
 
@@ -24,7 +24,7 @@ const SignUp = (userType) => (
 
                 <Button variant="" size="lg" block onClick={buttonClickHandler}>
                     <Link to="/register">
-                        <div class="flat-button container center blue-background">Register</div>
+                        <div className="flat-button container center blue-background">Register</div>
                     </Link>
                 </Button>
             </div>

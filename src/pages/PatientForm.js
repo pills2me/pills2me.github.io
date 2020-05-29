@@ -217,12 +217,12 @@ class PatientForm extends Component {
             return (
                 <div>
                     <Header />
-                    <div class="pharm-background container center column-dir after-heading">
+                    <div className="pharm-background background-form container center column-dir after-heading">
                         <Jumbotron>
-                            <h2 class="jumbotron-title">Welcome Patients</h2>
+                            <h2 className="jumbotron-title">Welcome Patients</h2>
                             <Form noValidate validated={this.state.validated} onSubmit={this.handleSubmit.bind(this)}>
-                                <h6 class="subheading center-text">Our delivery service is 100% free of charge. We deliver your medications right to your doorstep. Our goal is to promote public health and social distancing practices to prevent further spread of coronavirus (COVID-19). </h6>
-                                <h3 class="form">Personal Information</h3>
+                                <h6 className="subheading center-text">Our delivery service is 100% free of charge. We deliver your medications right to your doorstep. Our goal is to promote public health and social distancing practices to prevent further spread of coronavirus (COVID-19). </h6>
+                                <h3 className="form">Personal Information</h3>
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="firstName">
                                         <Form.Label>First Name</Form.Label>
@@ -275,7 +275,7 @@ class PatientForm extends Component {
                                     </Form.Group>
 
                                 </Form.Row>
-                                <h3 class="form">Prescription Pickup Information</h3>
+                                <h3 className="form">Prescription Pickup Information</h3>
 
                                 <Form.Group controlId="pharmacy">
                                     <Form.Label>Pharmacy Name</Form.Label>
@@ -323,7 +323,7 @@ class PatientForm extends Component {
                                     <Form.Check required inline label="Please check this only if your prescription is ready for pickup from your listed pharmacy." type="checkbox" />
                                 </Form.Group>
                                 <Form.Group>
-                                    <h3 class="form">Disclaimer</h3>
+                                    <h3 className="form">Disclaimer</h3>
                                     <Form.Check required type="checkbox" label="““By submitting the form, you are authorizing one of our volunteers to pick up and deliver your medication(s). We will do our best to deliver their medications as fast as we can (same day), but cannot guarantee that in all cases due to circumstances that might arise beyond our control.”" />
                                 </Form.Group>
                                 <Form.Group>

@@ -38,13 +38,13 @@ function Contact() {
 		<div>
 			<Header />
 
-			<div class="pharm-background fixed-background container center column-dir after-heading">
+			<div className="pharm-background background-contact fixed-background container center column-dir after-heading">
 				<Row className="my-container" style={{ paddingLeft: '5%', paddingRight: '5%' }}>
 					<Col md={6} className="container center column-dir">
 						<h1>
 							Please feel free to contact us with any questions or tell us how we can better serve you.
 						</h1>
-						<div class="extra-margin">
+						<div className="extra-margin">
 							<h6>Phone: (405) 436-0220</h6>
 							<h6>Email: info@pills2me.com</h6>
 						</div>
@@ -104,7 +104,7 @@ function Contact() {
 						</Jumbotron>
 					</Col>
 				</Row>
-				<hr class="colored-line" />
+				<hr className="colored-line" />
 				<DetailedFooter />
 			</div>
 		</div>

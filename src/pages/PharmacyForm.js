@@ -153,9 +153,9 @@ class Pharmacy extends Component {
 		return (
 			<div>
 				<Header />
-				<div class="pharm-background container center column-dir after-heading">
+				<div className="pharm-background container center column-dir after-heading">
 					<Jumbotron>
-						<h2 class="jumbotron-title">Welcome Pharmacies</h2>
+						<h2 className="jumbotron-title">Welcome Pharmacies</h2>
 						<Form
 							id="form"
 							noValidate
@@ -163,7 +163,7 @@ class Pharmacy extends Component {
 							onSubmit={this.handleSubmit.bind(this)}
 							action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsTyI34qYJ_P3AAXPLDa1CpSzSkCYdEAgvLQyZfHEfaSMpsw/formResponse"
 						>
-							<h3 class="form">Pharmacy Information</h3>
+							<h3 className="form">Pharmacy Information</h3>
 							<Form.Group controlId="name">
 								<Form.Label>Pharmacy Name</Form.Label>
 								<Form.Control
@@ -248,7 +248,7 @@ class Pharmacy extends Component {
 								</Form.Group>
 							</Form.Row>
 
-							<h3 class="form">Pharmacy Owner Information</h3>
+							<h3 className="form">Pharmacy Owner Information</h3>
 
 							<Form.Group controlId="ownerName">
 								<Form.Label>Pharmacy Owner's Name</Form.Label>
