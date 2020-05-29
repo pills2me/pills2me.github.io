@@ -31,6 +31,10 @@
 
 .btn {
 	padding: 15px 25px 15px 25px;
+	color: #0084f4;
+}
+.btn:hover {
+	color: #0084f4;
 }
 
 .fixed-background {
@@ -151,7 +155,7 @@ a.logo:hover {
 }
 
 .shadow {
-	box-shadow: 5px 10px 8px #888888;
+	box-shadow: 5px 10px 10px #888888;
 }
 
 div.logo {

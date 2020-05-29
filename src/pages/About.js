@@ -53,11 +53,11 @@ const About = () => (
 								vulnerable are not at risk for contracting the virus.
 							</p>
 						</div>
-						<Button variant="light" className="shadow" onClick={() => window.scrollTo(0, 0)}>
-							<Link className="logo" to="/news">
+						<Link to="news">
+							<Button onClick={() => window.scrollTo(0, 0)} variant="light" className="shadow">
 								PILLS2ME IN THE NEWS
-							</Link>
-						</Button>
+							</Button>
+						</Link>
 					</Col>
 				</Row>
 			</div>
@@ -121,9 +121,11 @@ const About = () => (
 								provided by the CDC
 							</p>
 						</div>
-						<Button variant="light" className="shadow" onClick={() => window.scrollTo(0, 0)}>
-							<Link to="/patient-form">REGISTER NOW</Link>
-						</Button>
+						<Link to="patient-form">
+							<Button onClick={() => window.scrollTo(0, 0)} variant="light" className="shadow">
+								REGISTER NOW
+							</Button>
+						</Link>
 					</Col>
 				</Row>
 				<hr className="colored-line" />
@@ -146,9 +148,11 @@ const About = () => (
 								provided by the CDC
 							</p>
 						</div>
-						<Button variant="light" className="shadow" onClick={() => window.scrollTo(0, 0)}>
-							<Link to="/driver-form">REGISTER NOW</Link>
-						</Button>
+						<Link to="driver-form">
+							<Button onClick={() => window.scrollTo(0, 0)} variant="light" className="shadow">
+								REGISTER NOW
+							</Button>
+						</Link>
 					</Col>
 					<Col lg={5} className="container center">
 						<img className="col-img" src={driver} />
@@ -182,6 +186,11 @@ const About = () => (
 								provided by the CDC
 							</p>
 						</div>
+						<Link to="pharmacy-form">
+							<Button onClick={() => window.scrollTo(0, 0)} variant="light" className="shadow">
+								PARTNER WITH US
+							</Button>
+						</Link>
 					</Col>
 				</Row>
 			</div>

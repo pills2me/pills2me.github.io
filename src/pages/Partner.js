@@ -29,7 +29,7 @@ const Partner = () => (
 				</Button>
 			</div>
 
-			<div className="section section-blue">
+			<div className="section">
 				<h1>Benefits of Partnering with Us</h1>
 				<hr className="colored-line" />
 				<Row>
@@ -50,7 +50,7 @@ const Partner = () => (
 				</Row>
 			</div>
 
-			<div className="section section-gray">
+			<div className="section">
 				<h1>Our Partners</h1>
 				<hr className="colored-line" />
 				<Row>

@@ -55,11 +55,13 @@ const About = () => (
 								with more than five years of healthcare experience. He is an innovator and passionate
 								about creating healthcare ventures that create impact in vulnerable communities.
 							</p>
-							{/* <Button className="linkedin"> */}
-							<a className="linkedin" href="https://www.linkedin.com/in/leslie-asanga-134b48143/">
-								<Button className="linkedin"> LinkedIn Profile</Button>
+							<a
+								className="shadow"
+								target="_blank"
+								href="https://www.linkedin.com/in/leslie-asanga-134b48143/"
+							>
+								<Button variant="light"> LinkedIn Profile</Button>
 							</a>
-							{/* </Button> */}
 						</div>
 					</Col>
 
@@ -80,11 +82,9 @@ const About = () => (
 								previously attended Brown University, where he graduated magna cum laude and Sigma Xi
 								Honors with a BA in computer science and a MSC in pathobiology.
 							</p>
-							<Button className="linkedin">
-								<a className="linkedin" href="https://www.linkedin.com/in/leonardolizbinski/">
-									LinkedIn Profile
-								</a>
-							</Button>
+							<a className="shadow" target="_blank" href="https://www.linkedin.com/in/leonardolizbinski/">
+								<Button variant="light"> LinkedIn Profile</Button>
+							</a>
 						</div>
 					</Col>
 				</Row>
@@ -105,11 +105,9 @@ const About = () => (
 								design thinking and social impact, and ultimately hopes to use design and innovation to
 								empower communities across the globe.
 							</p>
-							<Button className="linkedin">
-								<a className="linkedin" href="https://www.linkedin.com/in/angelamyoo/">
-									LinkedIn Profile
-								</a>
-							</Button>
+							<a className="shadow" target="_blank" href="https://www.linkedin.com/in/angelamyoo/">
+								<Button variant="light"> LinkedIn Profile</Button>
+							</a>
 						</div>
 					</Col>
 
@@ -129,11 +127,9 @@ const About = () => (
 								passion for programming and AI, she is also an environmental activist and hopes to find
 								a career in the overlap between technology and sustainability.
 							</p>
-							<Button className="linkedin">
-								<a className="linkedin" href="https://www.linkedin.com/in/annazhang2002/">
-									LinkedIn Profile
-								</a>
-							</Button>
+							<a className="shadow" target="_blank" href="https://www.linkedin.com/in/annazhang2002/">
+								<Button variant="light"> LinkedIn Profile</Button>
+							</a>
 						</div>
 					</Col>
 					<Col lg={4}>
@@ -150,11 +146,13 @@ const About = () => (
 								come to appreciate the unique challenge of building something from the ground up, and he
 								plans to continue with such ventures after he graduates.
 							</p>
-							<Button className="linkedin">
-								<a className="linkedin" href="https://www.linkedin.com/in/hassaan-qadir-2731891a5/">
-									LinkedIn Profile
-								</a>
-							</Button>
+							<a
+								className="shadow"
+								target="_blank"
+								href="https://www.linkedin.com/in/hassaan-qadir-2731891a5/"
+							>
+								<Button variant="light"> LinkedIn Profile</Button>
+							</a>
 						</div>
 					</Col>
 				</Row>
@@ -179,11 +177,9 @@ const About = () => (
 								biotech/medical devices, life science, physical science, venture capital, and project
 								finance.
 							</p>
-							<Button className="linkedin">
-								<a className="linkedin" href="https://www.linkedin.com/in/kdrakonakis/">
-									LinkedIn Profile
-								</a>
-							</Button>
+							<a className="shadow" target="_blank" href="https://www.linkedin.com/in/kdrakonakis/">
+								<Button variant="light"> LinkedIn Profile</Button>
+							</a>
 						</div>
 					</Col>
 
@@ -203,11 +199,13 @@ const About = () => (
 								named to Forbes 30 Under 30 in Education list for 2018 and is dedicated to ensuring
 								educational and health equity for students globally.
 							</p>
-							<Button className="linkedin">
-								<a className="linkedin" href="https://www.linkedin.com/in/fatema-basrai-bb18561/">
-									LinkedIn Profile
-								</a>
-							</Button>
+							<a
+								className="shadow"
+								target="_blank"
+								href="https://www.linkedin.com/in/fatema-basrai-bb18561/"
+							>
+								<Button variant="light"> LinkedIn Profile</Button>
+							</a>
 						</div>
 					</Col>
 				</Row>
@@ -227,14 +225,13 @@ const About = () => (
 								awards and recognitions and was recently recognized in May 2020 by Pharmacy Times® one
 								of the oldest pharmacy publications in the country.
 							</p>
-							<Button className="linkedin">
-								<a
-									className="linkedin"
-									href="https://www.linkedin.com/in/drchristinamadisonthepublichealthpharmacist/"
-								>
-									LinkedIn Profile
-								</a>
-							</Button>
+							<a
+								className="shadow"
+								target="_blank"
+								href="https://www.linkedin.com/in/drchristinamadisonthepublichealthpharmacist/"
+							>
+								<Button variant="light"> LinkedIn Profile</Button>
+							</a>
 						</div>
 					</Col>
 					<Col lg={6}>
@@ -253,12 +250,12 @@ const About = () => (
 								is mentoring students who are committed to tackle public health issues, especially those
 								affecting marginalized communities domestically and internationally.{' '}
 							</p>
-
-							<Button className="linkedin">
-								<a className="linkedin" href="https://www.linkedin.com/in/kaveh-khoshnood-34a11835/">
+							<a className="shadow" href="https://www.linkedin.com/in/kaveh-khoshnood-34a11835/">
+								<Button onClick={() => window.scrollTo(0, 0)} variant="light">
+									{' '}
 									LinkedIn Profile
-								</a>
-							</Button>
+								</Button>
+							</a>
 						</div>
 					</Col>
 				</Row>
