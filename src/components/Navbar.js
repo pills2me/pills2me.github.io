@@ -35,7 +35,7 @@ export default class Sidebar extends Component {
                             <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/about" >Our Mission</Link></Nav.Link>
                             <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/team" >Meet the Team</Link></Nav.Link>
                             <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/partner" >Partner with Us</Link></Nav.Link>
-                            <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/donate" >Donate</Link></Nav.Link>
+                            {/* <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/donate" >Donate</Link></Nav.Link> */}
                             <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/contact" >Contact</Link></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

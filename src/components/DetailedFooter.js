@@ -17,7 +17,9 @@ class Footer extends Component {
 									info@pills2me.com
 								</a>{' '}
 							</p>
-							<p>Toll-free Number: 800-475-7488</p>
+							<p>
+								Toll-free Number: <br />800-475-7488
+							</p>
 						</div>
 					</Col>
 					<Col md={6}>
@@ -61,6 +63,15 @@ class Footer extends Component {
 							<p>
 								<Link className="section-link" onClick={() => window.scrollTo(0, 0)} to="/driver-form">
 									Volunteer to Drive
+								</Link>
+							</p>
+							<p>
+								<Link
+									className="section-link"
+									onClick={() => window.scrollTo(0, 0)}
+									to="/pharmacy-form"
+								>
+									Become a Partner
 								</Link>
 							</p>
 						</div>
