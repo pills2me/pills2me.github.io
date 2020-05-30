@@ -6,29 +6,35 @@
 	overflow: auto;
 	min-height: 100vh;
 	padding: 0px;
+	background-size: cover;
 }
 
 /* .background-home {
 	background-position: left bottom;
 } */
-
+/* 
 .background-form {
 	background-size: cover;
-}
+} */
 
 .background-about {
+	background-size: auto;
 	background-position: center top;
 }
 .background-team {
+	background-size: auto;
 	background-position: center bottom;
 }
 .background-partner {
+	background-size: auto;
 	background-position: left top;
 }
 .background-donate {
+	background-size: auto;
 	background-position: right bottom;
 }
 .background-contact {
+	background-size: auto;
 	background-position: center center;
 }
 
@@ -151,7 +157,7 @@ h1.logo {
 }
 h2.logo {
 	padding-top: 20px;
-	font-family: SF Pro Display;
+	font-family: "SF Pro Display";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 36px;
@@ -479,6 +485,12 @@ a.news-button:hover {
 	color: white;
 }
 
+.navbar-toggler {
+	border-color: white;
+	border-width: 3px;
+	border-radius: 5px;
+}
+
 button.nav {
 	display: none;
 }
@@ -494,9 +506,14 @@ li.nav {
 	padding: 0 15px;
 }
 
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
 	font-size: 17px;
+	font-family: SF Pro Display;
 	color: white;
+}
+.navbar-dark .navbar-toggler {
+	border-color: white;
+	border-width: 2px;
 }
 
 .colored-line {

@@ -7,17 +7,26 @@ import logo from '../images/logo-white.png';
 
 export default class NavBar extends Component {
     state = {
-        toggle: false
+        toggleOpen: false
     }
     Toggle = () => {
-        this.setState({ toggle: !this.state.toggle })
+        this.setState({ toggleOpen: !this.state.toggleOpen })
+        console.log(this.state.toggleOpen);
     }
+
+    headerColor = () => {
+        if (this.state.toggleOpen) {
+            return {backgroundColor: "gray"};
+        }
+    }
+
+
     render() {
 
         return (
             <>
 
-                <Navbar collapseOnSelect expand="lg" variant="">
+                <Navbar collapseOnSelect expand="lg" bg="" variant="dark">
                     <Link to="/" className="my-container logo">
                         <img
                             alt=""
@@ -26,7 +35,7 @@ export default class NavBar extends Component {
                         />{' '}
                         <h1 className="logo">pills2me</h1>
                     </Link>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Toggle onClick={this.Toggle} aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto">
                         </Nav>
