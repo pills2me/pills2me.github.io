@@ -6,8 +6,11 @@
 	overflow: auto;
 	min-height: 100vh;
 	padding: 0px;
-	background-position: left bottom;
 }
+
+/* .background-home {
+	background-position: left bottom;
+} */
 
 .background-form {
 	background-size: cover;
@@ -132,7 +135,7 @@ h2 {
 }
 
 img.logo {
-	height: 70px;
+	height: 45px;
 	padding-right: 10px;
 }
 img.icon {
@@ -140,14 +143,19 @@ img.icon {
 }
 h1.logo {
 	font-family: comfortaa;
-	font-size: 72px;
+	font-size: 36px;
 	line-height: 100%;
 	vertical-align: top;
-	color: #0084f4;
+	color: white;
 	padding-top: 8px;
 }
 h2.logo {
 	padding-top: 20px;
+	font-family: SF Pro Display;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 43px;
 }
 
 a.logo:hover {
@@ -312,7 +320,7 @@ h3.form {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background-color: #e9ecef;
+	background-color: transparent;
 	z-index: 1000;
 }
 
@@ -466,6 +474,11 @@ a.news-button:hover {
 	text-decoration: none;
 }
 
+.navbar {
+	padding: 20px 30px 20px 30px;
+	color: white;
+}
+
 button.nav {
 	display: none;
 }
@@ -483,7 +496,7 @@ li.nav {
 
 .nav-link {
 	font-size: 17px;
-	color: #0084f4;
+	color: white;
 }
 
 .colored-line {
@@ -571,10 +584,6 @@ li.nav {
 	}
 	h2.logo {
 		margin: 5px;
-	}
-
-	div.logo {
-		margin-top: 15px;
 	}
 
 	.after-heading {

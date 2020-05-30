@@ -3,7 +3,7 @@ import "../style.css";
 import { Navbar, Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
-import logo from '../images/logo-blue.png';
+import logo from '../images/logo-white.png';
 
 export default class NavBar extends Component {
     state = {
@@ -17,7 +17,7 @@ export default class NavBar extends Component {
         return (
             <>
 
-                <Navbar collapseOnSelect expand="lg" className="logo" variant="">
+                <Navbar collapseOnSelect expand="lg" variant="">
                     <Link to="/" className="my-container logo">
                         <img
                             alt=""

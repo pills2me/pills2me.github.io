@@ -24,9 +24,11 @@ const Partner = () => (
 					We have partnered with many pharmacies and organizations in the New Haven and Las Vegas area that
 					help us facilitate the delivery process.{' '}
 				</h4>
-				<Button variant="light" onClick={() => window.scrollTo(0, 0)}>
-					<Link to="/pharmacy-form">BECOME A PARTNER</Link>
-				</Button>
+				<Link to="pharmacy-form">
+					<Button onClick={() => window.scrollTo(0, 0)} variant="light" className="shadow">
+						BECOME A PARTNER
+					</Button>
+				</Link>
 			</div>
 
 			<div className="section">

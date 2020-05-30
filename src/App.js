@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route } from 'react-router-dom';
 
-
 import OpeningPage from './pages/OpeningPage';
 import SignUp from './pages/SignUp';
 import PatientForm from './pages/PatientForm';
@@ -20,10 +19,18 @@ import Favicon from 'react-favicon';
 
 const App = () => (
 	<div className="center-text">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa" />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="//db.onlinewebfonts.com/c/0b51833ff62e4af8acb5fd3e2bf59e97?family=SF+Pro+Display"
+			rel="stylesheet"
+			type="text/css"
+		/>
 
 		<Route path="/" exact component={OpeningPage} />
 		<Route path="/signup" exact component={SignUp} />
@@ -39,6 +46,6 @@ const App = () => (
 		<Route path="/partner" exact component={Partner} />
 		<Route path="/pharmacy-form" exact component={Pharmacy} />
 	</div>
-)
+);
 
 export default App;
