@@ -40,7 +40,7 @@ class Header extends Component {
 		return (
 			<div className="header" style={this.headerColor()}>
 				<Navbar collapseOnSelect expand="lg" bg="" variant="dark">
-					<Link to="/" className="my-container logo">
+					<Link to="/" className="my-container logo" onClick={() => window.scrollTo(0, 0)}>
 						<img alt="" src={logo} className="d-inline-block align-top logo" />{' '}
 						<h1 className="logo">pills2me</h1>
 					</Link>
