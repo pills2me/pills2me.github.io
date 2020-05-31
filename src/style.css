@@ -94,6 +94,9 @@ h2 {
 	margin-top: 50px;
 	margin-bottom: 10px;
 }
+.bitmore-margin {
+	margin-top: 20px;
+}
 
 .space {
 	justify-content: space-around;
@@ -272,6 +275,7 @@ h3.form {
 	width: 100%;
 	text-decoration: underline;
 	font-family: Comfortaa;
+	margin-top: 20px;
 }
 
 .form-check-inline {
@@ -418,6 +422,8 @@ h3.form {
 	text-align: left;
 	font-size: 18px;
 	margin-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 .section-blue {
@@ -471,6 +477,7 @@ a.news-button:hover {
 
 .person-img {
 	height: 200px;
+	margin-bottom: 20px;
 }
 
 .person-card {
@@ -505,7 +512,7 @@ a.news-button:hover {
 	left: 0;
 	right: 0;
 	height: 100%;
-	width: 100%;
+	width: 85%;
 	opacity: 1;
 }
 
@@ -574,6 +581,7 @@ li.nav {
 	background-color: black;
 	height: 1;
 	width: 100%;
+	margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 768px) {

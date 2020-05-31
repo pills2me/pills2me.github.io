@@ -6,7 +6,7 @@ import '../style.css';
 import Header from '../components/Header';
 import DetailedFooter from '../components/DetailedFooter';
 
-import Medicine from '../images/medicine.jpeg';
+import Medicine from '../images/partner.jpg';
 
 import ChapelSt from '../images/partners/chapelst.png';
 import WestHaven from '../images/partners/westhaven.png';
@@ -20,12 +20,12 @@ const Partner = () => (
 		<div className="pharm-background background-partner fixed-background container center column-dir after-heading">
 			<div className="overlay-text-box container center column-dir">
 				<h1 className="overlay-text">Partner with Us</h1>
-				<h4>
+				<h4 className="overlay-description">
 					We have partnered with many pharmacies and organizations in the New Haven and Las Vegas area that
 					help us facilitate the delivery process.{' '}
 				</h4>
 				<Link to="pharmacy-form">
-					<Button onClick={() => window.scrollTo(0, 0)} variant="light" className="shadow">
+					<Button onClick={() => window.scrollTo(0, 0)} variant="light" className="shadow bitmore-margin">
 						BECOME A PARTNER
 					</Button>
 				</Link>
@@ -35,15 +35,15 @@ const Partner = () => (
 				<h1 className="section-heading">Benefits of Partnering with Us</h1>
 				<hr className="colored-line" />
 				<Row>
-					<Col lg={8}>
+					<Col lg={7}>
 						<div
 							style={{ alignItems: 'baseline', height: '100%' }}
-							className="left-align my-container space  column-dir "
+							className="left-align my-container space  column-dir section-text"
 						>
-							<h3>1. Free same-day delivery for your elderly and immunocompromised patients.</h3>
-							<h3>2. Free promotion on our platforms.</h3>
-							<h3>3. Patients can purchase your OTC items using our platform.</h3>
-							<h3> And much more.....</h3>
+							<h4>1. Free same-day delivery for your elderly and immunocompromised patients.</h4>
+							<h4>2. Free promotion on our platforms.</h4>
+							<h4>3. Patients can purchase your OTC items using our platform.</h4>
+							<h4> And much more.....</h4>
 						</div>
 					</Col>
 					<Col>

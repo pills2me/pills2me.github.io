@@ -155,7 +155,7 @@ class Pharmacy extends Component {
 				<Header />
 				<div className="pharm-background container center column-dir after-heading">
 					<Jumbotron>
-						<h2 className="jumbotron-title">Welcome Pharmacies</h2>
+						<h2 className="jumbotron-title comfortaa">Welcome Pharmacies</h2>
 						<Form
 							id="form"
 							noValidate

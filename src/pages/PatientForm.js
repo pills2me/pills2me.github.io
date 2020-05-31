@@ -324,7 +324,7 @@ class PatientForm extends Component {
                                 </Form.Group>
                                 <Form.Group>
                                     <h3 className="form">Disclaimer</h3>
-                                    <Form.Check required type="checkbox" label="““By submitting the form, you are authorizing one of our volunteers to pick up and deliver your medication(s). We will do our best to deliver their medications as fast as we can (same day), but cannot guarantee that in all cases due to circumstances that might arise beyond our control.”" />
+                                    <Form.Check required type="checkbox" label="By submitting the form, you are authorizing one of our volunteers to pick up and deliver your medication(s). We will do our best to deliver their medications as fast as we can (same day), but cannot guarantee that in all cases due to circumstances that might arise beyond our control." />
                                 </Form.Group>
                                 <Form.Group>
                                     <Form.Label>How did you hear about us?</Form.Label>
