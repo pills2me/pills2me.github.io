@@ -319,8 +319,34 @@ h3.form {
 	color: white;
 }
 
+.stretch {
+	align-items: stretch;
+}
+
 .left-align {
 	text-align: left;
+}
+.border-box {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 25px;
+	border-style: solid;
+	border-color: #0084f4;
+	border-radius: 15px;
+	border-width: 2px;
+	width: 45%;
+}
+
+.responsiveCols {
+	flex-direction: row;
+}
+
+.offerList {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	margin-top: 10px;
 }
 
 .bold {
@@ -551,6 +577,20 @@ li.nav {
 }
 
 @media only screen and (max-width: 768px) {
+	img.icon {
+		height: 40px;
+	}
+
+	.section-heading {
+		font-size: 50px;
+	}
+	.responsiveCols {
+		flex-direction: column;
+	}
+	.border-box {
+		width: 95%;
+		margin-top: 20px;
+	}
 	.person-img {
 		padding-top: 15px;
 	}
@@ -628,6 +668,8 @@ li.nav {
 	}
 	h2.logo {
 		margin: 5px;
+		font-size: 30px;
+		width: 100%;
 	}
 
 	.after-heading {

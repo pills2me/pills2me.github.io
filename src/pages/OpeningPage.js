@@ -54,28 +54,35 @@ const OpeningPage = () => (
 				</div>
 			</div>
 
-			<div className="section">
-				<h1>What We Offer</h1>
-				<hr className="colored-line" />
-				<Row>
-					<Col lg={6} className="left-align">
-						<h3 className="center-text">Our Patients</h3>
-
-						<p>- Free same-day medication delivery from any pharmacy.</p>
-						<p>- We deliver within 2 hours of request.</p>
-						<p>- Free pharmacist consultation</p>
-						<p>- Purchase over-the-counter items and have them delivered within a couple of hours.</p>
-						<p>- Enjoy special offers and discounts from our partner pharmacies.</p>
-					</Col>
-					<Col className="left-align">
-						<h3 className="center-text">Our Pharmacy Partners</h3>
-
-						<p>- Free same-day delivery for your elderly and immunocompromised patients.</p>
-						<p>- Free promotion on our platforms.</p>
-						<p>- Patients can purchase your OTC items using our platform.</p>
-						<p>- And much more.....</p>
-					</Col>
-				</Row>
+			<div className="section" style={{ color: '#0084F4' }}>
+				<h1 className="section-heading">What We Offer</h1>
+				<div className="container stretch extra-margin responsiveCols">
+					<div className="left-align border-box top-align">
+						<h2 className="center-text ">Our Patients</h2>
+						<ul style={{ marginTop: '20px' }}>
+							<li className="offerList">Free same-day medication delivery from any pharmacy.</li>
+							<li className="offerList">We deliver within 2 hours of request.</li>
+							<li className="offerList">Free pharmacist consultation</li>
+							<li className="offerList">
+								Purchase over-the-counter items and have them delivered within a couple of hours.
+							</li>
+							<li className="offerList">
+								Enjoy special offers and discounts from our partner pharmacies.
+							</li>
+						</ul>
+					</div>
+					<div className="left-align border-box top-align">
+						<h2 className="center-text">Our Pharmacy Partners</h2>
+						<ul style={{ marginTop: '20px' }}>
+							<li className="offerList">
+								Free same-day delivery for your elderly and immunocompromised patients.
+							</li>
+							<li className="offerList">Free promotion on our platforms.</li>
+							<li className="offerList">Patients can purchase your OTC items using our platform.</li>
+							<li className="offerList">And much more.....</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 
 			<DetailedFooter />
