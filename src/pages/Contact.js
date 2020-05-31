@@ -104,7 +104,6 @@ function Contact() {
 						</Jumbotron>
 					</Col>
 				</Row>
-				<hr className="colored-line" />
 				<DetailedFooter />
 			</div>
 		</div>

@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 import logo from '../images/logo_white.png';
 
+const color = '#0084F4';
+
 class Header extends Component {
 	state = {
 		toggleOpen: false,
@@ -19,10 +21,8 @@ class Header extends Component {
 	};
 
 	headerColor = () => {
-		if (!this.state.atTop) {
-			return { backgroundColor: 'gray' };
-		} else if (this.state.toggleOpen) {
-			return { backgroundColor: 'gray' };
+		if (!this.state.atTop || this.state.toggleOpen) {
+			return { backgroundColor: color };
 		} else {
 			return { backgroundColor: 'transparent' };
 		}
