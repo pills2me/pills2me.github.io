@@ -162,7 +162,7 @@ class DriverForm extends Component {
                     <Header />
                     <div className="pharm-background background-form container center column-dir after-heading">
                         <Jumbotron>
-                            <h2 className="jumbotron-title">Welcome Drivers</h2>
+                            <h2 className="jumbotron-title comfortaa">Welcome Drivers</h2>
                             <Form noValidate validated={this.state.validated} onSubmit={this.handleSubmit.bind(this)}>
                                 <h3 className="form">Personal Information</h3>
                                 <Form.Row>

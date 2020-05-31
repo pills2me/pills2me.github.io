@@ -50,7 +50,7 @@
 	background-attachment: fixed;
 }
 body {
-	font-family: 'Montserrat';
+	font-family: "SF Pro Display";
 	width: 100%;
 	color: white;
 	background-image: linear-gradient(rgba(100, 100, 100, 0.85), rgba(100, 100, 100, 0.85)), url('images/logo-blue.png');
@@ -138,6 +138,10 @@ h2 {
 .sidebar {
 	background-color: white;
 	color: black;
+}
+
+.comfortaa {
+	font-family: Comfortaa;
 }
 
 img.logo {
@@ -267,6 +271,7 @@ a.linkedin:hover {
 h3.form {
 	width: 100%;
 	text-decoration: underline;
+	font-family: Comfortaa;
 }
 
 .form-check-inline {
@@ -331,7 +336,7 @@ h3.form {
 }
 
 .after-heading {
-	padding-top: 105px;
+	padding-top: 92px;
 	position: relative;
 }
 
@@ -347,11 +352,22 @@ h3.form {
 }
 
 .overlay-text-box {
-	width: 100%;
-	height: 560px;
+	width: 80%;
+	height: 500px;
 }
 .overlay-text {
 	font-size: 50px;
+	font-family: Comfortaa;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 54px;
+	line-height: 60px;
+}
+.overlay-description {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 43px;
 }
 
 .overlay-descript {
@@ -363,6 +379,13 @@ h3.form {
 	padding: 5%;
 	background-color: white;
 	color: black;
+}
+.section-heading {
+	font-family: Comfortaa;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 54px;
+	line-height: 60px;
 }
 
 .section-text {
@@ -510,6 +533,10 @@ li.nav {
 	font-size: 17px;
 	font-family: SF Pro Display;
 	color: white;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 22px;
 }
 .navbar-dark .navbar-toggler {
 	border-color: white;

@@ -32,7 +32,7 @@ const Partner = () => (
 			</div>
 
 			<div className="section">
-				<h1>Benefits of Partnering with Us</h1>
+				<h1 className="section-heading">Benefits of Partnering with Us</h1>
 				<hr className="colored-line" />
 				<Row>
 					<Col lg={8}>
@@ -53,7 +53,7 @@ const Partner = () => (
 			</div>
 
 			<div className="section">
-				<h1>Our Partners</h1>
+				<h1 className="section-heading">Our Partners</h1>
 				<hr className="colored-line" />
 				<Row>
 					<Col className="my-container column-dir between">

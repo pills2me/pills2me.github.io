@@ -3,7 +3,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import '../style.css';
 import { Link } from 'react-router-dom';
 
-import logo from '../images/logo-white.png';
+import logo from '../images/logo_white.png';
 
 class Header extends Component {
 	state = {

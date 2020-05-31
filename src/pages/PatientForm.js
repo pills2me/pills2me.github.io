@@ -219,10 +219,10 @@ class PatientForm extends Component {
                     <Header />
                     <div className="pharm-background background-form container center column-dir after-heading">
                         <Jumbotron>
-                            <h2 className="jumbotron-title">Welcome Patients</h2>
+                            <h2 className="jumbotron-title comfortaa">Welcome Patients</h2>
                             <Form noValidate validated={this.state.validated} onSubmit={this.handleSubmit.bind(this)}>
                                 <h6 className="subheading center-text">Our delivery service is 100% free of charge. We deliver your medications right to your doorstep. Our goal is to promote public health and social distancing practices to prevent further spread of coronavirus (COVID-19). </h6>
-                                <h3 className="form">Personal Information</h3>
+                                <h3 className="form ">Personal Information</h3>
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="firstName">
                                         <Form.Label>First Name</Form.Label>

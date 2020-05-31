@@ -18,7 +18,7 @@ const About = () => (
 		<div className="pharm-background background-about fixed-background container center column-dir after-heading">
 			<div className="overlay-text-box container center column-dir">
 				<h1 className="overlay-text">Our Mission</h1>
-				<h4>
+				<h4 className="overlay-description">
 					We strive to help patients receive the care and medications they need without leaving their home.
 					Our goal is to promote public health and prevent the spread of the coronavirus (COVID-19) across the
 					country.{' '}
@@ -26,7 +26,9 @@ const About = () => (
 			</div>
 
 			<div className="section">
-				<h1 id="story">Our Story</h1>
+				<h1 className="section-heading" id="story">
+					Our Story
+				</h1>
 				<hr className="colored-line" />
 				<Row>
 					<Col md={6} className="container center">
@@ -63,7 +65,7 @@ const About = () => (
 			</div>
 
 			<div className="section">
-				<h1>How Pills2Me Works</h1>
+				<h1 className="section-heading">How Pills2Me Works</h1>
 				<hr className="colored-line" />
 				<Row>
 					<Col lg={6}>
@@ -100,7 +102,7 @@ const About = () => (
 			</div>
 
 			<div className="section">
-				<h1>How to Get Involved</h1>
+				<h1 className="section-heading">How to Get Involved</h1>
 				<hr className="colored-line" />
 				<Row className="subsection">
 					<Col lg={5} className="container center">

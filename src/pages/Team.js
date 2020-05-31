@@ -36,7 +36,7 @@ const About = () => (
 			</div>
 
 			<div className="section">
-				<h1>Our Team</h1>
+				<h1 className="section-heading">Our Team</h1>
 				<hr className="colored-line" />
 				<Row className="team-row top-align">
 					<Col lg={6}>
@@ -158,7 +158,7 @@ const About = () => (
 				</Row>
 
 				<Row className="team-row top-align">
-					<h1 className="center-text">Advisors</h1>
+					<h1 className="center-text section-heading">Advisors</h1>
 					<hr className="colored-line" />
 					<Col lg={6}>
 						<img className="person-img" src={Konstantine} />
