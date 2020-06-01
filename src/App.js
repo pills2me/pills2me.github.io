@@ -31,7 +31,7 @@ const App = () => (
 			rel="stylesheet"
 			type="text/css"
 		/>
-
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SF+Pro+Display" />
 		<Route path="/" exact component={OpeningPage} />
 		<Route path="/signup" exact component={SignUp} />
 		<Route path="/patient-form" exact component={PatientForm} />

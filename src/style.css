@@ -50,7 +50,7 @@
 	background-attachment: fixed;
 }
 body {
-	font-family: "SF Pro Display";
+	font-family: 'SF Pro Display' sans-serif;
 	width: 100%;
 	color: white;
 	background-image: linear-gradient(rgba(100, 100, 100, 0.85), rgba(100, 100, 100, 0.85)), url('images/logo-blue.png');
@@ -164,7 +164,6 @@ h1.logo {
 }
 h2.logo {
 	padding-top: 20px;
-	font-family: "SF Pro Display";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 36px;
@@ -569,7 +568,6 @@ li.nav {
 
 .navbar-dark .navbar-nav .nav-link {
 	font-size: 17px;
-	font-family: SF Pro Display;
 	color: white;
 	font-style: normal;
 	font-weight: 500;
