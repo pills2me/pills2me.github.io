@@ -271,6 +271,11 @@ a.linkedin:hover {
 	width: 100%;
 }
 
+.benefits {
+	align-items: baseline;
+	height: 100%;
+}
+
 h3.form {
 	width: 100%;
 	text-decoration: underline;
@@ -585,6 +590,10 @@ li.nav {
 }
 
 @media only screen and (max-width: 768px) {
+	.benefits {
+		height: auto;
+		margin-bottom: 20px;
+	}
 	.form {
 		font-size: 20px;
 	}

@@ -35,11 +35,8 @@ const Partner = () => (
 				<h1 className="section-heading">Benefits of Partnering with Us</h1>
 				<hr className="colored-line" />
 				<Row>
-					<Col lg={7}>
-						<div
-							style={{ alignItems: 'baseline', height: '100%' }}
-							className="left-align my-container space  column-dir section-text"
-						>
+					<Col md={7}>
+						<div className="left-align my-container space  column-dir section-text benefits">
 							<h4>1. Free same-day delivery for your elderly and immunocompromised patients.</h4>
 							<h4>2. Free promotion on our platforms.</h4>
 							<h4>3. Patients can purchase your OTC items using our platform.</h4>
