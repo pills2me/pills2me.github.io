@@ -3,14 +3,16 @@ import { Navbar, Nav } from 'react-bootstrap';
 import '../style.css';
 import { Link } from 'react-router-dom';
 
-import logo from '../images/logo_white.png';
+import blue from '../images/bluelogo_slogan.svg';
+import white from '../images/whitelogo_slogan.svg';
 
 const color = '#0084F4';
 
 class Header extends Component {
 	state = {
 		toggleOpen: false,
-		atTop: true
+		atTop: true,
+		logo: blue
 	};
 	Toggle = () => {
 		this.setState({ toggleOpen: !this.state.toggleOpen });
@@ -28,6 +30,14 @@ class Header extends Component {
 		}
 	};
 
+	logoColor = () => {
+		if (!this.state.atTop || this.state.toggleOpen) {
+			return white;
+		} else {
+			return blue;
+		}
+	};
+
 	componentDidMount() {
 		document.addEventListener('scroll', () => {
 			const attop = window.scrollY < 100 ? true : false;
@@ -41,8 +51,9 @@ class Header extends Component {
 			<div className="header" style={this.headerColor()}>
 				<Navbar collapseOnSelect expand="lg" bg="" variant="dark">
 					<Link to="/" className="my-container logo" onClick={() => window.scrollTo(0, 0)}>
-						<img alt="" src={logo} className="d-inline-block align-top logo" />{' '}
-						<h1 className="logo">pills2me</h1>
+						<img alt="" src={this.logoColor()} className="d-inline-block align-top logo" />
+						{/* <img alt="" src={logo} className="d-inline-block align-top logo" />{' '}
+						<h1 className="logo">pills2me</h1> */}
 					</Link>
 					<Navbar.Toggle onClick={this.Toggle} aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">

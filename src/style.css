@@ -148,8 +148,8 @@ h2 {
 }
 
 img.logo {
-	height: 45px;
-	padding-right: 10px;
+	height: 81px;
+	margin-top: 10px;
 }
 img.icon {
 	height: 90px;
@@ -400,8 +400,10 @@ h3.form {
 .overlay-description {
 	font-style: normal;
 	font-weight: 500;
-	font-size: 36px;
-	line-height: 43px;
+	font-size: 30px;
+	line-height: 33px;
+	margin-top: 18px;
+	margin-bottom: 18px;
 }
 
 .overlay-descript {
@@ -541,7 +543,7 @@ a.news-button:hover {
 }
 
 .navbar {
-	padding: 20px 30px 20px 30px;
+	padding: 20px 30px 18px 50px;
 	color: white;
 }
 
