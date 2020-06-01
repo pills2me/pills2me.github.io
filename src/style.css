@@ -50,7 +50,7 @@
 	background-attachment: fixed;
 }
 body {
-	font-family: 'SF Pro Display' sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 	width: 100%;
 	color: white;
 	background-image: linear-gradient(rgba(100, 100, 100, 0.85), rgba(100, 100, 100, 0.85)), url('images/logo-blue.png');
