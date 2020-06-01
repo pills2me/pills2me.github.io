@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e2d4afc.chunk.css",
-    "main.js": "/static/js/main.7b6a8ea8.chunk.js",
-    "main.js.map": "/static/js/main.7b6a8ea8.chunk.js.map",
+    "main.css": "/static/css/main.6863180c.chunk.css",
+    "main.js": "/static/js/main.9e773357.chunk.js",
+    "main.js.map": "/static/js/main.9e773357.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.65457b84.js",
     "runtime-main.js.map": "/static/js/runtime-main.65457b84.js.map",
     "static/css/2.69121389.chunk.css": "/static/css/2.69121389.chunk.css",
-    "static/js/2.b19e79d9.chunk.js": "/static/js/2.b19e79d9.chunk.js",
-    "static/js/2.b19e79d9.chunk.js.map": "/static/js/2.b19e79d9.chunk.js.map",
+    "static/js/2.ba3ba65d.chunk.js": "/static/js/2.ba3ba65d.chunk.js",
+    "static/js/2.ba3ba65d.chunk.js.map": "/static/js/2.ba3ba65d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.53239b0fd89e4ef2dbeb7dfa0ee0b8fd.js": "/precache-manifest.53239b0fd89e4ef2dbeb7dfa0ee0b8fd.js",
+    "precache-manifest.e27712753e964920f30018293785c678.js": "/precache-manifest.e27712753e964920f30018293785c678.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/static/css/2.69121389.chunk.css.map",
-    "static/css/main.7e2d4afc.chunk.css.map": "/static/css/main.7e2d4afc.chunk.css.map",
-    "static/js/2.b19e79d9.chunk.js.LICENSE.txt": "/static/js/2.b19e79d9.chunk.js.LICENSE.txt",
+    "static/css/main.6863180c.chunk.css.map": "/static/css/main.6863180c.chunk.css.map",
+    "static/js/2.ba3ba65d.chunk.js.LICENSE.txt": "/static/js/2.ba3ba65d.chunk.js.LICENSE.txt",
     "static/media/Kaveh.jpeg": "/static/media/Kaveh.82a83d17.jpeg",
     "static/media/angela.jpeg": "/static/media/angela.59264022.jpeg",
     "static/media/anna.png": "/static/media/anna.5b17249a.png",
@@ -29,8 +29,9 @@
     "static/media/konstantine.jpeg": "/static/media/konstantine.5c579127.jpeg",
     "static/media/leo.JPG": "/static/media/leo.2e664c0a.JPG",
     "static/media/leslie.jpg": "/static/media/leslie.ad0714c8.jpg",
-    "static/media/logo-blue.png": "/static/media/logo-blue.f414a155.png",
+    "static/media/logo_white.png": "/static/media/logo_white.b70698b4.png",
     "static/media/medicine.jpeg": "/static/media/medicine.d5e5d2c0.jpeg",
+    "static/media/partner.jpg": "/static/media/partner.51e08ac4.jpg",
     "static/media/patient.png": "/static/media/patient.d69688c4.png",
     "static/media/patients.jpeg": "/static/media/patients.4355181d.jpeg",
     "static/media/pharmacies.jpeg": "/static/media/pharmacies.ac231fe2.jpeg",
@@ -39,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.65457b84.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.b19e79d9.chunk.js",
-    "static/css/main.7e2d4afc.chunk.css",
-    "static/js/main.7b6a8ea8.chunk.js"
+    "static/js/2.ba3ba65d.chunk.js",
+    "static/css/main.6863180c.chunk.css",
+    "static/js/main.9e773357.chunk.js"
   ]
 }
