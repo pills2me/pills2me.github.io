@@ -147,6 +147,18 @@ h2 {
 	font-family: Comfortaa;
 }
 
+.popup-message {
+	color: black;
+	padding: 40px;
+	font-size: 25px;
+}
+
+.close {
+	color: black;
+	margin: 10px;
+	height: 10px;
+}
+
 img.logo {
 	height: 81px;
 	margin-top: 10px;

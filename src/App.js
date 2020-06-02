@@ -15,6 +15,8 @@ import Partner from './pages/Partner';
 import Team from './pages/Team';
 import Pharmacy from './pages/PharmacyForm';
 
+import PopupMessage from './components/PopupMessage';
+
 import Favicon from 'react-favicon';
 
 const App = () => (
@@ -32,6 +34,9 @@ const App = () => (
 			type="text/css"
 		/>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=SF+Pro+Display" />
+
+		<PopupMessage />
+
 		<Route path="/" exact component={OpeningPage} />
 		<Route path="/signup" exact component={SignUp} />
 		<Route path="/patient-form" exact component={PatientForm} />
