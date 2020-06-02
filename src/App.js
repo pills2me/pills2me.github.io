@@ -16,6 +16,7 @@ import Team from './pages/Team';
 import Pharmacy from './pages/PharmacyForm';
 
 import PopupMessage from './components/PopupMessage';
+import Cookies from './components/Cookies';
 
 import Favicon from 'react-favicon';
 
@@ -35,7 +36,10 @@ const App = () => (
 		/>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=SF+Pro+Display" />
 
-		<PopupMessage />
+		<Cookies message="We use cookies to understand our visitors and deliver our services in a better way. You are free to manage this through your browser settings at any time." />
+		<PopupMessage message="We are deeply saddened by the recent events. Nobody deserves to die like George Floyd. Our
+						hearts go out to his loved ones and everyone else affected by the recent events.
+						#JusticeforGeorgeFloyd" />
 
 		<Route path="/" exact component={OpeningPage} />
 		<Route path="/signup" exact component={SignUp} />

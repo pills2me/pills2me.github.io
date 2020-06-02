@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Popup from 'reactjs-popup';
+import { NONAME } from 'dns';
 
-class PopupMessage extends React.Component {
+class Cookies extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = { open: true };
@@ -21,17 +22,27 @@ class PopupMessage extends React.Component {
 				<Popup
 					open={this.state.open}
 					closeOnDocumentClick
-					contentStyle={{ border: 'none', borderRadius: '5px' }}
+					overlayStyle={{ backgroundColor: 'transparent' }}
+					contentStyle={{
+						marginRight: '10px',
+						marginBottom: '10px',
+						padding: '5px',
+						backgroundColor: '#0084f4',
+						width: '40%',
+						border: 'none',
+						borderRadius: '10px'
+					}}
+					position="bottom right"
 					onClose={this.closeModal}
 				>
 					{/* <div className="modal"> */}
 					<a className="close" style={{ color: 'black' }} onClick={this.closeModal}>
 						&times;
 					</a>
-					<p className="popup-message">{this.props.message}</p>
+					<p className="cookies">{this.props.message}</p>
 				</Popup>
 			</div>
 		);
 	}
 }
-export default PopupMessage;
+export default Cookies;
