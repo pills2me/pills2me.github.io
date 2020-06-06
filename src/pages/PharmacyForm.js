@@ -145,6 +145,8 @@ class Pharmacy extends Component {
 		// e.preventDefault();
 	}
 
+	// onSubmit={this.handleSubmit.bind(this)}
+
 	render() {
 		if (this.state.redirect) {
 			return <Redirect to="/submission-complete" />;
@@ -160,7 +162,6 @@ class Pharmacy extends Component {
 							id="form"
 							noValidate
 							validated={this.state.validated}
-							onSubmit={this.handleSubmit.bind(this)}
 							action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsTyI34qYJ_P3AAXPLDa1CpSzSkCYdEAgvLQyZfHEfaSMpsw/formResponse"
 						>
 							<h3 className="form">Pharmacy Information</h3>
