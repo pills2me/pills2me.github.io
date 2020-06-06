@@ -236,8 +236,8 @@ class DriverForm extends Component {
 
                                 </Form.Group>
 
-                                {/* <Form.Group controlId="instructionsCheck">
-                                    <Form.Check required type="checkbox" label="Please check this box when you have read and understood our instructions." />
+                                <Form.Group controlId="instructionsCheck">
+                                    <Form.Check name="entry.1069442594_sentinel" required type="checkbox" label="Please check this box when you have read and understood our instructions." />
                                 </Form.Group>
                                 <Form.Group>
                                     <h3 className="form">Disclaimer</h3>
@@ -247,9 +247,9 @@ class DriverForm extends Component {
                                 </Form.Group>
 
                                 <Form.Group controlId="instructionsCheck">
-                                    <Form.Check required type="checkbox" label="“By submitting this form, I attest that I am at least 18 years old and below the age of 65 years and have no symptoms or risk factors of Covid-19 per the CDC guidelines. I have also read and accept the terms and conditions above.”" />
+                                    <Form.Check name="entry.1914461429_sentinel" required type="checkbox" label="“By submitting this form, I attest that I am at least 18 years old and below the age of 65 years and have no symptoms or risk factors of Covid-19 per the CDC guidelines. I have also read and accept the terms and conditions above.”" />
                                 </Form.Group>
-                                */}
+                               
                                 <Form.Group> 
                                     <Form.Label>How did you hear about us?</Form.Label>
                                     <Form.Control name="entry.1429598282" onChange={this.hearHandler} required type="text"></Form.Control>
