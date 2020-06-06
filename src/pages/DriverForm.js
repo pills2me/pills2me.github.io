@@ -151,6 +151,8 @@ class DriverForm extends Component {
 
     }
 
+    //onSubmit={this.handleSubmit.bind(this)}
+
     render() {
         if (this.state.redirect) {
             return <Redirect to="/submission-complete" />;
@@ -163,48 +165,48 @@ class DriverForm extends Component {
                     <div className="pharm-background background-form container center column-dir after-heading">
                         <Jumbotron>
                             <h2 className="jumbotron-title comfortaa">Welcome Drivers</h2>
-                            <Form noValidate validated={this.state.validated} onSubmit={this.handleSubmit.bind(this)}>
+                            <Form noValidate action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScwwvFBTWeY7Gl6jcASqWPxK-lVXaLba0FXeoc5GDTGdR9s6A/formResponse" validated={this.state.validated} >
                                 <h3 className="form">Personal Information</h3>
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="name">
                                         <Form.Label>First Name</Form.Label>
-                                        <Form.Control required onChange={this.firstNameHandler} type="name" placeholder="First Name" />
+                                        <Form.Control name="entry.82345234" required onChange={this.firstNameHandler} type="name" placeholder="First Name" />
                                     </Form.Group>
                                     <Form.Group as={Col} controlId="lastName">
                                         <Form.Label>Last Name</Form.Label>
-                                        <Form.Control required onChange={this.lastNameHandler} type="name" placeholder="Last Name" />
+                                        <Form.Control name="entry.1477261172" required onChange={this.lastNameHandler} type="name" placeholder="Last Name" />
                                     </Form.Group>
                                 </Form.Row>
 
                                 <Form.Group controlId="email">
                                     <Form.Label>Email</Form.Label>
-                                    <Form.Control required onChange={this.emailHandler} type="email" placeholder="Email" />
+                                    <Form.Control name="entry.185618432" required onChange={this.emailHandler} type="email" placeholder="Email" />
                                 </Form.Group>
 
                                 <Form.Group controlId="phone">
                                     <Form.Label>Phone Number</Form.Label>
-                                    <Form.Control required onChange={this.phoneHandler} type="tel" placeholder="(###) ###-####" />
+                                    <Form.Control name="entry.11580172" required onChange={this.phoneHandler} type="tel" placeholder="(###) ###-####" />
                                 </Form.Group>
 
                                 <Form.Group controlId="address1">
                                     <Form.Label>Address 1</Form.Label>
-                                    <Form.Control required onChange={this.streetHandler} type="text" placeholder="ex. 123 Main St." />
+                                    <Form.Control name="entry.1011352520" required onChange={this.streetHandler} type="text" placeholder="ex. 123 Main St." />
                                 </Form.Group>
                                 <Form.Group controlId="address2">
-                                    <Form.Control type="text" onChange={this.street2Handler} placeholder="Address 2 (ex. apt #)" />
+                                    <Form.Control name="entry.2088614360" type="text" onChange={this.street2Handler} placeholder="Address 2 (ex. apt #)" />
                                 </Form.Group>
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="city">
                                         <Form.Label>City</Form.Label>
-                                        <Form.Control required onChange={this.cityHandler} type="text" placeholder="City" />
+                                        <Form.Control name="entry.461554111" required onChange={this.cityHandler} type="text" placeholder="City" />
                                     </Form.Group>
                                     <Form.Group as={Col} controlId="state">
                                         <Form.Label>State</Form.Label>
-                                        <Form.Control required onChange={this.stateHandler} type="text" placeholder="State" />
+                                        <Form.Control name="entry.755080364" required onChange={this.stateHandler} type="text" placeholder="State" />
                                     </Form.Group>
                                     <Form.Group as={Col} controlId="zip">
                                         <Form.Label>Zip/Postal Code</Form.Label>
-                                        <Form.Control required type="text" onChange={this.zipHandler} placeholder="Zip/Postal Code" />
+                                        <Form.Control name="entry.1238202128" required type="text" onChange={this.zipHandler} placeholder="Zip/Postal Code" />
                                     </Form.Group>
                                 </Form.Row>
 
@@ -212,15 +214,15 @@ class DriverForm extends Component {
 
                                 <Form.Group controlId="milesTravel">
                                     <Form.Label>How many miles are you willing to travel?</Form.Label>
-                                    <Form.Control required onChange={this.milesHandler} type="text" placeholder="ex. 10 miles" />
+                                    <Form.Control name="entry.1259681042" required onChange={this.milesHandler} type="text" placeholder="ex. 10 miles" />
                                 </Form.Group>
                                 <Form.Group controlId="availability">
                                     <Form.Label>What days and times are you available?</Form.Label>
-                                    <Form.Control required onChange={this.availabilityHandler} as="textarea" rows="3" placeholder="ex. Fridays 9AM-4PM" />
+                                    <Form.Control name="entry.1313889894" required onChange={this.availabilityHandler} as="textarea" rows="3" placeholder="ex. Fridays 9AM-4PM" />
                                 </Form.Group>
                                 <Form.Group controlId="notes">
                                     <Form.Label>Additional Notes</Form.Label>
-                                    <Form.Control as="textarea" rows="3" onChange={this.notesHandler} placeholder="Please provide any additional notes to us that you would like us to know." />
+                                    <Form.Control name="entry.93040506" as="textarea" rows="3" onChange={this.notesHandler} placeholder="Please provide any additional notes to us that you would like us to know." />
                                 </Form.Group>
 
                                 <Form.Group>
@@ -234,7 +236,7 @@ class DriverForm extends Component {
 
                                 </Form.Group>
 
-                                <Form.Group controlId="instructionsCheck">
+                                {/* <Form.Group controlId="instructionsCheck">
                                     <Form.Check required type="checkbox" label="Please check this box when you have read and understood our instructions." />
                                 </Form.Group>
                                 <Form.Group>
@@ -247,9 +249,10 @@ class DriverForm extends Component {
                                 <Form.Group controlId="instructionsCheck">
                                     <Form.Check required type="checkbox" label="“By submitting this form, I attest that I am at least 18 years old and below the age of 65 years and have no symptoms or risk factors of Covid-19 per the CDC guidelines. I have also read and accept the terms and conditions above.”" />
                                 </Form.Group>
-                                <Form.Group>
+                                */}
+                                <Form.Group> 
                                     <Form.Label>How did you hear about us?</Form.Label>
-                                    <Form.Control onChange={this.hearHandler} required type="text"></Form.Control>
+                                    <Form.Control name="entry.1429598282" onChange={this.hearHandler} required type="text"></Form.Control>
                                 </Form.Group>
 
                                 <Button variant="light" type="submit">
