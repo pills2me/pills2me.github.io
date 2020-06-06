@@ -21,7 +21,7 @@ class PopupMessage extends React.Component {
 				<Popup
 					open={this.state.open}
 					closeOnDocumentClick
-					contentStyle={{ border: 'none', borderRadius: '5px' }}
+					contentStyle={{ border: 'none', borderRadius: '5px', width: 'none' }}
 					onClose={this.closeModal}
 				>
 					{/* <div className="modal"> */}

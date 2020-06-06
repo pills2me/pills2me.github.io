@@ -147,6 +147,10 @@ h2 {
 	font-family: Comfortaa;
 }
 
+.popup-content {
+	width: 50%;
+}
+
 .popup-message {
 	color: black;
 	padding: 40px;
@@ -609,6 +613,9 @@ li.nav {
 }
 
 @media only screen and (max-width: 768px) {
+	.popup-content {
+		width: 95%;
+	}
 	.benefits {
 		height: auto;
 		margin-bottom: 20px;
@@ -656,6 +663,9 @@ li.nav {
 	}
 	.news-info {
 		font-size: 15px;
+	}
+	.news-img {
+		height: auto;
 	}
 
 	button.news-button {
@@ -709,10 +719,6 @@ li.nav {
 	.round-button {
 		height: 150px;
 		width: 150px;
-	}
-
-	img.logo {
-		height: 35px;
 	}
 
 	h1.logo {
