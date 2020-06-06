@@ -458,23 +458,24 @@ h3.form {
 	background-color: #6d6d6d;
 }
 
-.section-ceid {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.5)), url("images/ceid.png");
-	color: white;
+.news-img {
+	max-width: 100%;
+	height: 300px;
 }
-.section-nbc {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/nbc-ct.png");
-	background-size: 100%;
-	color: white;
+
+.news-box {
+	padding: 40px 70px 40px 70px;
 }
-.section-wtnh {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("images/wtnh.png");
-	background-size: 100%;
-	color: white;
-}
+
 .news-heading {
-	font-size: 60px;
+	font-size: 30px;
 	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.news-info {
+	font-size: 20px;
 }
 
 button.news-button {
