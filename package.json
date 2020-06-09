@@ -16,6 +16,7 @@
     "gapi": "0.0.3",
     "history": "^4.10.1",
     "react": "^16.13.1",
+    "react-async-script-loader": "^0.3.0",
     "react-bootstrap": "^1.0.1",
     "react-burger-menu": "^2.6.13",
     "react-dom": "^16.13.1",

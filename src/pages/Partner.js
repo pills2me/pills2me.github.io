@@ -25,7 +25,12 @@ const Partner = () => (
 					help us facilitate the delivery process.{' '}
 				</h4>
 				<Link to="pharmacy-form">
-					<Button onClick={() => window.scrollTo(0, 0)} variant="light" className="shadow bitmore-margin">
+					<Button
+						onClick={() => window.scrollTo(0, 0)}
+						variant="light"
+						className="shadow"
+						style={{ marginTop: '20px' }}
+					>
 						BECOME A PARTNER
 					</Button>
 				</Link>

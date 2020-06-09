@@ -29,7 +29,12 @@ const About = () => (
 					platforms and skills to create this company to help those in need.
 				</h4>
 				<Link to="about">
-					<Button onClick={() => window.scrollTo(0, 0)} variant="light" className="shadow bitmore-margin">
+					<Button
+						onClick={() => window.scrollTo(0, 0)}
+						variant="light"
+						className="shadow"
+						style={{ marginTop: '20px' }}
+					>
 						LEARN ABOUT OUR STORY
 					</Button>
 				</Link>

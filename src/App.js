@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route } from 'react-router-dom';
 
 import OpeningPage from './pages/OpeningPage';
-import SignUp from './pages/SignUp';
 import PatientForm from './pages/PatientForm';
 import DriverForm from './pages/DriverForm';
 import Submitted from './pages/Submitted';
@@ -17,8 +16,6 @@ import Pharmacy from './pages/PharmacyForm';
 
 import PopupMessage from './components/PopupMessage';
 import Cookies from './components/Cookies';
-
-import Favicon from 'react-favicon';
 
 const App = () => (
 	<div className="center-text">
@@ -36,17 +33,15 @@ const App = () => (
 		/>
 		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=SF+Pro+Display" />
 
-		<Cookies message="We use cookies to understand our visitors and deliver our services in a better way. You are free to manage this through your browser settings at any time." />
+		{/* <Cookies message="We use cookies to understand our visitors and deliver our services in a better way. You are free to manage this through your browser settings at any time." />
 		<PopupMessage message="We are deeply saddened by the recent events. Nobody deserves to die like George Floyd. Our
 						hearts go out to his loved ones and everyone else affected by the recent events.
-						#JusticeforGeorgeFloyd" />
+						#JusticeforGeorgeFloyd" /> */}
 
 		<Route path="/" exact component={OpeningPage} />
-		<Route path="/signup" exact component={SignUp} />
 		<Route path="/patient-form" exact component={PatientForm} />
 		<Route path="/driver-form" exact component={DriverForm} />
 		<Route path="/submission-complete" exact component={Submitted} />
-		<Route path="/login" exact component={SignUp} />
 		<Route path="/about" exact component={About} />
 		<Route path="/news" exact component={News} />
 		<Route path="/donate" exact component={Donate} />
