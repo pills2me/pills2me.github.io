@@ -71,7 +71,10 @@ class Header extends Component {
 							<Link to="/partner" className="nav-link" onClick={() => window.scrollTo(0, 0)}>
 								Partner with Us
 							</Link>
-							{/* <Nav.Link onClick={() => window.scrollTo(0, 0)}><Link to="/donate" >Donate</Link></Nav.Link> */}
+							<Link to="/donate" className="nav-link" onClick={() => window.scrollTo(0, 0)}>
+								Donate
+							</Link>
+
 							<Link to="/contact" className="nav-link" onClick={() => window.scrollTo(0, 0)}>
 								Contact
 							</Link>

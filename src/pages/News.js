@@ -14,7 +14,7 @@ const News = () => (
 	<div>
 		<Header />
 
-		<div className="pharm-background fixed-background container center column-dir after-heading">
+		<div className="pharm-background background-news fixed-background container center column-dir after-heading">
 			<div className="overlay-text-box container center column-dir">
 				<h1 className="overlay-text">Pills2Me in the News</h1>
 				<h4>Read about our efforts in the media, and how we have been helping the greater community. </h4>

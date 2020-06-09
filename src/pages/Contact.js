@@ -39,7 +39,7 @@ function Contact() {
 			<Header />
 
 			<div className="pharm-background background-contact fixed-background container center column-dir after-heading">
-				<Row className="my-container" style={{ paddingLeft: '5%', paddingRight: '5%' }}>
+				<Row className="my-container" style={{ paddingLeft: '5%', paddingRight: '5%', marginTop: '30px' }}>
 					<Col md={6} className="container center column-dir">
 						<h2 style={{ fontSize: '35px', width: '100%' }}>
 							Please feel free to contact us with any questions or tell us how we can better serve you.
