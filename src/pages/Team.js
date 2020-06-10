@@ -77,7 +77,7 @@ const About = () => (
 							<h4>Co-Founder, CTO</h4>
 							<hr className="colored-line" />
 							<p>
-								Leo has experience in software developement and is a medical student at the Warren
+								Leo has experience in software development and is a medical student at the Warren
 								Alpert Medical School of Brown University. Leo was inspired to help all our beloved
 								patients during COVID-19, the elderly and vulnerable who cannot leave their homes to
 								receive their medicine. Leo is a cofounder of ePharmHub, which won the Thorne Prize at
