@@ -46,7 +46,26 @@ body {
 	width: 100%;
 }
 
-/**************** SPECIFIC STYLING TOOL ****************/
+/* styling for jumbotrons */
+.jumbotron {
+	text-align: left;
+	color: black;
+	padding: 40px;
+	margin: 10px;
+	width: 70%;
+	margin-bottom: 30px;
+}
+
+/* black line under most headings */
+.colored-line {
+	color: color;
+	background-color: black;
+	height: 1;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+/**************** SPECIFIC STYLING TOOLS ****************/
 /* add extra margins */
 .extra-margin {
 	margin-top: 50px;
@@ -64,48 +83,57 @@ body {
 	font-family: Comfortaa;
 }
 
+/* adding shadows to the buttons */
+.shadow {
+	box-shadow: 5px 10px 10px #888888;
+}
+
+/* align text to left */
+.left-align {
+	text-align: left;
+}
+
+/* diy columns that will go on top of each other in mobile */
+.responsiveCols {
+	flex-direction: row;
+}
+
+/* bold */
+.bold {
+	font-weight: bold;
+}
+
+/* itaics */
+.italics {
+	font-style: italic;
+}
+
+/* make sure imgs are not huge and only take up designated space */
+.col-img {
+	width: 100%;
+}
+
 /************** BACKGROUND VARIATION *************/
 .background-about {
-	/*background-size: auto;*/
 	background-position: 10%;
 }
 .background-team {
-	/*background-size: auto;*/
 	background-position: 50%;
 }
 .background-partner {
-	/*background-size: auto;*/
 	background-position: 40%;
 }
 .background-donate {
-	/*background-size: auto;*/
 	background-position: 60%;
 }
 .background-contact {
-	/*background-size: auto;*/
 	background-position: 80%;
 }
 .background-news {
 	background-position: 70%;
 }
 
-/************ HOME PAGE FORMATING ***************/
-
-/* labels below the circular buttons on the home page */
-.button-labels {
-	font-size: 20px;
-	width: 30%;
-}
-
-/* the circular buttons for drivers/patients */
-.round-button {
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
-	background-color: white;
-}
-
-/*************** FLEXBOX STYLING TOOLS ************/
+/*************** FLEXBOX  TOOLS ************/
 
 /* variants on containers */
 .my-container {
@@ -137,7 +165,7 @@ body {
 	justify-content: center;
 }
 
-/* flex direction set to column */
+/* set flex direction  */
 .column-dir {
 	flex-direction: column;
 }
@@ -146,9 +174,13 @@ body {
 	flex-direction: row;
 }
 
-/* align items at the top of container */
+/* align items  */
 .top-align {
 	align-items: start;
+}
+
+.stretch {
+	align-items: stretch;
 }
 
 /************* POP UP MESSAGE *************/
@@ -171,233 +203,21 @@ body {
 	height: 10px;
 }
 
-/* specifc styling for the cookies pop up message */
+/* cookies pop up message */
 .cookies {
 	font-size: 12px;
 	padding: 2px;
 	margin-bottom: 0px;
 }
 
-img.logo {
-	height: 81px;
-	margin-top: 10px;
-}
-img.icon {
-	height: 90px;
-}
-h1.logo {
-	font-family: comfortaa;
-	font-size: 36px;
-	line-height: 100%;
-	vertical-align: top;
-	color: white;
-	padding-top: 8px;
-}
-h2.logo {
-	padding-top: 20px;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 36px;
-	line-height: 43px;
-}
-
-a.logo:hover {
-	text-decoration: none;
-}
-
-.shadow {
-	box-shadow: 5px 10px 10px #888888;
-}
-
-div.logo {
-	margin-top: 35px;
-	background-color: #e9ecef;
-}
-
-button.linkedin {
-	background-color: transparent;
-	border-color: #0084f4;
-}
-button.linkedin:hover {
-	background-color: #0084f4;
-}
-a.linkedin {
-	border-color: #0084f4;
-	color: #0084f4;
-}
-a.linkedin:hover {
-	background-color: #0084f4;
-	text-decoration: none;
+/************** NAV BAR  ********************/
+/* general nav bar layout / padding */
+.navbar {
+	padding: 20px 30px 18px 50px;
 	color: white;
 }
 
-.donate-img {
-	max-width: 100%;
-	height: 300px;
-	margin-bottom: 50px;
-}
-/* Individual item */
-.bm-item {
-	display: inline-block;
-
-	/* Our sidebar item styling */
-	text-decoration: none;
-	font-size: 35px;
-	margin-bottom: 30px;
-	color: white;
-	transition: color 0.2s;
-}
-
-/* Position and sizing of burger button */
-.bm-burger-button {
-	position: fixed;
-	width: 50px;
-	height: 45px;
-	left: 50px;
-	top: 50px;
-}
-
-/* Color/shape of burger icon bars */
-.bm-burger-bars {
-	background: #262626;
-}
-
-/* Position and sizing of clickable cross button */
-.bm-cross-button {
-	height: 40px;
-	width: 40px;
-}
-
-/* Color/shape of close button cross */
-.bm-cross {
-	background: #bdc3c7;
-}
-
-/* General sidebar styles */
-.bm-menu {
-	background: #262626;
-	padding: 3.5em 1.5em 0;
-	font-size: 20px;
-}
-
-.menu-item {
-	color: white;
-}
-
-.menu-item:hover {
-	color: white;
-}
-
-/* Styling of overlay */
-.bm-overlay {
-	background: rgba(0, 0, 0, 0.3);
-}
-
-.jumbotron {
-	text-align: left;
-	color: black;
-	padding: 40px;
-	margin: 10px;
-	width: 70%;
-	margin-bottom: 30px;
-}
-
-.jumbotron-title {
-	text-align: center;
-	width: 100%;
-}
-
-.benefits {
-	align-items: baseline;
-	height: 100%;
-}
-
-h3.form {
-	width: 100%;
-	text-decoration: underline;
-	font-family: Comfortaa;
-	margin-top: 20px;
-}
-
-.form-check-inline {
-	margin-left: 20px;
-}
-.submitted {
-	text-align: center;
-	width: 100%;
-	font-size: 28px;
-	margin-bottom: 20px;
-}
-
-.subheading {
-	margin-bottom: 20px;
-}
-
-.not-footer {
-	padding-bottom: 60px;
-}
-
-.footer {
-	margin-top: auto;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
-	font-size: 15px;
-	text-align: center;
-}
-
-.detailed-footer {
-	margin-top: auto;
-	bottom: 0;
-	width: 100%;
-	height: auto;
-	font-size: 15px;
-	padding: 20px;
-	text-align: center;
-	background-color: #3a3a3a;
-}
-.footer-link {
-	color: #f2f2f2;
-	text-decoration: underline;
-}
-.footer-link:hover {
-	color: white;
-}
-
-.stretch {
-	align-items: stretch;
-}
-
-.left-align {
-	text-align: left;
-}
-.border-box {
-	margin-left: 20px;
-	margin-right: 20px;
-	padding: 25px;
-	border-style: solid;
-	border-color: #0084f4;
-	border-radius: 15px;
-	border-width: 2px;
-	width: 45%;
-}
-
-.responsiveCols {
-	flex-direction: row;
-}
-
-.offerList {
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 25px;
-	margin-top: 10px;
-}
-
-.bold {
-	font-weight: bold;
-}
-
+/* general header (e.g. coloring, position ) */
 .header {
 	position: fixed;
 	top: 0;
@@ -406,202 +226,31 @@ h3.form {
 	z-index: 1000;
 }
 
+/* padding to make sure everything starts below the nav bar */
 .after-heading {
 	padding-top: 92px;
 	position: relative;
 }
 
-.card {
-	background: transparent;
-	width: 100%;
-	margin: 0px;
-	border-width: 0px;
+/* logo in upper left corner */
+img.logo {
+	height: 81px;
+	margin-top: 10px;
 }
 
-.homescreen {
-	min-height: 590px;
-}
-
-.overlay-text-box {
-	width: 80%;
-	height: 500px;
-}
-.overlay-text {
-	font-size: 50px;
-	font-family: Comfortaa;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 54px;
-	line-height: 60px;
-}
-.overlay-description {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 30px;
-	line-height: 33px;
-	margin-top: 18px;
-	margin-bottom: 18px;
-	width: 70%;
-}
-
-.overlay-descript {
-	margin-bottom: 20px;
-}
-
-.section {
-	width: 100%;
-	padding: 5%;
-	padding-left: 12%;
-	padding-right: 12%;
-	background-color: white;
-	color: black;
-}
-.section-heading {
-	font-family: Comfortaa;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 54px;
-	line-height: 60px;
-}
-
-.section-text {
-	text-align: left;
-	font-size: 18px;
-	margin-top: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
-}
-
-.section-blue {
-	background-color: #4eaeff;
-}
-
-.section-gray {
-	background-color: #6d6d6d;
-}
-
-.news-img {
-	max-width: 100%;
-	height: 300px;
-}
-
-.news-box {
-	padding: 40px 70px 40px 70px;
-}
-
-.news-heading {
-	font-size: 30px;
-	font-weight: bold;
-	margin-top: 40px;
-	margin-bottom: 20px;
-}
-
-.news-info {
-	font-size: 20px;
-}
-
-button.news-button {
-	background-color: rgb(0, 132, 244, 0.7);
-	font-size: 25px;
-	padding: 15px;
-	margin-top: 20px;
-}
-a.news-button {
-	color: white;
-}
-
-button.news-button:hover {
-	background-color: rgb(0, 132, 244, 0.95);
-}
-a.news-button:hover {
-	color: white;
+/* link to home from the logo */
+a.logo:hover {
 	text-decoration: none;
 }
 
-.col-img {
-	width: 100%;
-}
-
-.donation-btn {
-	margin: 15px;
-}
-
-.person-img {
-	height: 200px;
-	margin-bottom: 20px;
-}
-
-.person-card {
-	padding-left: 35px;
-
-	padding-right: 35px;
-}
-.team-row {
-	padding-top: 50px;
-}
-
-.underline {
-	text-decoration: underline;
-}
-
-.italics {
-	font-style: italic;
-}
-.subsection {
-	margin-top: 30px;
-	margin-bottom: 50px;
-}
-
-.hoverable {
-	margin-left: 10px;
-	margin-right: 10px;
-}
-
-.person-info {
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	height: 100%;
-	width: 85%;
-	opacity: 1;
-}
-
-.hoverable:hover .person-info {
-	opacity: 1;
-}
-
-.section-link {
-	color: #575757;
-	text-decoration: underline;
-}
-
-.section-link:hover {
-	color: black;
-}
-
-.fa {
-	padding: 15px;
-}
-.fa:hover {
-	text-decoration: none;
-}
-
-.navbar {
-	padding: 20px 30px 18px 50px;
-	color: white;
-}
-
+/* button to toggle menu in mobile */
 .navbar-toggler {
 	border-color: white;
 	border-width: 3px;
 	border-radius: 5px;
 }
 
-button.nav {
-	display: none;
-}
-
+/* links in nav bar */
 .links {
 	height: auto;
 	display: flex;
@@ -609,10 +258,12 @@ button.nav {
 	text-decoration: none;
 }
 
+/* list of nav items */
 li.nav {
 	padding: 0 15px;
 }
 
+/* colors and fonts of nav links */
 .navbar-dark .navbar-nav .nav-link {
 	font-size: 17px;
 	color: white;
@@ -626,28 +277,303 @@ li.nav {
 	border-width: 2px;
 }
 
-.colored-line {
-	color: color;
-	background-color: black;
-	height: 1;
+/******************** FOOTER *******************/
+
+/* footer with basic information about contacting */
+.footer {
+	margin-top: auto;
+	bottom: 0;
 	width: 100%;
-	margin-bottom: 30px;
+	height: 50px;
+	font-size: 15px;
+	text-align: center;
 }
 
+/* complex footer with many links and things */
+.detailed-footer {
+	margin-top: auto;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	font-size: 15px;
+	padding: 20px;
+	text-align: center;
+	background-color: #3a3a3a;
+}
+
+/* links that bring user to forms */
+.footer-link {
+	color: #f2f2f2;
+	text-decoration: underline;
+}
+.footer-link:hover {
+	color: white;
+}
+
+/* social media icons*/
+.fa {
+	padding: 15px;
+}
+.fa:hover {
+	text-decoration: none;
+}
+
+/***************** TITLE SECTION W/ IMAGE BACKGROUND FOR EACH PAGE ***********/
+
+/* the box for all text in title */
+.overlay-text-box {
+	width: 80%;
+	height: 500px;
+}
+
+/* page title text */
+.overlay-text {
+	font-size: 50px;
+	font-family: Comfortaa;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 54px;
+	line-height: 60px;
+}
+
+/* description of the page content */
+.overlay-description {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 33px;
+	margin-top: 18px;
+	margin-bottom: 18px;
+	width: 70%;
+}
+
+/**************** SECTIONS WITH TEXT/INFORMATION ON DIFFERENT PAGES ***********/
+
+/* general padding, spacing, and colors */
+.section {
+	width: 100%;
+	padding: 5%;
+	padding-left: 12%;
+	padding-right: 12%;
+	background-color: white;
+	color: black;
+}
+
+/* headings of each section */
+.section-heading {
+	font-family: Comfortaa;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 54px;
+	line-height: 60px;
+}
+
+/* text within a section */
+.section-text {
+	text-align: left;
+	font-size: 18px;
+	margin-top: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+/* links in a section paragraph */
+.section-link {
+	color: #575757;
+	text-decoration: underline;
+}
+
+.section-link:hover {
+	color: black;
+}
+
+/************ HOME PAGE / OPENING PAGE ***************/
+
+/* setting min-height */
+.homescreen {
+	min-height: 590px;
+}
+
+/* labels below the circular buttons on the home page */
+.button-labels {
+	font-size: 20px;
+	width: 30%;
+}
+
+/* the circular buttons for drivers/patients */
+.round-button {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: white;
+}
+
+/* images in the round buttons */
+img.icon {
+	height: 90px;
+}
+
+/* text on homepage */
+.opening-text {
+	padding-top: 20px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 43px;
+}
+
+/* what we offer boxes for text */
+.blue-border-box {
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 25px;
+	border-style: solid;
+	border-color: #0084f4;
+	border-radius: 15px;
+	border-width: 2px;
+	width: 45%;
+}
+
+/* list items (li) in what we offer */
+.offerList {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 25px;
+	margin-top: 10px;
+}
+
+/********************* PATIENT/DRIVER/PHARMACY FORMS  ***********/
+/* title of form */
+.jumbotron-title {
+	text-align: center;
+	width: 100%;
+}
+
+/* subheadings on the forms */
+h3.form-subheading {
+	width: 100%;
+	text-decoration: underline;
+	font-family: Comfortaa;
+	margin-top: 20px;
+}
+
+/*********************** SUBMITTED PAGE *******************/
+.submitted {
+	text-align: center;
+	width: 100%;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+/********************** OUR MISSION / ABOUT PAGE  **************/
+
+/* how to get involved subsections */
+.subsection {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+/********************** MEET THE TEAM PAGE  ****************/
+
+/* team member image */
+.person-img {
+	height: 200px;
+	margin-bottom: 20px;
+}
+
+/* description name and title for each team member */
+.person-info {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 85%;
+	opacity: 1;
+}
+
+/* each row of team members */
+.team-row {
+	padding-top: 50px;
+}
+
+/********************** PARTNER WITH US PAGE ************************/
+
+/* numbered list of benefits to partnering */
+.benefits {
+	align-items: baseline;
+	height: 100%;
+}
+
+/********************* DONATION PAGE  *************/
+
+/* image of donation jar */
+.donate-img {
+	max-width: 100%;
+	height: 300px;
+	margin-bottom: 50px;
+}
+
+/* buttons with the donation amounts */
+.donation-btn {
+	margin: 15px;
+}
+
+/****************** CONTACT US PAGE ************************/
+
+/******************** PILLS2ME IN THE NEWS PAGE ******************/
+
+/* pictures above articles */
+.news-img {
+	max-width: 100%;
+	height: 300px;
+}
+
+/* box / col with news articles */
+.news-box {
+	padding: 40px 70px 40px 70px;
+}
+
+/* news article names / headings */
+.news-heading {
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+/* information about the article */
+.news-info {
+	font-size: 20px;
+}
+
+/************************************************************************/
+/**********************  MOBILE STYING **********************************/
+/************************************************************************/
+
 @media only screen and (max-width: 768px) {
+	/**************** MOBILE GENERAL FORMATTING ************************/
+
+	/* general text input field */
 	.text-input {
 		margin-left: 10px;
 	}
-	.popup-content {
+
+	/* diy responsive columns */
+	.responsiveCols {
+		flex-direction: column;
+	}
+
+	.jumbotron {
 		width: 95%;
 	}
-	.benefits {
-		height: auto;
-		margin-bottom: 20px;
+
+	.extra-margin {
+		margin-top: 5px;
 	}
-	.form {
-		font-size: 20px;
-	}
+	/**************************** MOBILE TITLE OVERLAYS *********************/
+
 	.overlay-text-box {
 		min-height: fit-content;
 		padding-top: 40px;
@@ -661,28 +587,90 @@ li.nav {
 		font-size: 20px;
 		line-height: initial;
 	}
+
+	/*************************** MOBILE SECTIONS **************************/
+	.section-heading {
+		font-size: 40px;
+		margin-top: 20px;
+	}
+
+	.section {
+		padding: 5%;
+	}
+
+	/***************************** MOBILE HEADER *********************/
+	img.logo {
+		height: 60px;
+	}
+
+	.after-heading {
+		padding-top: 80px;
+	}
+
+	/************************** MOBILE FOOTER ************************/
+	.footer {
+		font-size: 10px;
+	}
+
+	/*************************** MOBILE POP UP MESSAGE *****************/
+	.popup-content {
+		width: 95%;
+	}
+
+	/**************************** MOBILE HOME SCREEN PAGE ****************/
+	/* image in round buttons */
 	img.icon {
 		height: 40px;
 	}
 
-	.section-heading {
-		font-size: 40px;
-	}
-	.responsiveCols {
-		flex-direction: column;
-	}
-	.border-box {
-		width: 95%;
+	/* boxes for what we offer */
+	.blue-border-box {
+		width: 100%;
+
+		margin: 0px;
 		margin-top: 20px;
 	}
+
+	/* round buttons for patients/drivers on home */
+	.round-button {
+		height: 130px;
+		width: 130px;
+	}
+	.button-labels {
+		font-size: 14px;
+	}
+
+	/* text description */
+	.opening-text {
+		margin: 5px;
+		font-size: 25px;
+		line-height: 30px;
+		width: 100%;
+	}
+
+	/****************************** MOBILE FORMS PAGES **********************/
+	/* h3 form headings */
+	.form-subheading {
+		font-size: 20px;
+	}
+
+	/****************************** MOBILE ABOUT / OUR MISSION PAGE *************/
+	.instructions {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	/****************************** MOBILE MEET THE TEAM PAGE *****************/
+	/* team photos */
 	.person-img {
-		padding-top: 15px;
+		margin-top: 50px;
 	}
 
-	.jumbotron {
-		width: 95%;
+	.team-row {
+		padding-top: 0px;
 	}
 
+	/****************************** MOBILE NEWS PAGE **********************/
 	.news-heading {
 		font-size: 20px;
 	}
@@ -693,96 +681,14 @@ li.nav {
 		height: auto;
 	}
 
-	button.news-button {
-		font-size: 10px;
-		padding: 4px;
-		padding-right: 20px;
-		padding-left: 20px;
-		margin-top: 5px;
-	}
-
-	.instructions {
-		margin-top: 20px;
+	/***************************** MOBILE PARTNER WITH US PAGE ***************/
+	/* section of benefits of partnering with us */
+	.benefits {
+		height: auto;
 		margin-bottom: 20px;
 	}
 
-	/* Elements */
-	li.nav {
-		padding: 10px 0;
-	}
-
-	button.nav {
-		font-size: 30px;
-		margin-right: 30px;
-		color: white;
-		background: transparent;
-		border: none;
-		cursor: pointer;
-		outline: none;
-		float: right;
-	}
-
-	/* className */
-	.navBar {
-		width: 100%;
-		background-color: #111;
-		color: white;
-		padding: 10px;
-	}
-
-	.links {
-		height: 0;
-		overflow: hidden;
-		list-style-type: none;
-		font-weight: bold;
-	}
-
-	.show-nav {
-		height: 120px;
-	}
-
-	.round-button {
-		height: 150px;
-		width: 150px;
-	}
-
-	h1.logo {
-		font-size: 40px;
-	}
-	h2.logo {
-		margin: 5px;
-		font-size: 30px;
-		width: 100%;
-	}
-
-	.after-heading {
-		padding-top: 80px;
-	}
-
-	.button-labels {
-		font-size: 14px;
-	}
-
-	.extra-margin {
-		margin-top: 5px;
-	}
-
-	.bm-burger-button {
-		top: 20px;
-		left: 10px;
-		width: 35px;
-		height: 35px;
-	}
-
-	.bm-cross-button {
-		height: 80px;
-		width: 80px;
-	}
-
-	h2 {
-		font-size: 25px;
-	}
-	.footer {
-		font-size: 10px;
+	.partner-img {
+		margin-top: 30px;
 	}
 }

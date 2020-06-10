@@ -51,9 +51,7 @@ class Header extends Component {
 			<div className="header" style={this.headerColor()}>
 				<Navbar collapseOnSelect expand="lg" bg="" variant="dark">
 					<Link to="/" className="my-container logo" onClick={() => window.scrollTo(0, 0)}>
-						<img alt="" src={this.logoColor()} className="d-inline-block align-top logo" />
-						{/* <img alt="" src={logo} className="d-inline-block align-top logo" />{' '}
-						<h1 className="logo">pills2me</h1> */}
+						<img alt="Pills2Me" src={this.logoColor()} className="d-inline-block align-top logo" />
 					</Link>
 					<Navbar.Toggle onClick={this.Toggle} aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
@@ -81,23 +79,6 @@ class Header extends Component {
 						</Nav>
 					</Navbar.Collapse>
 				</Navbar>
-				{/* <Navbar className="logo">
-                    <Link to="/" className="my-container center left">
-                        <img
-                            alt=""
-                            src={logo}
-                            className="d-inline-block align-top logo"
-                        />{' '}
-                        <h1 className="logo">pills2me</h1>
-                    </Link>
-                    <Nav className="links">
-                        <Nav className="links">
-                            <Nav.Link><Link to="/">Home</Link></Nav.Link>
-                            <Nav.Link><Link to="/about">Link</Link></Nav.Link>
-                        </Nav>
-                    </Nav>
-
-                </Navbar> */}
 			</div>
 		);
 	}

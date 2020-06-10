@@ -164,7 +164,7 @@ class Pharmacy extends Component {
 							validated={this.state.validated}
 							action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfsTyI34qYJ_P3AAXPLDa1CpSzSkCYdEAgvLQyZfHEfaSMpsw/formResponse"
 						>
-							<h3 className="form">Pharmacy Information</h3>
+							<h3 className="form-subheading">Pharmacy Information</h3>
 							<Form.Group controlId="name">
 								<Form.Label>Pharmacy Name</Form.Label>
 								<Form.Control
@@ -249,7 +249,7 @@ class Pharmacy extends Component {
 								</Form.Group>
 							</Form.Row>
 
-							<h3 className="form">Pharmacy Owner Information</h3>
+							<h3 className="form-subheading">Pharmacy Owner Information</h3>
 
 							<Form.Group controlId="ownerName">
 								<Form.Label>Pharmacy Owner's Name</Form.Label>

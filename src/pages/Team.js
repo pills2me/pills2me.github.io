@@ -272,35 +272,3 @@ const About = () => (
 );
 
 export default About;
-
-{
-	/* <Col className="hoverable">
-                            <img className="col-img" src="https://static.wixstatic.com/media/200fe1_06ce139451b6433d95342587d4542c01.png"></img>
-                            <div className="person-info container column-dir center">
-                                <h3>Leslie Asanga</h3>
-                                <p>Brief description and title</p>
-                            </div>
-                        </Col>
-
-                        <Col className="hoverable">
-                            <img className="col-img" src="https://static.wixstatic.com/media/200fe1_06ce139451b6433d95342587d4542c01.png"></img>
-                            <div className="person-info container column-dir center">
-                                <h3>Leonardo Lizbinski</h3>
-                                <p>Brief description and title</p>
-                            </div>
-                        </Col>
-                        <Col className="hoverable">
-                            <img className="col-img" src="https://static.wixstatic.com/media/200fe1_06ce139451b6433d95342587d4542c01.png"></img>
-                            <div className="person-info container column-dir center">
-                                <h3>Anna Zhang</h3>
-                                <p>Brief description and title</p>
-                            </div>
-                        </Col>
-                        <Col className="hoverable">
-                            <img className="col-img" src="https://static.wixstatic.com/media/200fe1_06ce139451b6433d95342587d4542c01.png"></img>
-                            <div className="person-info container column-dir center">
-                                <h3>John Doe</h3>
-                                <p>Brief description and title</p>
-                            </div>
-                        </Col> */
-}

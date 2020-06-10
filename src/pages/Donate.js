@@ -28,11 +28,6 @@ function Donate() {
 						vulnerable receive their medication faster. We greatly appreciate your help in supporting our
 						mission.
 					</h4>
-					{/* <a className="logo" href="#donate">
-						<Button variant="light" className="shadow extra-margin">
-							MAKE A DONATION
-						</Button>
-					</a> */}
 				</div>
 
 				<div className="section ">

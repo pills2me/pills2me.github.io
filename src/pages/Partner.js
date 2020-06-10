@@ -59,7 +59,7 @@ const Partner = () => (
 				<hr className="colored-line" />
 				<Row>
 					<Col className="my-container column-dir between">
-						<img className="center-text" src={ChapelSt} />
+						<img className="center-text partner-img" src={ChapelSt} />
 						<div>
 							<h3>
 								<a style={{ color: 'white' }} href="http://www.chapelstreetpharmacy.com/">
@@ -71,7 +71,7 @@ const Partner = () => (
 						</div>
 					</Col>
 					<Col className="my-container column-dir between">
-						<img className="center-text" src={WestHaven} />
+						<img className="center-text partner-img" src={WestHaven} />
 						<div>
 							<h3>
 								<a style={{ color: 'white' }} href="http://www.westhavenpharmacy.com/">
@@ -86,7 +86,7 @@ const Partner = () => (
                 <br></br>
                 <Row> */}
 					<Col className="my-container column-dir between">
-						<img className="center-text" src={Berneys} />
+						<img className="center-text partner-img" src={Berneys} />
 						<div>
 							<h3>
 								<a style={{ color: 'white' }} href="http://www.berneysrx.com/">
@@ -98,7 +98,7 @@ const Partner = () => (
 						</div>
 					</Col>
 					<Col className="my-container column-dir between">
-						<img className="center-text" src={Essential} />
+						<img className="center-text partner-img" src={Essential} />
 						<div>
 							<h3>
 								<a style={{ color: 'white' }} href="https://www.essentialsupply.org/">

@@ -166,7 +166,7 @@ class DriverForm extends Component {
                         <Jumbotron>
                             <h2 className="jumbotron-title comfortaa">Welcome Drivers</h2>
                             <Form noValidate action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScwwvFBTWeY7Gl6jcASqWPxK-lVXaLba0FXeoc5GDTGdR9s6A/formResponse" validated={this.state.validated} >
-                                <h3 className="form">Personal Information</h3>
+                                <h3 className="form-subheading">Personal Information</h3>
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="name">
                                         <Form.Label>First Name</Form.Label>
@@ -210,7 +210,7 @@ class DriverForm extends Component {
                                     </Form.Group>
                                 </Form.Row>
 
-                                <h3 className="form">Driver Information</h3>
+                                <h3 className="form-subheading">Driver Information</h3>
 
                                 <Form.Group controlId="milesTravel">
                                     <Form.Label>How many miles are you willing to travel?</Form.Label>
@@ -226,7 +226,7 @@ class DriverForm extends Component {
                                 </Form.Group>
 
                                 <Form.Group>
-                                    <h3 className="form">Instructions</h3>
+                                    <h3 className="form-subheading">Instructions</h3>
                                     <Form.Text>Please read the follow instructions that we ask for drivers: </Form.Text>
                                     <Form.Text>1. Use the pharmacy drive through if one is available.</Form.Text>
                                     <Form.Text>2. Call the patient before you arrive at their residence.</Form.Text>
@@ -240,7 +240,7 @@ class DriverForm extends Component {
                                     <Form.Check name="entry.1069442594_sentinel" required type="checkbox" label="Please check this box when you have read and understood our instructions." />
                                 </Form.Group>
                                 <Form.Group>
-                                    <h3 className="form">Disclaimer</h3>
+                                    <h3 className="form-subheading">Disclaimer</h3>
                                     <Form.Text>Terms and Conditions: </Form.Text>
                                     <Form.Text>As a volunteer driver, I attest that I have an active car insurance policy and Pill2Me is not liable for any accidents that might occur while carrying out volunteer activities. I will follow the CDC guidelines on Covid-19 prevention and allow and practice social distancing at all times while interacting with the patients and at the pharmacy. </Form.Text>
 

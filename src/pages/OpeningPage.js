@@ -18,7 +18,7 @@ const OpeningPage = () => (
 		<Header />
 		<div className="pharm-background background-home container center column-dir after-heading">
 			<div className="homescreen center container column-dir">
-				<h2 className="logo">
+				<h2 className="opening-text">
 					Free same-day medication pick-up and delivery from any pharmacy for the elderly and vulnerable
 					during COVID-19.
 				</h2>
@@ -57,7 +57,7 @@ const OpeningPage = () => (
 			<div className="section" style={{ color: '#0084F4' }}>
 				<h1 className="section-heading">What We Offer</h1>
 				<div className="container stretch extra-margin responsiveCols">
-					<div className="left-align border-box top-align">
+					<div className="left-align blue-border-box top-align">
 						<h2 className="center-text ">Our Patients</h2>
 						<ul style={{ marginTop: '20px' }}>
 							<li className="offerList">Free same-day medication delivery from any pharmacy.</li>
@@ -71,7 +71,7 @@ const OpeningPage = () => (
 							</li>
 						</ul>
 					</div>
-					<div className="left-align border-box top-align">
+					<div className="left-align blue-border-box top-align">
 						<h2 className="center-text">Our Pharmacy Partners</h2>
 						<ul style={{ marginTop: '20px' }}>
 							<li className="offerList">

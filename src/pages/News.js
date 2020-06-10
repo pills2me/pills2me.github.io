@@ -66,20 +66,6 @@ const News = () => (
 					</Col>
 				</Row>
 			</div>
-
-			{/* 
-			<div className="section section-gray">
-				<div className="container center column-dir">
-					<h1 className="news-heading">“YSPH Student Innovators Respond to Pandemic Needs”</h1>
-					<h3 className="news-info">By: Colin Poitras</h3>
-					<h3 className="news-info">FROM STARTUP YALE</h3>
-					<Button className="news-button">
-						<a className="news-button" href="https://publichealth.yale.edu/news-article/24005/">
-							Read the story from Startup Yale
-						</a>
-					</Button>
-				</div>
-			</div> */}
 			<DetailedFooter />
 		</div>
 	</div>
