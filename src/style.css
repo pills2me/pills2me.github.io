@@ -520,6 +520,13 @@ h3.form-subheading {
 	margin: 15px;
 }
 
+/* large jumbotron for donating */
+.donations-jumbotron {
+	width: 80%;
+	min-height: 90%;
+	margin-top: 0px;
+}
+
 /****************** CONTACT US PAGE ************************/
 
 /******************** PILLS2ME IN THE NEWS PAGE ******************/
@@ -690,5 +697,12 @@ h3.form-subheading {
 
 	.partner-img {
 		margin-top: 30px;
+	}
+
+	/******************************* MOBILE DONATIONS PAGE *********************/
+	.donations-jumbotron {
+		width: 90%;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 }

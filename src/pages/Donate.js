@@ -42,10 +42,7 @@ function Donate() {
 							<img src={donateimg} className="donate-img" />
 						</Col>
 						<Col className="container center">
-							<Jumbotron
-								className="container column-dir space"
-								style={{ width: '80%', minHeight: '90%', marginTop: '0px' }}
-							>
+							<Jumbotron className="container column-dir space donations-jumbotron">
 								{donationAmount == 0.01 ? (
 									<div className="center-text container column-dir space">
 										<h3>Select a donation amount</h3>
