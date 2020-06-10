@@ -26,6 +26,12 @@
 	margin-left: 30px;
 }
 
+/* button to go back */
+.back-btn {
+	padding: 5px;
+	width: 100%;
+}
+
 /* body formatting (fonts, colors, no margin/padding) */
 body {
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -435,6 +441,7 @@ h3.form {
 	line-height: 33px;
 	margin-top: 18px;
 	margin-bottom: 18px;
+	width: 70%;
 }
 
 .overlay-descript {
@@ -444,6 +451,8 @@ h3.form {
 .section {
 	width: 100%;
 	padding: 5%;
+	padding-left: 12%;
+	padding-right: 12%;
 	background-color: white;
 	color: black;
 }
