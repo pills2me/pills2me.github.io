@@ -224,6 +224,7 @@ class PatientForm extends Component {
                             <h2 className="jumbotron-title comfortaa">Welcome Patients</h2>
                             <Form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSev69qaNCRzJEmvH1QqRjd2H8IvtU4MwrTJN_-oo8v0pgAudg/formResponse" noValidate validated={this.state.validated} >
                                 <h6 className="center-text" style={{marginBottom: '20px'}}>Our delivery service is 100% free of charge. We deliver your medications right to your doorstep. Our goal is to promote public health and social distancing practices to prevent further spread of coronavirus (COVID-19). </h6>
+                                <h6 className="center-text bold">We do not deliver controlled medications at this time</h6>
                                 <h3 className="form-subheading">Personal Information</h3>
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="firstName">
