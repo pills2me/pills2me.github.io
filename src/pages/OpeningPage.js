@@ -55,12 +55,14 @@ const OpeningPage = () => (
 			</div>
 
 			<div className="section" style={{ color: '#0084F4' }}>
-				<h1 className="section-heading">What We Offer</h1>
+				<h1 class="section-heading">Bringing Your Pharmacy to You</h1>
 				<div className="container stretch extra-margin responsiveCols">
 					<div className="left-align blue-border-box top-align">
 						<h2 className="center-text ">Our Patients</h2>
 						<ul style={{ marginTop: '20px' }}>
-							<li className="offerList">Free same-day medication delivery from any pharmacy.</li>
+							<li class="offerList">
+								Free same-day medication delivery for your elderly and immunocompromised patients.
+							</li>
 							<li className="offerList">We deliver within 2 hours of request.</li>
 							<li className="offerList">Free pharmacist consultation</li>
 							<li className="offerList">
