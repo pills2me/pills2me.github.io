@@ -1,5 +1,5 @@
-Pills2Me Website
-================
+# Pills2Me Website   <img src="/src/images/logo-blue.png" width="40px">
+
 
 ## Overview
 
