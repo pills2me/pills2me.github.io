@@ -60,9 +60,7 @@ const OpeningPage = () => (
 					<div className="left-align blue-border-box top-align">
 						<h2 className="center-text ">Our Patients</h2>
 						<ul style={{ marginTop: '20px' }}>
-							<li class="offerList">
-								Free same-day medication delivery for your elderly and immunocompromised patients.
-							</li>
+							<li class="offerList">Free same-day medication delivery from any pharmacy.</li>
 							<li className="offerList">We deliver within 2 hours of request.</li>
 							<li className="offerList">Free pharmacist consultation</li>
 							<li className="offerList">
@@ -76,8 +74,8 @@ const OpeningPage = () => (
 					<div className="left-align blue-border-box top-align">
 						<h2 className="center-text">Our Pharmacy Partners</h2>
 						<ul style={{ marginTop: '20px' }}>
-							<li className="offerList">
-								Free same-day delivery for your elderly and immunocompromised patients.
+							<li class="offerList">
+								Free same-day medication delivery for your elderly and immunocompromised patients.
 							</li>
 							<li className="offerList">Free promotion on our platforms.</li>
 							<li className="offerList">Patients can purchase your OTC items using our platform.</li>
