@@ -104,7 +104,12 @@ function Donate() {
 									</div>
 								) : (
 									<div>
-										<Paypal donation={donationAmount} />
+										<h3>Select payment method</h3>
+										<Paypal
+											donation={donationAmount}
+											message="Thank you for contributing to our cause"
+											className="extra-margin"
+										/>
 										<Button
 											variant="light"
 											className="back-btn"

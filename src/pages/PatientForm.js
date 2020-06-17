@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { Button, Form, Jumbotron, Col } from 'react-bootstrap'
+import { Button, Form, Jumbotron, Col, InputGroup } from 'react-bootstrap'
 import { Redirect } from 'react-router';
 import { Link } from 'react-router-dom';
 import '../style.css';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Paypal from '../components/Paypal';
 
 import firebase from '../Firebase';
 import { thisExpression } from "@babel/types";
@@ -45,6 +46,7 @@ class PatientForm extends Component {
             pharmStreet2: "",
             pharmZip: "",
             copay: false,
+            copayAmt: 0.01,
             formSelector: ''
 
         }
@@ -115,6 +117,9 @@ class PatientForm extends Component {
     }
     copayHandler = (event) => {
         this.setState({ copay: !this.state.copay });
+    }
+    copayAmtHandler = (event) => {
+        this.setState({ copayAmt: event.target.value });
     }
 
     handleSubmit(e) {
@@ -212,6 +217,46 @@ class PatientForm extends Component {
         }
         this.setState({ validated: true });
 
+    }
+
+    copayPaymentHandler() {
+        if (this.state.copay) {
+            
+            return (
+                <div>
+                     <Form.Group controlId="copayAmt">
+                        <Form.Label>How much is your copay?</Form.Label>
+                        <InputGroup className="mb-2">
+												<InputGroup.Prepend>
+													<InputGroup.Text>$</InputGroup.Text>
+												</InputGroup.Prepend>
+												<Form.Control name="entry.712556072" required  type="text" placeholder="ex. 10, 20" onChange={this.copayAmtHandler}/>
+											</InputGroup>
+                         
+                    </Form.Group>
+                    {this.copayPaypal()}
+                </div>
+                
+                
+            );
+        }
+    }
+
+    copayPaypal() {
+        if (this.state.copayAmt != 0.01) {
+            if (Number(this.state.copayAmt)){
+                return (
+                <div className="container column-dir center">
+                    <h4 className="center-text">Please select a payment method for your copay</h4>
+                    <Paypal donation={Number(this.state.copayAmt)} message="Thank you for your payment" />
+                </div>
+                
+                );
+            } else {
+                return (<h3 className="form-error">Please enter a valid number (ex. 10, 20)</h3>);
+            }
+            
+        }
     }
 
     formHandler() {
@@ -334,10 +379,11 @@ class PatientForm extends Component {
                 </Form.Group>
             </Form.Row>
             <Form.Group controlId="copay">
-                <Form.Label>Does your prescription have a copay? If yes, please include how much your copay is    </Form.Label>
-                <Form.Control name="entry.712556072" required  type="text" placeholder="Yes or No" />
-                {/* <Form.Check required inline checked={this.state.copay} onClick={this.copayHandler} label="Yes" type="radio" />
-                <Form.Check required inline checked={!this.state.copay} onClick={this.copayHandler} label="No" type="radio" /> */}
+                <Form.Label>Does your prescription have a copay? </Form.Label>
+                {/* <Form.Control name="entry.712556072" required  type="text" placeholder="Yes or No" /> */}
+                <Form.Check required  checked={this.state.copay} onClick={() => this.setState({ copay: true })} label="Yes" type="radio" />
+                <Form.Check required  checked={!this.state.copay} onClick={() =>this.setState({ copay: false})} label="No" type="radio" />
+                {this.copayPaymentHandler()}
             </Form.Group>
 
             <Form.Group controlId="notes">

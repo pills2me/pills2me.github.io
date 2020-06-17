@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Button, Col, Row, Jumbotron } from 'react-bootstrap';
 
 function Paypal(props) {
 	const [ paidFor, setPaidFor ] = useState(false);
@@ -58,13 +57,12 @@ function Paypal(props) {
 		<div>
 			{paidFor ? (
 				<div className="container column-dir center">
-					<h2 className="comfortaa center-text">Donation Complete!</h2>
-					<p>Thank you for contributing to our mission.</p>
+					<h2 className="comfortaa center-text">Payment Complete!</h2>
+					<p>{props.message}</p>
 				</div>
 			) : (
 				<div>
-					<h3>Select payment method</h3>
-					<div className="extra-margin" ref={(v) => (paypalRef = v)} />
+					<div ref={(v) => (paypalRef = v)} />
 				</div>
 			)}
 		</div>
