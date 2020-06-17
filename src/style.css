@@ -686,6 +686,12 @@ h3.form-subheading {
 		width: 100%;
 	}
 
+	/* carousel caption for mobile */
+	.carousel-caption {
+		bottom: 5px;
+		font-size: 10px;
+	}
+
 	/****************************** MOBILE FORMS PAGES **********************/
 	/* h3 form headings */
 	.form-subheading {

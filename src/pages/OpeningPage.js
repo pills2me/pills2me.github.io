@@ -153,7 +153,7 @@ const OpeningPage = () => (
 										onClick={() => window.scrollTo(0, 0)}
 										variant="primary"
 										className="blue-btn shadow"
-										style={{ marginTop: '30px' }}
+										style={{ marginTop: '20px' }}
 									>
 										PILLS2ME IN THE NEWS
 									</Button>
