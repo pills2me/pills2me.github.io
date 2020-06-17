@@ -20,6 +20,15 @@
 	color: #0084f4;
 }
 
+/* blue buttons for emphasis */
+.blue-btn {
+	background-color: #0084f4;
+	color: white;
+}
+.blue-btn:hover {
+	color: white;
+}
+
 /* general text input styling */
 .text-input {
 	margin: 5px;
@@ -234,7 +243,7 @@ body {
 
 /* logo in upper left corner */
 img.logo {
-	height: 81px;
+	height: 70px;
 	margin-top: 10px;
 }
 
@@ -441,6 +450,23 @@ img.icon {
 	font-size: 18px;
 	line-height: 25px;
 	margin-top: 10px;
+}
+
+/* carousel item caption */
+.carousel-caption {
+	width: 100%;
+	background-color: #3a3a3a;
+	left: 0%;
+	right: 0%;
+}
+
+/* link for carousel news item */
+.carousel-link {
+	color: white;
+}
+.carousel-link:hover {
+	text-decoration: underline;
+	color: white;
 }
 
 /********************* PATIENT/DRIVER/PHARMACY FORMS  ***********/
