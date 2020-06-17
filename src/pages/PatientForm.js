@@ -15,7 +15,9 @@ const userRefDrugs = dbRef.ref('drugs');
 const userRefPatients = dbRef.ref('patients');
 
 
-const ctForm = [];
+const ctform = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSev69qaNCRzJEmvH1QqRjd2H8IvtU4MwrTJN_-oo8v0pgAudg/formResponse";
+const nvform = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScoc-j9J5VG5NQKP2jbRgli7AWXgyyXdDAOJmBEzPbWjGdFCg/formResponse';
+const ilform = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSc3MTOI5bGRimteyewl14toig0FvwhvSrd16mwYr-M0DRlK8Q/formResponse';
 
 class PatientForm extends Component {
     constructor(props) {
@@ -43,7 +45,7 @@ class PatientForm extends Component {
             pharmStreet2: "",
             pharmZip: "",
             copay: false,
-            stateSelector: ""
+            formSelector: ''
 
         }
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -213,7 +215,7 @@ class PatientForm extends Component {
     }
 
     formHandler() {
-        if (this.state.stateSelector == "") {
+        if (this.state.formSelector == "") {
             return (
                 <div className="container column-dir center">
                     <h3 className="form-subheading center-text" >Please Select Your State</h3>
@@ -221,21 +223,21 @@ class PatientForm extends Component {
 											<Button
 												className="donation-btn"
 												variant="light"
-												onClick={() => this.setState({ stateSelector: "Connecticut"})}
+												onClick={() => this.setState({ formSelector: ctform})}
 											>
 												Connecticut
 											</Button>
 											<Button
 												className="donation-btn"
 												variant="light"
-												onClick={() => this.setState({ stateSelector: "Nevada"})}
+												onClick={() => this.setState({ formSelector: nvform})}
 											>
 												Nevada
 											</Button>
 											<Button
 												className="donation-btn"
 												variant="light"
-												onClick={() => this.setState({ stateSelector: "Illinois"})}
+												onClick={() => this.setState({ formSelector: ilform})}
 											>
 												Illinois
 											</Button>
@@ -378,7 +380,7 @@ class PatientForm extends Component {
                     <div className="pharm-background background-form container center column-dir after-heading">
                         <Jumbotron>
                             <h2 className="jumbotron-title comfortaa">Welcome Patients</h2>
-                            <Form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSev69qaNCRzJEmvH1QqRjd2H8IvtU4MwrTJN_-oo8v0pgAudg/formResponse" noValidate validated={this.state.validated} >
+                            <Form action={this.state.formSelector} noValidate validated={this.state.validated} >
                                 <h6 className="center-text" style={{marginBottom: '20px'}}>Our delivery service is 100% free of charge. We deliver your medications right to your doorstep. Our goal is to promote public health and social distancing practices to prevent further spread of coronavirus (COVID-19). </h6>
                                 <h6 className="center-text bold">We do not deliver controlled medications at this time</h6>
                                 {this.formHandler()}
