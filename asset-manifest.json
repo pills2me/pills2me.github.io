@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f407644.chunk.css",
-    "main.js": "/static/js/main.da019aa0.chunk.js",
-    "main.js.map": "/static/js/main.da019aa0.chunk.js.map",
+    "main.css": "/static/css/main.6bf61ff1.chunk.css",
+    "main.js": "/static/js/main.49ce8d86.chunk.js",
+    "main.js.map": "/static/js/main.49ce8d86.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.65457b84.js",
     "runtime-main.js.map": "/static/js/runtime-main.65457b84.js.map",
     "static/css/2.69121389.chunk.css": "/static/css/2.69121389.chunk.css",
-    "static/js/2.30a05135.chunk.js": "/static/js/2.30a05135.chunk.js",
-    "static/js/2.30a05135.chunk.js.map": "/static/js/2.30a05135.chunk.js.map",
+    "static/js/2.8b6a0f70.chunk.js": "/static/js/2.8b6a0f70.chunk.js",
+    "static/js/2.8b6a0f70.chunk.js.map": "/static/js/2.8b6a0f70.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1578c6654ab96abd26abd624e00ed77b.js": "/precache-manifest.1578c6654ab96abd26abd624e00ed77b.js",
+    "precache-manifest.f10a21d8989ab68b25666170be377b6b.js": "/precache-manifest.f10a21d8989ab68b25666170be377b6b.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/static/css/2.69121389.chunk.css.map",
-    "static/css/main.3f407644.chunk.css.map": "/static/css/main.3f407644.chunk.css.map",
-    "static/js/2.30a05135.chunk.js.LICENSE.txt": "/static/js/2.30a05135.chunk.js.LICENSE.txt",
+    "static/css/main.6bf61ff1.chunk.css.map": "/static/css/main.6bf61ff1.chunk.css.map",
+    "static/js/2.8b6a0f70.chunk.js.LICENSE.txt": "/static/js/2.8b6a0f70.chunk.js.LICENSE.txt",
     "static/media/Kaveh.jpeg": "/static/media/Kaveh.82a83d17.jpeg",
     "static/media/angela.jpeg": "/static/media/angela.59264022.jpeg",
     "static/media/anna.png": "/static/media/anna.5b17249a.png",
@@ -39,6 +39,7 @@
     "static/media/patients.jpeg": "/static/media/patients.4355181d.jpeg",
     "static/media/pharmacies.jpeg": "/static/media/pharmacies.ac231fe2.jpeg",
     "static/media/publichealthyale.png": "/static/media/publichealthyale.f23c0dc4.png",
+    "static/media/vesper.jpg": "/static/media/vesper.794ee0f1.jpg",
     "static/media/westhaven.png": "/static/media/westhaven.16506514.png",
     "static/media/white-screen.png": "/static/media/white-screen.93bcd7c5.png",
     "static/media/whitelogo_slogan.svg": "/static/media/whitelogo_slogan.54712070.svg",
@@ -47,8 +48,8 @@
   "entrypoints": [
     "static/js/runtime-main.65457b84.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.30a05135.chunk.js",
-    "static/css/main.3f407644.chunk.css",
-    "static/js/main.da019aa0.chunk.js"
+    "static/js/2.8b6a0f70.chunk.js",
+    "static/css/main.6bf61ff1.chunk.css",
+    "static/js/main.49ce8d86.chunk.js"
   ]
 }
