@@ -5,6 +5,7 @@ import '../style.css';
 
 import Header from '../components/Header';
 import DetailedFooter from '../components/DetailedFooter';
+import Company from '../components/Company';
 
 import Medicine from '../images/partner.jpg';
 
@@ -12,6 +13,7 @@ import ChapelSt from '../images/partners/chapelst.png';
 import WestHaven from '../images/partners/westhaven.png';
 import Berneys from '../images/partners/berneys.png';
 import Essential from '../images/partners/essential.png';
+import Vespar from '../images/partners/vesper.jpg';
 
 const Partner = () => (
 	<div>
@@ -59,57 +61,24 @@ const Partner = () => (
 				<hr className="colored-line" />
 				<Row>
 					<Col className="my-container column-dir between">
-						<img className="center-text partner-img" src={ChapelSt} />
-						<div>
-							<h3>
-								<a style={{ color: 'white' }} href="http://www.chapelstreetpharmacy.com/">
-									Chapel Street Pharmacy
-								</a>
-							</h3>
-							<h5>1245 Chapel St </h5>
-							<h5>New Haven, CT 06511</h5>
-						</div>
+						<Company src="http://www.chapelstreetpharmacy.com/" img={ChapelSt} />
 					</Col>
 					<Col className="my-container column-dir between">
-						<img className="center-text partner-img" src={WestHaven} />
-						<div>
-							<h3>
-								<a style={{ color: 'white' }} href="http://www.westhavenpharmacy.com/">
-									West Haven Pharmacy
-								</a>
-							</h3>
-							<h5>764, Campbell Ave, Unit A </h5>
-							<h5>West Haven, CT 06516</h5>
-						</div>
+						<Company src="http://www.westhavenpharmacy.com/" img={WestHaven} />
 					</Col>
 					{/* </Row>
                 <br></br>
                 <Row> */}
 					<Col className="my-container column-dir between">
-						<img className="center-text partner-img" src={Berneys} />
-						<div>
-							<h3>
-								<a style={{ color: 'white' }} href="http://www.berneysrx.com/">
-									Berneys Pharmacy
-								</a>
-							</h3>
-							<h5>615 Howard Avenue</h5>
-							<h5>New Haven, CT 06519</h5>
-						</div>
+						<Company src="http://www.berneysrx.com/" img={Berneys} />
+					</Col>
+				</Row>
+				<Row>
+					<Col className="my-container column-dir between">
+						<Company src="https://www.essentialsupply.org/" img={Essential} />
 					</Col>
 					<Col className="my-container column-dir between">
-						<img className="center-text partner-img" src={Essential} />
-						<div>
-							<h3>
-								<a style={{ color: 'white' }} href="https://www.essentialsupply.org/">
-									Essential Supply
-								</a>
-							</h3>
-							<h5>
-								Essential Supply is a student-led nonprofit founded in response to the COVID-19 crisis
-								to facilitate deliveries.{' '}
-							</h5>
-						</div>
+						<Company src="https://www.vesperrx.com/" img={Vespar} />
 					</Col>
 				</Row>
 			</div>

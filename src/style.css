@@ -55,6 +55,10 @@ body {
 	width: 100%;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* styling for jumbotrons */
 .jumbotron {
 	text-align: left;
