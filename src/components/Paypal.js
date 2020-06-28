@@ -62,6 +62,10 @@ function Paypal(props) {
 				</div>
 			) : (
 				<div>
+					<p style={{ fontSize: '12px' }}>
+						If there is a problem with the PayPal transactions, please try opening the page in an incognito
+						window
+					</p>
 					<div ref={(v) => (paypalRef = v)} />
 				</div>
 			)}
