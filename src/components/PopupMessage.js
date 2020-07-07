@@ -29,6 +29,7 @@ class PopupMessage extends React.Component {
 						&times;
 					</a>
 					<p className="popup-message">{this.props.message}</p>
+					{this.props.extras}
 				</Popup>
 			</div>
 		);

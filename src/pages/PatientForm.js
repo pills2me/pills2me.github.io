@@ -47,7 +47,8 @@ class PatientForm extends Component {
             pharmZip: "",
             copay: false,
             copayAmt: 0.01,
-            formSelector: ''
+            formSelector: '',
+            immunoCheck: false
 
         }
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -117,6 +118,9 @@ class PatientForm extends Component {
     }
     copayHandler = (event) => {
         this.setState({ copay: !this.state.copay });
+    }
+    immunoCheckHandler = (event) => {
+        this.setState({ immunoCheck: !this.state.immunoCheck });
     }
     copayAmtHandler = (event) => {
         this.setState({ copayAmt: event.target.value });
@@ -247,7 +251,7 @@ class PatientForm extends Component {
             if (Number(this.state.copayAmt)){
                 return (
                 <div className="container column-dir center">
-                    <h4 className="center-text">Please select a payment method for your copay</h4>
+                    <h4 className="center-text">Please select a payment method for your payment of ${this.state.copayAmt}</h4>
                     <Paypal donation={Number(this.state.copayAmt)} message="Thank you for your payment" />
                 </div>
                 
@@ -385,6 +389,13 @@ class PatientForm extends Component {
                 <Form.Check required  checked={!this.state.copay} onClick={() =>this.setState({ copay: false})} label="No" type="radio" />
                 {this.copayPaymentHandler()}
             </Form.Group>
+{/* 
+            <Form.Group controlId="immunoOld">
+            <Form.Label>Please select an option: </Form.Label>
+                <Form.Check required  checked={this.state.immunoCheck} onClick={() => this.setState({ immunoCheck: true })} label="I am immunocompromised, or I am older than 65 yrs old" type="radio" />
+                <Form.Check required  checked={!this.state.immunoCheck} onClick={() =>this.setState({ immunoCheck: false})} label="I am NOT immunocompromised, and I am younger than 65 yrs old" type="radio" />
+                {this.copayPaymentHandler()}
+            </Form.Group> */}
 
             <Form.Group controlId="notes">
                 <Form.Label>Additional Notes</Form.Label>

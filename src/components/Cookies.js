@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Popup from 'reactjs-popup';
+import { Button } from 'react-bootstrap';
 import { NONAME } from 'dns';
 
 class Cookies extends React.Component {
@@ -40,9 +41,20 @@ class Cookies extends React.Component {
 						&times;
 					</a>
 					<p className="cookies">{this.props.message}</p>
+					<Button variant="light" style={styles.acceptBtn} onClick={this.closeModal}>
+						ACCEPT
+					</Button>
 				</Popup>
 			</div>
 		);
 	}
 }
+
+const styles = {
+	acceptBtn: {
+		padding: '5px 10px 5px 10px',
+		fontSize: '8px',
+		width: '40%'
+	}
+};
 export default Cookies;
