@@ -72,14 +72,14 @@ const Partner = () => (
 					<Col className="my-container column-dir between">
 						<Company src="http://www.berneysrx.com/" img={Berneys} />
 					</Col>
-				</Row>
-				<Row>
-					<Col className="my-container column-dir between">
-						<Company src="https://www.essentialsupply.org/" img={Essential} />
-					</Col>
 					<Col className="my-container column-dir between">
 						<Company src="https://www.vesperrx.com/" img={Vespar} />
 					</Col>
+				</Row>
+				<Row>
+					{/* <Col className="my-container column-dir between">
+						<Company src="https://www.essentialsupply.org/" img={Essential} />
+					</Col> */}
 				</Row>
 			</div>
 
