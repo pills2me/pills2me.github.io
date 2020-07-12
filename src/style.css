@@ -456,6 +456,21 @@ img.icon {
 	margin-top: 10px;
 }
 
+/* numbers representing pills2me */
+.bythenumber {
+	font-size: 150px;
+	/* font-family: Comfortaa; */
+	color: #0084f4;
+}
+
+/* text to accompany the numbers ^ */
+.bythenumbers-text {
+	font-size: 20px;
+	color: #0084f4;
+	font-family: Comfortaa;
+	font-weight: 800;
+}
+
 /* carousel item caption */
 .carousel-caption {
 	width: 100%;
@@ -471,6 +486,42 @@ img.icon {
 .carousel-link:hover {
 	text-decoration: underline;
 	color: white;
+}
+
+/* testimonials on the home page */
+blockquote {
+	border: none;
+	/* margin-bottom: -30px; */
+	quotes: "\201C""\201D""\2018""\2019";
+	font-family: Comfortaa;
+	position: relative;
+}
+
+blockquote h3 {
+	font-size: 21px;
+}
+
+blockquote h3:before {
+	content: open-quote;
+	font-family: Comfortaa;
+	font-size: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+}
+blockquote h3:after {
+	content: close-quote;
+	font-family: Comfortaa;
+	font-size: 100px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: auto;
+}
+.quote {
+	padding: 50px;
+	/* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
 }
 
 /********************* PATIENT/DRIVER/PHARMACY FORMS  ***********/
@@ -523,7 +574,6 @@ h3.form-subheading {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	height: 100%;
 	width: 85%;
 	opacity: 1;
 }
@@ -659,6 +709,11 @@ h3.form-subheading {
 		width: 95%;
 	}
 
+	/****************** COOKIES *********************/
+	.cookies {
+		font-size: 8px;
+	}
+
 	/**************************** MOBILE HOME SCREEN PAGE ****************/
 	/* image in round buttons */
 	img.icon {
@@ -688,6 +743,16 @@ h3.form-subheading {
 		font-size: 25px;
 		line-height: 30px;
 		width: 100%;
+	}
+
+	/* numbers representing pills2me */
+	.bythenumber {
+		font-size: 80px;
+	}
+
+	/* text to accompany the numbers ^ */
+	.bythenumbers-text {
+		font-size: 10px;
 	}
 
 	/* carousel caption for mobile */

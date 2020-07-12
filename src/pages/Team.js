@@ -11,6 +11,7 @@ import Leo from '../images/team/leo.JPG';
 import Anna from '../images/team/anna.png';
 import Angela from '../images/team/angela.jpeg';
 import Hassaan from '../images/team/hassaan.jpg';
+import Jessica from '../images/team/jessica.jpeg';
 import Konstantine from '../images/team/konstantine.jpeg';
 import Fatema from '../images/team/fatema.jpeg';
 import Christina from '../images/team/christina.jpg';
@@ -77,11 +78,11 @@ const About = () => (
 							<h4>Co-Founder, CTO</h4>
 							<hr className="colored-line" />
 							<p>
-								Leo has experience in software development and is a medical student at the Warren
-								Alpert Medical School of Brown University. Leo was inspired to help all our beloved
-								patients during COVID-19, the elderly and vulnerable who cannot leave their homes to
-								receive their medicine. Leo is a cofounder of ePharmHub, which won the Thorne Prize at
-								Startup Yale 2020. Leo is founder and former President of the Yale Innovation and
+								Leo has experience in software development and is a medical student at the Warren Alpert
+								Medical School of Brown University. Leo was inspired to help all our beloved patients
+								during COVID-19, the elderly and vulnerable who cannot leave their homes to receive
+								their medicine. Leo is a cofounder of ePharmHub, which won the Thorne Prize at Startup
+								Yale 2020. Leo is founder and former President of the Yale Innovation and
 								Entreprenurship in Modern Health Care (IEMH), a graduate student group. Leo graduated
 								from Yale University with a Master of Public Health in Health Care Management. Leo
 								previously attended Brown University, where he graduated magna cum laude and Sigma Xi
@@ -94,7 +95,7 @@ const About = () => (
 					</Col>
 				</Row>
 				<Row className="team-row top-align">
-					<Col lg={4}>
+					<Col lg={6}>
 						<img className="person-img" src={Angela} />
 						<div className="person-info container column-dir center">
 							<h3 className="bold">Angela Yoo</h3>
@@ -116,7 +117,7 @@ const About = () => (
 						</div>
 					</Col>
 
-					<Col lg={4}>
+					<Col lg={6}>
 						<img className="person-img" src={Anna} />
 						<div className="person-info container column-dir center" style={{ alignContent: 'top' }}>
 							<h3 className="bold">Anna Zhang</h3>
@@ -137,7 +138,9 @@ const About = () => (
 							</a>
 						</div>
 					</Col>
-					<Col lg={4}>
+				</Row>
+				<Row className="team-row">
+					<Col lg={6}>
 						<img className="person-img" src={Hassaan} />
 						<div className="person-info container column-dir center">
 							<h3 className="bold">Hassaan Qadir</h3>
@@ -150,6 +153,31 @@ const About = () => (
 								focus on local issues. In leading a small, dynamic group tackling large problems, he has
 								come to appreciate the unique challenge of building something from the ground up, and he
 								plans to continue with such ventures after he graduates.
+							</p>
+							<a
+								className="shadow"
+								target="_blank"
+								href="https://www.linkedin.com/in/hassaan-qadir-2731891a5/"
+							>
+								<Button variant="light"> LinkedIn Profile</Button>
+							</a>
+						</div>
+					</Col>
+					<Col lg={6}>
+						<img className="person-img" src={Jessica} />
+						<div className="person-info container column-dir center">
+							<h3 className="bold">Jessica Schlotfeldt</h3>
+							<h4>Chicago Outreach Intern</h4>
+							<hr className="colored-line" />
+							<p>
+								Jessica is a student at the Midwestern University Chicago College of pharmacy. Jessica
+								is a soon to be pharmacist with a passion for public health and health inequity
+								resolution. She is proudly born and raised in the suburbs outside of Chicago and
+								considers the city and its communities her home. She is currently working at a Walgreens
+								COVID-19 test site and working to help communities disproportionately affected by the
+								virus. She has done research in clinical trial diversity and access to care issues
+								through the Novartis Institute for Biomedical Research and looks forward to pursuing
+								public health alongside her pharmacy career.
 							</p>
 							<a
 								className="shadow"

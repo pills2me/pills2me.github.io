@@ -89,6 +89,26 @@ const OpeningPage = () => (
 					</div>
 				</div>
 			</div>
+
+			{/**************** PILLS2ME BY THE NUMBERS ********************/}
+			{/* <div className="section" style={{ backgroundColor: '#e6e6e6' }}>
+				<Row>
+					<Col>
+						<h1 className="bythenumber">88</h1>
+						<h4 className="bythenumbers-text">Drivers</h4>
+					</Col>
+					<Col>
+						<h1 className="bythenumber">3</h1>
+						<h4 className="bythenumbers-text">Cities across the US</h4>
+					</Col>
+					<Col>
+						<h1 className="bythenumber">4</h1>
+						<h4 className="bythenumbers-text">Partner Pharmacies</h4>
+					</Col>
+				</Row>
+			</div> */}
+
+			{/**************** PILLS2ME IN THE NEWS ********************/}
 			<div className="section">
 				<h1 className="section-heading">Pills2Me in the News</h1>
 				<hr className="colored-line" />
@@ -164,6 +184,20 @@ const OpeningPage = () => (
 				</div>
 			</div>
 
+			{/**************** TESTIMONIALS ********************/}
+			{/* <div className="section" style={{ backgroundColor: '#e6e6e6' }}>
+				<blockquote>
+					<h3 className="quote" style={{ paddingBottom: '10px' }}>
+						Here is my testimonialHere is my testimonialHere is my testimonialHere is my testimonialHere is
+						my testimonialHere is my testimonialHere is my testimonialHere is my testimonialHere is my
+						testimonialHere is my testimonialHere is my testimonialHere is my testimonialHere is my
+						testimonialHere is my testimonialHere is my testimonialHere is my testimonial
+					</h3>
+					<p style={{ fontFamily: '-apple-system, BlinkMacSystemFont, sans-serif' }}>
+						- John Doe from Illinois
+					</p>
+				</blockquote>
+			</div> */}
 			<DetailedFooter />
 		</div>
 	</div>
