@@ -43,7 +43,7 @@ const OpeningPage = () => (
 							<Link to="/driver-form">
 								<div className="round-button container center column-dir">
 									<img className="icon" src={Driver} />
-									Volunteer to Drive
+									Drive for Pills2Me
 								</div>
 							</Link>
 						</Button>
