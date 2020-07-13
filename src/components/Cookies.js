@@ -32,6 +32,7 @@ class Cookies extends React.Component {
 
 	acceptedCookies() {
 		ReactPixel.grantConsent();
+		ReactPixel.pageView(); // For tracking page view
 	}
 
 	render() {
