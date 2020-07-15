@@ -5,13 +5,13 @@ import { NONAME } from 'dns';
 
 import ReactPixel from 'react-facebook-pixel';
 
-const advancedMatching = { em: 'some@email.com' }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
-const options = {
-	autoConfig: true, // set pixel's autoConfig
-	debug: false // enable logs
-};
-ReactPixel.init('676650016509645', advancedMatching, options);
-ReactPixel.revokeConsent();
+// const advancedMatching = { em: 'some@email.com' }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
+// const options = {
+// 	autoConfig: true, // set pixel's autoConfig
+// 	debug: false // enable logs
+// };
+// ReactPixel.init('676650016509645', advancedMatching, options);
+// ReactPixel.revokeConsent();
 // fbq('init', '676650016509645');
 
 class Cookies extends React.Component {
@@ -31,8 +31,8 @@ class Cookies extends React.Component {
 	}
 
 	acceptedCookies() {
-		ReactPixel.grantConsent();
-		ReactPixel.pageView(); // For tracking page view
+		// ReactPixel.grantConsent();
+		// ReactPixel.pageView(); // For tracking page view
 	}
 
 	render() {
