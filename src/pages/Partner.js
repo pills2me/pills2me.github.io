@@ -14,6 +14,10 @@ import WestHaven from '../images/partners/westhaven.png';
 import Berneys from '../images/partners/berneys.png';
 import Essential from '../images/partners/essential.png';
 import Vespar from '../images/partners/vesper.jpg';
+import Albertsons from "../images/partners/albertsons.png";
+import JewelOsco from "../images/partners/jewelosco.png";
+import Safeway from "../images/partners/safeway.png";
+import Vons from "../images/partners/vons.png";
 
 const Partner = () => (
 	<div>
@@ -80,6 +84,18 @@ const Partner = () => (
 					{/* <Col className="my-container column-dir between">
 						<Company src="https://www.essentialsupply.org/" img={Essential} />
 					</Col> */}
+					<Col className="my-container column-dir between">
+            					<Company src="http://www.albertsons.com" img={Albertsons} />
+          				</Col>
+          				<Col className="my-container column-dir between">
+            					<Company src="http://www.jewelosco.com/" img={JewelOsco} />
+          				</Col>
+          				<Col className="my-container column-dir between">
+            					<Company src="http://www.safeway.com" img={Safeway} />
+          				</Col>
+          				<Col className="my-container column-dir between">
+           					 <Company src="http://www.vons.com/" img={Vons} />
+          				</Col>
 				</Row>
 			</div>
 
