@@ -63,53 +63,53 @@ const Partner = () => (
 			</div>
 
 			<div className="section">
-        <h1 className="section-heading">Our Partners</h1>
-        <hr className="colored-line" />
-        <Row>
-          <Col className="my-container column-dir between">
-            <Company
-              src="http://www.chapelstreetpharmacy.com/"
-              img={ChapelSt}
-            />
-          </Col>
-          <Col className="my-container column-dir between">
-            <Company src="http://www.westhavenpharmacy.com/" img={WestHaven} />
-          </Col>
-          <Col className="my-container column-dir between">
-            <Company src="http://www.berneysrx.com/" img={Berneys} />
-          </Col>
-        </Row>
-        <Row>
-          <Col className="my-container column-dir between">
-            <Company src="https://lvscripts.com/" img={LVScripts} />
-          </Col>
-          <Col className="my-container column-dir between">
-            <Company img={CityCenter} />
-          </Col>
-          <Col className="my-container column-dir between">
-            <Company src="https://www.vesperrx.com/" img={Vespar} />
-          </Col>
-        </Row>
-        <h1 className="partner-heading">Official Pharmacy Partners</h1>
-        <hr className="colored-line" />
-        <Row>
-          {/* <Col className="my-container column-dir between">
+        			<h1 className="section-heading">Our Partners</h1>
+        			<hr className="colored-line" />
+        			<Row>
+          				<Col className="my-container column-dir between">
+           					<Company
+            					  src="http://www.chapelstreetpharmacy.com/"
+            					  img={ChapelSt}
+         					/>
+        				</Col>
+         				<Col className="my-container column-dir between">
+       						<Company src="http://www.westhavenpharmacy.com/" img={WestHaven} />
+          				</Col>
+          				<Col className="my-container column-dir between">
+            					<Company src="http://www.berneysrx.com/" img={Berneys} />
+          				</Col>
+        			</Row>
+        			<Row>
+          				<Col className="my-container column-dir between">
+            					<Company src="https://lvscripts.com/" img={LVScripts} />
+          				</Col>
+          				<Col className="my-container column-dir between">
+            					<Company img={CityCenter} />
+          				</Col>
+          				<Col className="my-container column-dir between">
+            					<Company src="https://www.vesperrx.com/" img={Vespar} />
+          				</Col>
+        			</Row>
+        			<h1 className="partner-heading">Official Pharmacy Partners</h1>
+        			<hr className="colored-line" />
+        			<Row>
+          				{/* <Col className="my-container column-dir between">
 						<Company src="https://www.essentialsupply.org/" img={Essential} />
 					</Col> */}
-          <Col className="my-container column-dir between">
-            <Company src="http://www.albertsons.com" img={Albertsons} />
-          </Col>
-          <Col className="my-container column-dir between">
-            <Company src="http://www.jewelosco.com/" img={JewelOsco} />
-          </Col>
-          <Col className="my-container column-dir between">
-            <Company src="http://www.safeway.com" img={Safeway} />
-          </Col>
-          <Col className="my-container column-dir between">
-            <Company src="http://www.vons.com/" img={Vons} />
-          </Col>
-        </Row>
-      </div>
+          				<Col className="my-container column-dir between">
+            					<Company src="http://www.albertsons.com" img={Albertsons} />
+          				</Col>
+          				<Col className="my-container column-dir between">
+            					<Company src="http://www.jewelosco.com/" img={JewelOsco} />
+          				</Col>
+          				<Col className="my-container column-dir between">
+            					<Company src="http://www.safeway.com" img={Safeway} />
+          				</Col>
+          				<Col className="my-container column-dir between">
+            					<Company src="http://www.vons.com/" img={Vons} />
+          				</Col>
+        			</Row>
+      			</div>
 
 			<DetailedFooter />
 		</div>
