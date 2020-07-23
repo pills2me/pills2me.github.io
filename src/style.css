@@ -591,6 +591,15 @@ h3.form-subheading {
 	height: 100%;
 }
 
+.partner-heading {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 60px;
+  margin-top: 60px;
+}
+
 /********************* DONATION PAGE  *************/
 
 /* image of donation jar */
