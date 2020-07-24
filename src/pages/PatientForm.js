@@ -20,6 +20,8 @@ const ctform = "https://docs.google.com/forms/u/0/d/e/1FAIpQLSev69qaNCRzJEmvH1Qq
 const nvform = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLScoc-j9J5VG5NQKP2jbRgli7AWXgyyXdDAOJmBEzPbWjGdFCg/formResponse';
 const ilform = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSc3MTOI5bGRimteyewl14toig0FvwhvSrd16mwYr-M0DRlK8Q/formResponse';
 
+const DELIVERY_FEE = 7.99
+
 class PatientForm extends Component {
     constructor(props) {
         super(props);
@@ -280,7 +282,7 @@ class PatientForm extends Component {
             let deliveryFee = 0
             let total = 0
             if (!this.state.immunoCheck) {
-                deliveryFee = 9
+                deliveryFee = DELIVERY_FEE
             }
             total = Number(this.state.copayAmt) + Number(this.state.tipAmt) + deliveryFee + 0
             if (total == 0 ) {
