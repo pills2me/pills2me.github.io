@@ -1,76 +1,78 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from "react";
 
 function Paypal(props) {
-	const [ paidFor, setPaidFor ] = useState(false);
-	const [ loaded, setLoaded ] = useState(false);
+  const [paidFor, setPaidFor] = useState(false);
+  const [loaded, setLoaded] = useState(false);
 
-	let paypalRef = useRef();
+  let paypalRef = useRef();
 
-	useEffect(() => {
-		const script = document.createElement('script');
-		script.src =
-			'https://www.paypal.com/sdk/js?client-id=AfRPgzQWR1ymjm8d3hjEiWCkDVZNhuv-Z-D1euhBthOyB8DiPNN5spAs3ieO9D5fTthqSamk9Uglb-2i';
-		script.addEventListener('load', () => setLoaded(true));
-		document.body.appendChild(script);
-		console.log('loaded? sure?');
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://www.paypal.com/sdk/js?client-id=AfRPgzQWR1ymjm8d3hjEiWCkDVZNhuv-Z-D1euhBthOyB8DiPNN5spAs3ieO9D5fTthqSamk9Uglb-2i";
+    script.addEventListener("load", () => setLoaded(true));
+    document.body.appendChild(script);
+    console.log("loaded? sure?");
 
-		if (loaded) {
-			console.log(props.donation);
+    if (loaded) {
+      console.log(props.donation);
 
-			setTimeout(() => {
-				window.paypal
-					.Buttons({
-						style: {
-							shape: 'rect',
-							color: 'blue',
-							layout: 'vertical',
-							label: 'paypal'
-						},
-						createOrder: (data, actions) => {
-							console.log('createOrder');
-							return actions.order.create({
-								purchase_units: [
-									{
-										amount: {
-											currency_code: 'USD',
-											value: props.donation
-										}
-									}
-								]
-							});
-						},
-						onApprove: (data, actions) => {
-							const order = actions.order.capture().then(function(details) {
-								console.log('Transaction completed by ' + details.payer.name.given_name);
-								setPaidFor(true);
-							});
-							console.log(order);
-							return order;
-						}
-					})
-					.render(paypalRef);
-			});
-		}
-	});
+      setTimeout(() => {
+        window.paypal
+          .Buttons({
+            style: {
+              shape: "rect",
+              color: "blue",
+              layout: "vertical",
+              label: "paypal"
+            },
+            createOrder: (data, actions) => {
+              console.log("createOrder");
+              return actions.order.create({
+                purchase_units: [
+                  {
+                    amount: {
+                      currency_code: "USD",
+                      value: props.donation
+                    }
+                  }
+                ]
+              });
+            },
+            onApprove: (data, actions) => {
+              const order = actions.order.capture().then(function(details) {
+                console.log(
+                  "Transaction completed by " + details.payer.name.given_name
+                );
+                setPaidFor(true);
+              });
+              console.log(order);
+              return order;
+            }
+          })
+          .render(paypalRef);
+      });
+    }
+  });
 
-	return (
-		<div>
-			{paidFor ? (
-				<div className="container column-dir center">
-					<h2 className="comfortaa center-text">Payment Complete!</h2>
-					<p>{props.message}</p>
-				</div>
-			) : (
-				<div>
-					<p style={{ fontSize: '12px' }}>
-						If there is a problem with the PayPal transactions, please try opening the page in an incognito
-						window
-					</p>
-					<div ref={(v) => (paypalRef = v)} />
-				</div>
-			)}
-		</div>
-	);
+  return (
+    <div>
+      {paidFor ? (
+        <div className="container column-dir center">
+          <h2 className="comfortaa center-text">Payment Complete!</h2>
+          <p>{props.message}</p>
+        </div>
+      ) : (
+        <div>
+          <p style={{ fontSize: "12px" }}>
+            If there is a problem with the PayPal transactions, please try
+            opening the page in an incognito window
+          </p>
+          <div ref={v => (paypalRef = v)} />
+        </div>
+      )}
+    </div>
+  );
 }
 export default Paypal;
 

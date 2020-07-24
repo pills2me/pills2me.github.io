@@ -1,594 +1,608 @@
 /************* GENERAL FORMATTING ***************/
 /* background with pharmacy image */
 .pharm-background {
-	max-width: 100%;
-	background-image: linear-gradient(rgba(109, 109, 109, 0.3), rgba(109, 109, 109, 0.3)), url("images/pharmacy.jpeg");
-	background-size: 200%;
-	background-repeat: no-repeat;
-	overflow: auto;
-	min-height: 100vh;
-	padding: 0px;
-	background-size: cover;
+  max-width: 100%;
+  background-image: linear-gradient(
+      rgba(109, 109, 109, 0.3),
+      rgba(109, 109, 109, 0.3)
+    ),
+    url("images/pharmacy.jpeg");
+  background-size: 200%;
+  background-repeat: no-repeat;
+  overflow: auto;
+  min-height: 100vh;
+  padding: 0px;
+  background-size: cover;
 }
 
 /* general button formatting */
 .btn {
-	padding: 15px 25px 15px 25px;
-	color: #0084f4;
+  padding: 15px 25px 15px 25px;
+  color: #0084f4;
 }
 .btn:hover {
-	color: #0084f4;
+  color: #0084f4;
 }
 
 /* blue buttons for emphasis */
 .blue-btn {
-	background-color: #0084f4;
-	color: white;
+  background-color: #0084f4;
+  color: white;
 }
 .blue-btn:hover {
-	color: white;
+  color: white;
 }
 
 /* general text input styling */
 .text-input {
-	margin: 5px;
-	margin-left: 30px;
+  margin: 5px;
+  margin-left: 30px;
 }
 
 /* button to go back */
 .back-btn {
-	padding: 5px;
-	width: 100%;
+  padding: 5px;
+  width: 100%;
 }
 
 /* body formatting (fonts, colors, no margin/padding) */
 body {
-	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-	width: 100%;
-	color: white;
-	background-image: linear-gradient(rgba(100, 100, 100, 0.85), rgba(100, 100, 100, 0.85)), url('images/logo-blue.png');
-	background: no-repeat top center fixed;
-	background-size: cover;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 100%;
+  color: white;
+  background-image: linear-gradient(
+      rgba(100, 100, 100, 0.85),
+      rgba(100, 100, 100, 0.85)
+    ),
+    url("images/logo-blue.png");
+  background: no-repeat top center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* styling for jumbotrons */
 .jumbotron {
-	text-align: left;
-	color: black;
-	padding: 40px;
-	margin: 10px;
-	width: 70%;
-	margin-bottom: 30px;
+  text-align: left;
+  color: black;
+  padding: 40px;
+  margin: 10px;
+  width: 70%;
+  margin-bottom: 30px;
 }
 
 /* black line under most headings */
 .colored-line {
-	color: color;
-	background-color: black;
-	height: 1;
-	width: 100%;
-	margin-bottom: 30px;
+  color: color;
+  background-color: black;
+  height: 1;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 /**************** SPECIFIC STYLING TOOLS ****************/
 /* add extra margins */
 .extra-margin {
-	margin-top: 50px;
-	margin-bottom: 10px;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 /* center align text */
 .center-text {
-	text-align: center;
-	width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 /* make a specific heading comfortaa font */
 .comfortaa {
-	font-family: Comfortaa;
+  font-family: Comfortaa;
 }
 
 /* adding shadows to the buttons */
 .shadow {
-	box-shadow: 5px 10px 10px #888888;
+  box-shadow: 5px 10px 10px #888888;
 }
 
 /* align text to left */
 .left-align {
-	text-align: left;
+  text-align: left;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+.flex-start {
+  justify-content: flex-start;
 }
 
 /* diy columns that will go on top of each other in mobile */
 .responsiveCols {
-	flex-direction: row;
+  flex-direction: row;
 }
 
 /* bold */
 .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 /* itaics */
 .italics {
-	font-style: italic;
+  font-style: italic;
 }
 
 /* make sure imgs are not huge and only take up designated space */
 .col-img {
-	width: 100%;
+  width: 100%;
 }
 
 /************** BACKGROUND VARIATION *************/
 .background-about {
-	background-position: 10%;
+  background-position: 10%;
 }
 .background-team {
-	background-position: 50%;
+  background-position: 50%;
 }
 .background-partner {
-	background-position: 40%;
+  background-position: 40%;
 }
 .background-donate {
-	background-position: 60%;
+  background-position: 60%;
 }
 .background-contact {
-	background-position: 80%;
+  background-position: 80%;
 }
 .background-news {
-	background-position: 70%;
+  background-position: 70%;
 }
 
 /*************** FLEXBOX  TOOLS ************/
 
 /* variants on containers */
 .my-container {
-	display: flex;
-	align-items: center;
-	align-content: space-around;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
 }
 
 .my-container-95 {
-	width: 95%;
+  width: 95%;
 }
 
 .container {
-	display: flex;
-	align-items: center;
-	align-content: space-around;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
 }
 
 /* different ways to justify content */
 .space {
-	justify-content: space-around;
+  justify-content: space-around;
 }
 
 .between {
-	justify-content: space-between;
+  justify-content: space-between;
 }
 
 .center {
-	justify-content: center;
+  justify-content: center;
 }
 
 /* set flex direction  */
 .column-dir {
-	flex-direction: column;
+  flex-direction: column;
 }
 
 .row-dir {
-	flex-direction: row;
+  flex-direction: row;
 }
 
 /* align items  */
 .top-align {
-	align-items: start;
+  align-items: start;
 }
 
 .stretch {
-	align-items: stretch;
+  align-items: stretch;
 }
 
 /************* POP UP MESSAGE *************/
 /* the container for the message */
 .popup-content {
-	width: 50%;
+  width: 50%;
 }
 
 /* text formatting of message */
 .popup-message {
-	color: black;
-	padding: 40px;
-	font-size: 25px;
+  color: black;
+  padding: 40px;
+  font-size: 25px;
 }
 
 /* closing button */
 .close {
-	color: black;
-	margin: 10px;
-	height: 10px;
+  color: black;
+  margin: 10px;
+  height: 10px;
 }
 
 /* cookies pop up message */
 .cookies {
-	font-size: 12px;
-	padding: 2px;
-	margin-bottom: 0px;
+  font-size: 12px;
+  padding: 2px;
+  margin-bottom: 0px;
 }
 
 /************** NAV BAR  ********************/
 /* general nav bar layout / padding */
 .navbar {
-	padding: 20px 30px 18px 50px;
-	color: white;
+  padding: 20px 30px 18px 50px;
+  color: white;
 }
 
 /* general header (e.g. coloring, position ) */
 .header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: transparent;
-	z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
 }
 
 /* padding to make sure everything starts below the nav bar */
 .after-heading {
-	padding-top: 92px;
-	position: relative;
+  padding-top: 92px;
+  position: relative;
 }
 
 /* logo in upper left corner */
 img.logo {
-	height: 70px;
-	margin-top: 10px;
+  height: 70px;
+  margin-top: 10px;
 }
 
 /* link to home from the logo */
 a.logo:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /* button to toggle menu in mobile */
 .navbar-toggler {
-	border-color: white;
-	border-width: 3px;
-	border-radius: 5px;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 5px;
 }
 
 /* links in nav bar */
 .links {
-	height: auto;
-	display: flex;
-	float: right;
-	text-decoration: none;
+  height: auto;
+  display: flex;
+  float: right;
+  text-decoration: none;
 }
 
 /* list of nav items */
 li.nav {
-	padding: 0 15px;
+  padding: 0 15px;
 }
 
 /* colors and fonts of nav links */
 .navbar-dark .navbar-nav .nav-link {
-	font-size: 17px;
-	color: white;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 17px;
-	line-height: 22px;
+  font-size: 17px;
+  color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 22px;
 }
 .navbar-dark .navbar-toggler {
-	border-color: white;
-	border-width: 2px;
+  border-color: white;
+  border-width: 2px;
 }
 
 /******************** FOOTER *******************/
 
 /* footer with basic information about contacting */
 .footer {
-	margin-top: auto;
-	bottom: 0;
-	width: 100%;
-	height: 50px;
-	font-size: 15px;
-	text-align: center;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  font-size: 15px;
+  text-align: center;
 }
 
 /* complex footer with many links and things */
 .detailed-footer {
-	margin-top: auto;
-	bottom: 0;
-	width: 100%;
-	height: auto;
-	font-size: 15px;
-	padding: 20px;
-	text-align: center;
-	background-color: #3a3a3a;
+  margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+  background-color: #3a3a3a;
 }
 
 /* links that bring user to forms */
 .footer-link {
-	color: #f2f2f2;
-	text-decoration: underline;
+  color: #f2f2f2;
+  text-decoration: underline;
 }
 .footer-link:hover {
-	color: white;
+  color: white;
 }
 
 /* social media icons*/
 .fa {
-	padding: 15px;
+  padding: 15px;
 }
 .fa:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 /***************** TITLE SECTION W/ IMAGE BACKGROUND FOR EACH PAGE ***********/
 
 /* the box for all text in title */
 .overlay-text-box {
-	width: 80%;
-	height: 500px;
+  width: 80%;
+  height: 500px;
 }
 
 /* page title text */
 .overlay-text {
-	font-size: 50px;
-	font-family: Comfortaa;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 54px;
-	line-height: 60px;
+  font-size: 50px;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 60px;
 }
 
 /* description of the page content */
 .overlay-description {
-	font-style: normal;
-	font-weight: 500;
-	font-size: 30px;
-	line-height: 33px;
-	margin-top: 18px;
-	margin-bottom: 18px;
-	width: 70%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 33px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  width: 70%;
 }
 
 /**************** SECTIONS WITH TEXT/INFORMATION ON DIFFERENT PAGES ***********/
 
 /* general padding, spacing, and colors */
 .section {
-	width: 100%;
-	padding: 5%;
-	padding-left: 12%;
-	padding-right: 12%;
-	background-color: white;
-	color: black;
+  width: 100%;
+  padding: 5%;
+  padding-left: 12%;
+  padding-right: 12%;
+  background-color: white;
+  color: black;
 }
 
 /* headings of each section */
 .section-heading {
-	font-family: Comfortaa;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 54px;
-	line-height: 60px;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 60px;
 }
 
 /* text within a section */
 .section-text {
-	text-align: left;
-	font-size: 18px;
-	margin-top: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
+  text-align: left;
+  font-size: 18px;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 /* links in a section paragraph */
 .section-link {
-	color: #575757;
-	text-decoration: underline;
+  color: #575757;
+  text-decoration: underline;
 }
 
 .section-link:hover {
-	color: black;
+  color: black;
 }
 
 /************ HOME PAGE / OPENING PAGE ***************/
 
 /* setting min-height */
 .homescreen {
-	min-height: 590px;
+  min-height: 590px;
 }
 
 /* labels below the circular buttons on the home page */
 .button-labels {
-	font-size: 20px;
-	width: 30%;
+  font-size: 20px;
+  width: 30%;
 }
 
 /* the circular buttons for drivers/patients */
 .round-button {
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
-	background-color: white;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 /* images in the round buttons */
 img.icon {
-	height: 90px;
+  height: 90px;
 }
 
 /* text on homepage */
 .opening-text {
-	padding-top: 20px;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 36px;
-	line-height: 43px;
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
 }
 
 /* what we offer boxes for text */
 .blue-border-box {
-	margin-left: 20px;
-	margin-right: 20px;
-	padding: 25px;
-	border-style: solid;
-	border-color: #0084f4;
-	border-radius: 15px;
-	border-width: 2px;
-	width: 45%;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 25px;
+  border-style: solid;
+  border-color: #0084f4;
+  border-radius: 15px;
+  border-width: 2px;
+  width: 45%;
 }
 
 /* list items (li) in what we offer */
 .offerList {
-	font-style: normal;
-	font-weight: normal;
-	font-size: 18px;
-	line-height: 25px;
-	margin-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 10px;
 }
 
 /* numbers representing pills2me */
 .bythenumber {
-	font-size: 150px;
-	/* font-family: Comfortaa; */
-	color: #0084f4;
+  font-size: 150px;
+  /* font-family: Comfortaa; */
+  color: #0084f4;
 }
 
 /* text to accompany the numbers ^ */
 .bythenumbers-text {
-	font-size: 20px;
-	color: #0084f4;
-	font-family: Comfortaa;
-	font-weight: 800;
+  font-size: 20px;
+  color: #0084f4;
+  font-family: Comfortaa;
+  font-weight: 800;
 }
 
 /* carousel item caption */
 .carousel-caption {
-	width: 100%;
-	background-color: #3a3a3a;
-	left: 0%;
-	right: 0%;
+  width: 100%;
+  background-color: #3a3a3a;
+  left: 0%;
+  right: 0%;
 }
 
 /* link for carousel news item */
 .carousel-link {
-	color: white;
+  color: white;
 }
 .carousel-link:hover {
-	text-decoration: underline;
-	color: white;
+  text-decoration: underline;
+  color: white;
 }
 
 /* testimonials on the home page */
 blockquote {
-	border: none;
-	/* margin-bottom: -30px; */
-	quotes: "\201C""\201D""\2018""\2019";
-	font-family: Comfortaa;
-	position: relative;
+  border: none;
+  /* margin-bottom: -30px; */
+  quotes: "\201C""\201D""\2018""\2019";
+  font-family: Comfortaa;
+  position: relative;
 }
 
 blockquote h3 {
-	font-size: 21px;
+  font-size: 21px;
 }
 
 blockquote h3:before {
-	content: open-quote;
-	font-family: Comfortaa;
-	font-size: 100px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 20px;
+  content: open-quote;
+  font-family: Comfortaa;
+  font-size: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px;
 }
 blockquote h3:after {
-	content: close-quote;
-	font-family: Comfortaa;
-	font-size: 100px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	height: auto;
+  content: close-quote;
+  font-family: Comfortaa;
+  font-size: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
 }
 .quote {
-	padding: 50px;
-	/* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  padding: 50px;
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
 }
 
 /********************* PATIENT/DRIVER/PHARMACY FORMS  ***********/
 /* title of form */
 .jumbotron-title {
-	text-align: center;
-	width: 100%;
+  text-align: center;
+  width: 100%;
 }
 
 /* subheadings on the forms */
 h3.form-subheading {
-	width: 100%;
-	text-decoration: underline;
-	font-family: Comfortaa;
-	margin-top: 20px;
+  width: 100%;
+  text-decoration: underline;
+  font-family: Comfortaa;
+  margin-top: 20px;
 }
 
 .form-error {
-	font-size: 12px;
-	color: red;
+  font-size: 12px;
+  color: red;
 }
 
 /*********************** SUBMITTED PAGE *******************/
 .submitted {
-	text-align: center;
-	width: 100%;
-	font-size: 28px;
-	margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 /********************** OUR MISSION / ABOUT PAGE  **************/
 
 /* how to get involved subsections */
 .subsection {
-	margin-top: 30px;
-	margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 /********************** MEET THE TEAM PAGE  ****************/
 
 /* team member image */
 .person-img {
-	height: 200px;
-	margin-bottom: 20px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 /* description name and title for each team member */
 .person-info {
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 85%;
-	opacity: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 85%;
+  opacity: 1;
 }
 
 /* each row of team members */
 .team-row {
-	padding-top: 50px;
+  padding-top: 50px;
 }
 
 /********************** PARTNER WITH US PAGE ************************/
 
 /* numbered list of benefits to partnering */
 .benefits {
-	align-items: baseline;
-	height: 100%;
+  align-items: baseline;
+  height: 100%;
 }
 
 .partner-heading {
@@ -604,21 +618,21 @@ h3.form-subheading {
 
 /* image of donation jar */
 .donate-img {
-	max-width: 100%;
-	height: 300px;
-	margin-bottom: 50px;
+  max-width: 100%;
+  height: 300px;
+  margin-bottom: 50px;
 }
 
 /* buttons with the donation amounts */
 .donation-btn {
-	margin: 15px;
+  margin: 15px;
 }
 
 /* large jumbotron for donating */
 .donations-jumbotron {
-	width: 80%;
-	min-height: 90%;
-	margin-top: 0px;
+  width: 80%;
+  min-height: 90%;
+  margin-top: 0px;
 }
 
 /****************** CONTACT US PAGE ************************/
@@ -627,26 +641,26 @@ h3.form-subheading {
 
 /* pictures above articles */
 .news-img {
-	max-width: 100%;
-	height: 300px;
+  max-width: 100%;
+  height: 300px;
 }
 
 /* box / col with news articles */
 .news-box {
-	padding: 40px 70px 40px 70px;
+  padding: 40px 70px 40px 70px;
 }
 
 /* news article names / headings */
 .news-heading {
-	font-size: 30px;
-	font-weight: bold;
-	margin-top: 40px;
-	margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 /* information about the article */
 .news-info {
-	font-size: 20px;
+  font-size: 20px;
 }
 
 /************************************************************************/
@@ -654,170 +668,170 @@ h3.form-subheading {
 /************************************************************************/
 
 @media only screen and (max-width: 768px) {
-	/**************** MOBILE GENERAL FORMATTING ************************/
+  /**************** MOBILE GENERAL FORMATTING ************************/
 
-	/* general text input field */
-	.text-input {
-		margin-left: 10px;
-	}
+  /* general text input field */
+  .text-input {
+    margin-left: 10px;
+  }
 
-	/* diy responsive columns */
-	.responsiveCols {
-		flex-direction: column;
-	}
+  /* diy responsive columns */
+  .responsiveCols {
+    flex-direction: column;
+  }
 
-	.jumbotron {
-		width: 95%;
-	}
+  .jumbotron {
+    width: 95%;
+  }
 
-	.extra-margin {
-		margin-top: 5px;
-	}
-	/**************************** MOBILE TITLE OVERLAYS *********************/
+  .extra-margin {
+    margin-top: 5px;
+  }
+  /**************************** MOBILE TITLE OVERLAYS *********************/
 
-	.overlay-text-box {
-		min-height: fit-content;
-		padding-top: 40px;
-		padding-bottom: 40px;
-		width: 100%;
-	}
-	.overlay-text {
-		font-size: 40px;
-	}
-	.overlay-description {
-		font-size: 20px;
-		line-height: initial;
-	}
+  .overlay-text-box {
+    min-height: fit-content;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .overlay-text {
+    font-size: 40px;
+  }
+  .overlay-description {
+    font-size: 20px;
+    line-height: initial;
+  }
 
-	/*************************** MOBILE SECTIONS **************************/
-	.section-heading {
-		font-size: 40px;
-		margin-top: 20px;
-	}
+  /*************************** MOBILE SECTIONS **************************/
+  .section-heading {
+    font-size: 40px;
+    margin-top: 20px;
+  }
 
-	.section {
-		padding: 5%;
-	}
+  .section {
+    padding: 5%;
+  }
 
-	/***************************** MOBILE HEADER *********************/
-	img.logo {
-		height: 60px;
-	}
+  /***************************** MOBILE HEADER *********************/
+  img.logo {
+    height: 60px;
+  }
 
-	.after-heading {
-		padding-top: 80px;
-	}
+  .after-heading {
+    padding-top: 80px;
+  }
 
-	/************************** MOBILE FOOTER ************************/
-	.footer {
-		font-size: 10px;
-	}
+  /************************** MOBILE FOOTER ************************/
+  .footer {
+    font-size: 10px;
+  }
 
-	/*************************** MOBILE POP UP MESSAGE *****************/
-	.popup-content {
-		width: 95%;
-	}
+  /*************************** MOBILE POP UP MESSAGE *****************/
+  .popup-content {
+    width: 95%;
+  }
 
-	/****************** COOKIES *********************/
-	.cookies {
-		font-size: 8px;
-	}
+  /****************** COOKIES *********************/
+  .cookies {
+    font-size: 8px;
+  }
 
-	/**************************** MOBILE HOME SCREEN PAGE ****************/
-	/* image in round buttons */
-	img.icon {
-		height: 40px;
-	}
+  /**************************** MOBILE HOME SCREEN PAGE ****************/
+  /* image in round buttons */
+  img.icon {
+    height: 40px;
+  }
 
-	/* boxes for what we offer */
-	.blue-border-box {
-		width: 100%;
+  /* boxes for what we offer */
+  .blue-border-box {
+    width: 100%;
 
-		margin: 0px;
-		margin-top: 20px;
-	}
+    margin: 0px;
+    margin-top: 20px;
+  }
 
-	/* round buttons for patients/drivers on home */
-	.round-button {
-		height: 130px;
-		width: 130px;
-	}
-	.button-labels {
-		font-size: 14px;
-	}
+  /* round buttons for patients/drivers on home */
+  .round-button {
+    height: 130px;
+    width: 130px;
+  }
+  .button-labels {
+    font-size: 14px;
+  }
 
-	/* text description */
-	.opening-text {
-		margin: 5px;
-		font-size: 25px;
-		line-height: 30px;
-		width: 100%;
-	}
+  /* text description */
+  .opening-text {
+    margin: 5px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 100%;
+  }
 
-	/* numbers representing pills2me */
-	.bythenumber {
-		font-size: 80px;
-	}
+  /* numbers representing pills2me */
+  .bythenumber {
+    font-size: 80px;
+  }
 
-	/* text to accompany the numbers ^ */
-	.bythenumbers-text {
-		font-size: 10px;
-	}
+  /* text to accompany the numbers ^ */
+  .bythenumbers-text {
+    font-size: 10px;
+  }
 
-	/* carousel caption for mobile */
-	.carousel-caption {
-		bottom: 5px;
-		font-size: 10px;
-	}
+  /* carousel caption for mobile */
+  .carousel-caption {
+    bottom: 5px;
+    font-size: 10px;
+  }
 
-	/****************************** MOBILE FORMS PAGES **********************/
-	/* h3 form headings */
-	.form-subheading {
-		font-size: 20px;
-	}
+  /****************************** MOBILE FORMS PAGES **********************/
+  /* h3 form headings */
+  .form-subheading {
+    font-size: 20px;
+  }
 
-	/****************************** MOBILE ABOUT / OUR MISSION PAGE *************/
-	.instructions {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
+  /****************************** MOBILE ABOUT / OUR MISSION PAGE *************/
+  .instructions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-	/****************************** MOBILE MEET THE TEAM PAGE *****************/
-	/* team photos */
-	.person-img {
-		margin-top: 50px;
-	}
+  /****************************** MOBILE MEET THE TEAM PAGE *****************/
+  /* team photos */
+  .person-img {
+    margin-top: 50px;
+  }
 
-	.team-row {
-		padding-top: 0px;
-	}
+  .team-row {
+    padding-top: 0px;
+  }
 
-	/****************************** MOBILE NEWS PAGE **********************/
-	.news-heading {
-		font-size: 20px;
-	}
-	.news-info {
-		font-size: 15px;
-	}
-	.news-img {
-		height: auto;
-	}
+  /****************************** MOBILE NEWS PAGE **********************/
+  .news-heading {
+    font-size: 20px;
+  }
+  .news-info {
+    font-size: 15px;
+  }
+  .news-img {
+    height: auto;
+  }
 
-	/***************************** MOBILE PARTNER WITH US PAGE ***************/
-	/* section of benefits of partnering with us */
-	.benefits {
-		height: auto;
-		margin-bottom: 20px;
-	}
+  /***************************** MOBILE PARTNER WITH US PAGE ***************/
+  /* section of benefits of partnering with us */
+  .benefits {
+    height: auto;
+    margin-bottom: 20px;
+  }
 
-	.partner-img {
-		margin-top: 30px;
-	}
+  .partner-img {
+    margin-top: 30px;
+  }
 
-	/******************************* MOBILE DONATIONS PAGE *********************/
-	.donations-jumbotron {
-		width: 90%;
-		padding-left: 5px;
-		padding-right: 5px;
-	}
+  /******************************* MOBILE DONATIONS PAGE *********************/
+  .donations-jumbotron {
+    width: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 }

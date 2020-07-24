@@ -46,9 +46,13 @@ class PatientForm extends Component {
             pharmStreet2: "",
             pharmZip: "",
             copay: false,
-            copayAmt: 0.01,
+            copayAmt: 0.00,
             formSelector: '',
-            immunoCheck: false
+            immunoCheck: true, 
+            paymentsEntered: false,
+            paymentsComplete: false,
+            tipAmt: 0.00,
+            totalCost: 0.00
 
         }
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -124,6 +128,9 @@ class PatientForm extends Component {
     }
     copayAmtHandler = (event) => {
         this.setState({ copayAmt: event.target.value });
+    }
+    tipAmtHandler = (event) => {
+        this.setState({ tipAmt: event.target.value });
     }
 
     handleSubmit(e) {
@@ -238,12 +245,15 @@ class PatientForm extends Component {
 											</InputGroup>
                          
                     </Form.Group>
-                    {this.copayPaypal()}
                 </div>
                 
                 
             );
         }
+    }
+
+    completePaymentHandler() {
+        this.setState({paymentComplete: true})
     }
 
     copayPaypal() {
@@ -263,39 +273,119 @@ class PatientForm extends Component {
         }
     }
 
-    formHandler() {
-        if (this.state.formSelector == "") {
-            return (
+    goToTwo() {
+        console.log(this.state.formSelector)
+        
+        if (this.state.formSelector != ""){
+            let deliveryFee = 0
+            let total = 0
+            if (!this.state.immunoCheck) {
+                deliveryFee = 9
+            }
+            total = Number(this.state.copayAmt) + Number(this.state.tipAmt) + deliveryFee + 0
+            if (total == 0 ) {
+                this.setState({paymentsEntered: true, paymentsComplete: true})
+            } else {
+                this.setState({paymentsEntered: true, 
+                    totalCost: total})
+            }
+            
+        } 
+    }
+
+    
+
+    pageOne() {
+        return (
+            <div className="container column-dir center">
+                <h3 className="form-subheading center-text" >Please Select Your State</h3>
+                <div>
+                                        <Button
+                                            className="donation-btn"
+                                            variant="light"
+                                            onClick={() => this.setState({ formSelector: ctform})}
+                                        >
+                                            Connecticut
+                                        </Button>
+                                        <Button
+                                            className="donation-btn"
+                                            variant="light"
+                                            onClick={() => this.setState({ formSelector: nvform})}
+                                        >
+                                            Nevada
+                                        </Button>
+                                        <Button
+                                            className="donation-btn"
+                                            variant="light"
+                                            onClick={() => this.setState({ formSelector: ilform})}
+                                        >
+                                            Illinois
+                                        </Button>
+                                    </div>
+                <h3 className="form-subheading center-text" >Do you have a copay?</h3>
+                <div className="my-container space">
+                    <Form.Check required inline checked={this.state.copay} onClick={() => this.setState({ copay: true })} label="Yes" type="radio" />
+                    <Form.Check required inline checked={!this.state.copay} onClick={() =>this.setState({ copay: false})} label="No" type="radio" />
+                </div>
+                {this.copayPaymentHandler()}
+                <h3 className="form-subheading center-text" >Are you over 65 years old or immunocompromised?</h3>
+                <div className="my-container space">
+                    <Form.Check required inline checked={this.state.immunoCheck} onClick={() => this.setState({ immunoCheck: true })} label="Yes" type="radio" />
+                    <Form.Check required inline checked={!this.state.immunoCheck} onClick={() =>this.setState({ immunoCheck: false})} label="No" type="radio" />
+                </div>
+                <h3 className="form-subheading center-text" >How much would you like to tip your driver?</h3>
+                <InputGroup className="mb-2" style={{width: '40%'}}>
+                    <InputGroup.Prepend>
+                        <InputGroup.Text>$</InputGroup.Text>
+                    </InputGroup.Prepend>
+                    <Form.Control name="entry.712556072"  type="text" placeholder="ex. $2, $5, 0" onChange={this.tipAmtHandler}/>
+                </InputGroup>
+                <div className="container flex-end">
+                    <Button className="blue-btn" onClick={() => this.goToTwo()}>Next</Button>
+                </div>
+            </div>
+
+            
+        );
+    }
+
+    pageTwo() {
+
+        return(
+            <div className="container column-dir center">
+                <div className="container flex-start">
+                    <Button variant="light" onClick={() => this.setState({paymentsEntered: false})}>Back</Button>
+                </div>
                 <div className="container column-dir center">
-                    <h3 className="form-subheading center-text" >Please Select Your State</h3>
-                    <div>
-											<Button
-												className="donation-btn"
-												variant="light"
-												onClick={() => this.setState({ formSelector: ctform})}
-											>
-												Connecticut
-											</Button>
-											<Button
-												className="donation-btn"
-												variant="light"
-												onClick={() => this.setState({ formSelector: nvform})}
-											>
-												Nevada
-											</Button>
-											<Button
-												className="donation-btn"
-												variant="light"
-												onClick={() => this.setState({ formSelector: ilform})}
-											>
-												Illinois
-											</Button>
-										</div>
+                    <h4 className="center-text">Please select a payment method for your payment of ${this.state.totalCost}</h4>
+                    <Paypal donation={this.state.totalCost} message="Thank you for your payment"/>
+                </div>
+                <div className="container flex-end">
+                    <Button className="blue-btn" onClick={() => this.setState({paymentsComplete: true})}>Next</Button>
+                </div>
+            </div>
+        );
+    }
+
+    formHandler() {
+        if (!this.state.paymentsEntered) {
+            return (
+                <div>
+                    {this.pageOne()}
+                </div>
+            );
+        } else if (!this.state.paymentsComplete) {
+            return (
+                <div>
+                    {this.pageTwo()}
                 </div>
             );
         } else {
             return (
             <div>
+                <div className="container flex-start">
+                    <Button variant="light" onClick={() => this.setState({paymentsComplete: false, paymentsEntered: false})}>Back</Button>
+                </div>
                 <h3 className="form-subheading">Personal Information</h3>
             <Form.Row>
                 <Form.Group as={Col} controlId="firstName">
@@ -382,13 +472,6 @@ class PatientForm extends Component {
                     <Form.Control name="entry.501020162" required onChange={this.pharmZipHandler} type="text" placeholder="Zip/Postal Code" />
                 </Form.Group>
             </Form.Row>
-            <Form.Group controlId="copay">
-                <Form.Label>Does your prescription have a copay? </Form.Label>
-                {/* <Form.Control name="entry.712556072" required  type="text" placeholder="Yes or No" /> */}
-                <Form.Check required  checked={this.state.copay} onClick={() => this.setState({ copay: true })} label="Yes" type="radio" />
-                <Form.Check required  checked={!this.state.copay} onClick={() =>this.setState({ copay: false})} label="No" type="radio" />
-                {this.copayPaymentHandler()}
-            </Form.Group>
 {/* 
             <Form.Group controlId="immunoOld">
             <Form.Label>Please select an option: </Form.Label>
