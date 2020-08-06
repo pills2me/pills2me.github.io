@@ -360,8 +360,8 @@ class DriverForm extends Component {
 						<h3 className="form-subheading">Disclaimer</h3>
 						<Form.Text>Terms and Conditions: </Form.Text>
 						<Form.Text>
-							As a volunteer driver, I attest that I have an active car insurance policy and Pill2Me is
-							not liable for any accidents that might occur while carrying out volunteer activities. I
+							As a Pills2Me driver, I attest that I have an active car insurance policy and Pill2Me is
+							not liable for any accidents that might occur while driving for Pills2Me. I
 							will follow the CDC guidelines on Covid-19 prevention and allow and practice social
 							distancing at all times while interacting with the patients and at the pharmacy.{' '}
 						</Form.Text>
