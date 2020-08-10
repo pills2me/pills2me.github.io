@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.b76d8dc4.chunk.css",
-    "main.js": "/static/js/main.d59fd8b1.chunk.js",
-    "main.js.map": "/static/js/main.d59fd8b1.chunk.js.map",
+    "main.js": "/static/js/main.4db33d05.chunk.js",
+    "main.js.map": "/static/js/main.4db33d05.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.65457b84.js",
     "runtime-main.js.map": "/static/js/runtime-main.65457b84.js.map",
     "static/css/2.69121389.chunk.css": "/static/css/2.69121389.chunk.css",
-    "static/js/2.ca42746d.chunk.js": "/static/js/2.ca42746d.chunk.js",
-    "static/js/2.ca42746d.chunk.js.map": "/static/js/2.ca42746d.chunk.js.map",
+    "static/js/2.3feab4bf.chunk.js": "/static/js/2.3feab4bf.chunk.js",
+    "static/js/2.3feab4bf.chunk.js.map": "/static/js/2.3feab4bf.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.aeeaf862a61d476974f727a4feac45c7.js": "/precache-manifest.aeeaf862a61d476974f727a4feac45c7.js",
+    "precache-manifest.f1dd9168ffd8dd961d6da24d721512ef.js": "/precache-manifest.f1dd9168ffd8dd961d6da24d721512ef.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/static/css/2.69121389.chunk.css.map",
     "static/css/main.b76d8dc4.chunk.css.map": "/static/css/main.b76d8dc4.chunk.css.map",
-    "static/js/2.ca42746d.chunk.js.LICENSE.txt": "/static/js/2.ca42746d.chunk.js.LICENSE.txt",
+    "static/js/2.3feab4bf.chunk.js.LICENSE.txt": "/static/js/2.3feab4bf.chunk.js.LICENSE.txt",
     "static/media/Kaveh.jpeg": "/static/media/Kaveh.82a83d17.jpeg",
     "static/media/albertsons.png": "/static/media/albertsons.112e20e8.png",
     "static/media/angela.jpeg": "/static/media/angela.59264022.jpeg",
@@ -38,7 +38,9 @@
     "static/media/leslie.jpg": "/static/media/leslie.ad0714c8.jpg",
     "static/media/style.css": "/static/media/pharmacy.d8baeb5d.jpeg",
     "static/media/medicine.jpeg": "/static/media/medicine.d5e5d2c0.jpeg",
+    "static/media/meriden.PNG": "/static/media/meriden.61ae72f9.PNG",
     "static/media/nbc-ct.png": "/static/media/nbc-ct.b18eb983.png",
+    "static/media/newbritain.PNG": "/static/media/newbritain.90496e51.PNG",
     "static/media/partner.jpg": "/static/media/partner.51e08ac4.jpg",
     "static/media/patient.png": "/static/media/patient.d69688c4.png",
     "static/media/patients.jpeg": "/static/media/patients.4355181d.jpeg",
@@ -55,8 +57,8 @@
   "entrypoints": [
     "static/js/runtime-main.65457b84.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.ca42746d.chunk.js",
+    "static/js/2.3feab4bf.chunk.js",
     "static/css/main.b76d8dc4.chunk.css",
-    "static/js/main.d59fd8b1.chunk.js"
+    "static/js/main.4db33d05.chunk.js"
   ]
 }
