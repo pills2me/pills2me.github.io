@@ -56,84 +56,85 @@ class PatientForm extends Component {
       paymentsEntered: false,
       paymentsComplete: true,
       tipAmt: 0.0,
-      totalCost: 0.0,
+      totalCost: 0.0
     };
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.calculateCost = this.calculateCost.bind(this);
   }
 
   // HANDLERS FOR THE FORM INPUTS
 
-  firstNameHandler = (event) => {
+  firstNameHandler = event => {
     this.setState({ firstName: event.target.value });
   };
-  lastNameHandler = (event) => {
+  lastNameHandler = event => {
     this.setState({ lastName: event.target.value });
   };
-  birthdayHandler = (event) => {
+  birthdayHandler = event => {
     this.setState({ birthday: event.target.value });
   };
-  notesHandler = (event) => {
+  notesHandler = event => {
     this.setState({ notes: event.target.value });
   };
-  cityHandler = (event) => {
+  cityHandler = event => {
     this.setState({ city: event.target.value });
   };
-  emailHandler = (event) => {
+  emailHandler = event => {
     this.setState({ email: event.target.value });
   };
-  phoneHandler = (event) => {
+  phoneHandler = event => {
     this.setState({ phone: event.target.value });
   };
-  stateHandler = (event) => {
+  stateHandler = event => {
     this.setState({ state: event.target.value });
   };
-  streetHandler = (event) => {
+  streetHandler = event => {
     this.setState({ street: event.target.value });
   };
-  street2Handler = (event) => {
+  street2Handler = event => {
     this.setState({ street2: event.target.value });
   };
-  zipHandler = (event) => {
+  zipHandler = event => {
     this.setState({ zip: event.target.value });
   };
-  hearHandler = (event) => {
+  hearHandler = event => {
     this.setState({ hearaboutus: event.target.value });
   };
-  pharmHandler = (event) => {
+  pharmHandler = event => {
     this.setState({ pharm: event.target.value });
   };
-  pharmCityHandler = (event) => {
+  pharmCityHandler = event => {
     this.setState({ pharmCity: event.target.value });
   };
-  pharmPhoneHandler = (event) => {
+  pharmPhoneHandler = event => {
     this.setState({ pharmPhone: event.target.value });
   };
-  pharmStateHandler = (event) => {
+  pharmStateHandler = event => {
     this.setState({ pharmState: event.target.value });
   };
-  pharmStateHandler = (event) => {
+  pharmStateHandler = event => {
     this.setState({ pharmState: event.target.value });
   };
-  pharmStreet1Handler = (event) => {
+  pharmStreet1Handler = event => {
     this.setState({ pharmStreet1: event.target.value });
   };
-  pharmStreet2Handler = (event) => {
+  pharmStreet2Handler = event => {
     this.setState({ pharmStreet2: event.target.value });
   };
-  pharmZipHandler = (event) => {
+  pharmZipHandler = event => {
     this.setState({ pharmZip: event.target.value });
   };
-  copayHandler = (event) => {
+  copayHandler = event => {
     this.setState({ copay: !this.state.copay });
   };
-  immunoCheckHandler = (event) => {
+  immunoCheckHandler = event => {
     this.setState({ immunoCheck: !this.state.immunoCheck });
   };
-  copayAmtHandler = (event) => {
-    this.setState({ copayAmt: event.target.value, paymentEntered: true });
+  copayAmtHandler = event => {
+    this.setState({ copayAmt: event.target.value });
   };
-  tipAmtHandler = (event) => {
-    this.setState({ tipAmt: event.target.value, paymentEntered: true });
+  tipAmtHandler = event => {
+    this.setState({ tipAmt: event.target.value });
   };
 
   handleSubmit(e) {
@@ -167,7 +168,7 @@ class PatientForm extends Component {
       firebase
         .auth()
         .signInAnonymously()
-        .catch(function (error) {
+        .catch(function(error) {
           // Handle Errors here.
           var errorCode = error.code;
           var errorMessage = error.message;
@@ -176,7 +177,7 @@ class PatientForm extends Component {
       console.log("User Anonymously Signed In");
 
       // make sure the user exists to prevent error messages
-      firebase.auth().onAuthStateChanged(function (user) {
+      firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
           var userid = user.uid;
           console.log(userid);
@@ -193,7 +194,7 @@ class PatientForm extends Component {
             street: street,
             zip: zip,
             notes: notes,
-            hearaboutus: hearaboutus,
+            hearaboutus: hearaboutus
           });
 
           // push the user data to the drugs node in the database
@@ -216,7 +217,7 @@ class PatientForm extends Component {
             pharmacyState: pharmState,
             pharmacyStreet: pharmStreet,
             pharmacyZip: pharmZip,
-            completed: false,
+            completed: false
           });
         } else {
           // User is signed out.
@@ -258,29 +259,35 @@ class PatientForm extends Component {
     this.setState({ paymentComplete: true });
   }
 
-  copayPaypal() {
-    if (this.state.copayAmt != 0.01) {
-      if (Number(this.state.copayAmt)) {
-        return (
-          <div className="container column-dir center">
-            <h4 className="center-text">
-              Please select a payment method for your payment of $
-              {this.state.copayAmt}
-            </h4>
-            <Paypal
-              donation={Number(this.state.copayAmt)}
-              message="Thank you for your payment"
-            />
-          </div>
-        );
-      } else {
-        return (
-          <h3 className="form-error">
-            Please enter a valid number (ex. 10, 20)
-          </h3>
-        );
-      }
+  paypalHandler() {
+    return (
+      <div className="container column-dir center">
+        <h4 className="center-text">
+          Please select a payment method for your payment of $
+          {this.state.totalCost}
+        </h4>
+        <Paypal
+          donation={this.state.totalCost}
+          message="Thank you for your payment"
+        />
+      </div>
+    );
+  }
+
+  calculateCost() {
+    let total = 0;
+    if (!this.state.immunoCheck) {
+      console.log("delivery fee");
+      total += DELIVERY_FEE;
     }
+    total += Number(this.state.copayAmt);
+    total += Number(this.state.tipAmt);
+    console.log("Total: " + total);
+    this.setState({
+      paymentsEntered: true,
+      paymentsComplete: false,
+      totalCost: total
+    });
   }
 
   goToPayment() {
@@ -303,7 +310,7 @@ class PatientForm extends Component {
         this.setState({
           paymentsEntered: true,
           paymentsComplete: false,
-          totalCost: total,
+          totalCost: total
         });
       }
     }
@@ -352,7 +359,7 @@ class PatientForm extends Component {
               this.setState({
                 paymentsComplete: true,
                 paymentsEntered: false,
-                formSelector: "",
+                formSelector: ""
               })
             }
           >
@@ -402,7 +409,7 @@ class PatientForm extends Component {
             onClick={() =>
               this.setState({
                 paymentsEntered: false,
-                formSelector: "",
+                formSelector: ""
               })
             }
           >
@@ -617,14 +624,16 @@ class PatientForm extends Component {
           />
         </Form.Group>
         <Form.Group>
-          <h3 className="form-subheading">Additional Information</h3>
+          <h3 className="form-subheading">Payment Information</h3>
           <Form.Label> Do you have a copay?</Form.Label>
           <div>
             <Form.Check
               required
               inline
               checked={this.state.copay}
-              onClick={() => this.setState({ copay: true })}
+              onClick={() => {
+                this.setState({ copay: true });
+              }}
               label="Yes"
               type="radio"
             />
@@ -632,7 +641,9 @@ class PatientForm extends Component {
               required
               inline
               checked={!this.state.copay}
-              onClick={() => this.setState({ copay: false })}
+              onClick={() => {
+                this.setState({ copay: false });
+              }}
               label="No"
               type="radio"
             />
@@ -647,9 +658,31 @@ class PatientForm extends Component {
               name="entry.712556072"
               type="text"
               placeholder="ex. $2, $5, 0"
-              onChange={this.tipAmtHandler}
+              onChange={() => {
+                this.tipAmtHandler();
+              }}
             />
           </InputGroup>
+          {this.state.copay ||
+          !this.state.immunoCheck ||
+          this.state.tipAmt != 0 ? (
+            <div>
+              {this.state.paymentsEntered ? (
+                <div>
+                  <Button variant="light" onClick={() => this.calculateCost()}>
+                    Refresh payment
+                  </Button>
+                  {this.paypalHandler()}
+                </div>
+              ) : (
+                <Button variant="light" onClick={() => this.calculateCost()}>
+                  Pay Amount Due
+                </Button>
+              )}
+            </div>
+          ) : (
+            <div></div>
+          )}
         </Form.Group>
         <Form.Group>
           <h3 className="form-subheading">Disclaimer</h3>
@@ -668,8 +701,9 @@ class PatientForm extends Component {
             type="text"
           ></Form.Control>
         </Form.Group>
-        {!this.state.paymentsEntered ? <div></div> : this.goToPayment}
-        {this.state.paymentsComplete ? <div></div> : this.pageTwo()}
+        {/* {!this.state.paymentsEntered ? <div></div> : this.goToPayment} */}
+        {/* {this.state.paymentsComplete ? <div></div> : this.pageTwo()} */}
+
         <Button variant="light" type="submit">
           SUBMIT
           {/* <Link to="/submission-complete">SUBMIT</Link> */}
@@ -687,7 +721,7 @@ class PatientForm extends Component {
             onClick={() =>
               this.setState({
                 paymentsEntered: false,
-                formSelector: "",
+                formSelector: ""
               })
             }
           >
@@ -902,14 +936,16 @@ class PatientForm extends Component {
           />
         </Form.Group>
         <Form.Group>
-          <h3 className="form-subheading">Additional Information</h3>
+          <h3 className="form-subheading">Payment Information</h3>
           <Form.Label>Do you have a copay?</Form.Label>
           <div>
             <Form.Check
               required
               inline
               checked={this.state.copay}
-              onClick={() => this.setState({ copay: true })}
+              onClick={() => {
+                this.setState({ copay: true });
+              }}
               label="Yes"
               type="radio"
             />
@@ -931,7 +967,9 @@ class PatientForm extends Component {
               required
               inline
               checked={this.state.immunoCheck}
-              onClick={() => this.setState({ immunoCheck: true })}
+              onClick={() => {
+                this.setState({ immunoCheck: true });
+              }}
               label="Yes"
               type="radio"
             />
@@ -939,7 +977,9 @@ class PatientForm extends Component {
               required
               inline
               checked={!this.state.immunoCheck}
-              onClick={() => this.setState({ immunoCheck: false })}
+              onClick={() => {
+                this.setState({ immunoCheck: false });
+              }}
               label="No"
               type="radio"
             />
@@ -953,9 +993,31 @@ class PatientForm extends Component {
               name="entry.712556072"
               type="text"
               placeholder="ex. $2, $5, 0"
-              onChange={this.tipAmtHandler}
+              onChange={() => {
+                this.tipAmtHandler();
+              }}
             />
           </InputGroup>
+          {this.state.copay ||
+          !this.state.immunoCheck ||
+          this.state.tipAmt != 0 ? (
+            <div>
+              {this.state.paymentsEntered ? (
+                <div>
+                  <Button variant="light" onClick={() => this.calculateCost()}>
+                    Refresh payment
+                  </Button>
+                  {this.paypalHandler()}
+                </div>
+              ) : (
+                <Button variant="light" onClick={() => this.calculateCost()}>
+                  Pay Amount Due
+                </Button>
+              )}
+            </div>
+          ) : (
+            <div></div>
+          )}
         </Form.Group>
         <Form.Group>
           <h3 className="form-subheading">Disclaimer</h3>
@@ -974,8 +1036,15 @@ class PatientForm extends Component {
             type="text"
           ></Form.Control>
         </Form.Group>
-        {!this.state.paymentsEntered ? <div></div> : this.goToPayment}
-        {this.state.paymentsComplete ? <div></div> : this.pageTwo()}
+        {/* {!this.state.paymentsEntered ? <div></div> : this.goToPayment} */}
+        {/* {this.state.paymentsComplete ? <div></div> : this.pageTwo()} */}
+        {/* {this.state.copay ||
+        !this.state.immunoCheck ||
+        this.state.tipAmt != 0 ? (
+          <div>{this.paypalHandler()}</div>
+        ) : (
+          <div></div>
+        )} */}
         <Button variant="light" type="submit">
           SUBMIT
           {/* <Link to="/submission-complete">SUBMIT</Link> */}
@@ -1021,4 +1090,3 @@ class PatientForm extends Component {
 }
 
 export default PatientForm;
-
