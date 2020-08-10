@@ -20,6 +20,8 @@ import Safeway from "../images/partners/safeway.png";
 import Vons from "../images/partners/vons.png";
 import LVScripts from "../images/partners/lasvegasscripts.jpg";
 import CityCenter from "../images/partners/citycenterpharmacy.jpg";
+import NewBritain from "../images/partners/newbritain.PNG";
+import Meriden from "../images/partners/meriden.PNG";
 
 const Partner = () => (
   <div>
@@ -83,6 +85,9 @@ const Partner = () => (
           <Col className="my-container column-dir between">
             <Company src="http://www.berneysrx.com/" img={Berneys} />
           </Col>
+          <Col className="my-container column-dir between">
+            <Company src="http://www.newbritainrx.com/" img={NewBritain} />
+          </Col>
         </Row>
         <Row>
           <Col className="my-container column-dir between">
@@ -94,10 +99,16 @@ const Partner = () => (
           <Col className="my-container column-dir between">
             <Company src="https://www.vesperrx.com/" img={Vespar} />
           </Col>
+          <Col className="my-container column-dir between">
+            <Company src="http://www.meridencommunityrx.com//" img={Meriden} />
+          </Col>
         </Row>
-        <h1 className="partner-heading">Official Participating Pharmacies</h1>
+        <h1 className="partner-heading">Official Pharmacy Partners</h1>
         <hr className="colored-line" />
         <Row>
+          {/* <Col className="my-container column-dir between">
+						<Company src="https://www.essentialsupply.org/" img={Essential} />
+					</Col> */}
           <Col className="my-container column-dir between">
             <Company src="http://www.albertsons.com" img={Albertsons} />
           </Col>
