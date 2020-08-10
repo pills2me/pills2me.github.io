@@ -24,8 +24,6 @@ const ilform =
 
 const DELIVERY_FEE = 7.99;
 
-const DELIVERY_FEE = 7.99;
-
 class PatientForm extends Component {
   constructor(props) {
     super(props);
