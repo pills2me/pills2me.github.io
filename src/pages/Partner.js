@@ -98,7 +98,7 @@ const Partner = () => (
            					 <Company src="http://www.meridencommunityrx.com//" img={Meriden} />
           				</Col>
         			</Row>
-        			<h1 className="partner-heading">Official Pharmacy Partners</h1>
+        			<h1 className="partner-heading">Official Participating Pharmacy</h1>
         			<hr className="colored-line" />
         			<Row>
           				{/* <Col className="my-container column-dir between">
