@@ -9,7 +9,7 @@ function Paypal(props) {
   useEffect(() => {
     const script = document.createElement("script");
     script.src =
-      "https://www.paypal.com/sdk/js?client-id=AfRPgzQWR1ymjm8d3hjEiWCkDVZNhuv-Z-D1euhBthOyB8DiPNN5spAs3ieO9D5fTthqSamk9Uglb-2i";
+      "https://www.paypal.com/sdk/js?client-id=AfnAAB2dXjcuExHDBEMbmcZgTYMBfK1la404S-I_3f8L71_eAf41Fg_lC0AyYnMbFjrjTaq96gd2wKCM";
     script.addEventListener("load", () => setLoaded(true));
     document.body.appendChild(script);
     console.log("loaded? sure?");
