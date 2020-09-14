@@ -128,8 +128,7 @@ const OpeningPage = () => (
               <h1 class="section-heading">Need to Consult a Doctor?</h1>
               <p style={{ fontSize: "20px" }}>
                 For Nevada patients, we have partnered with the Roseman Medical
-                Group to give you access to access to additional help with your
-                prescriptions.
+                Group to give you access to licensed doctors.
               </p>
               <Link to="https://rosemanmedicalgroup.com/">
                 <Button className="blue-btn">
