@@ -309,7 +309,7 @@ class DriverForm extends Component {
 							placeholder="ex. 10 miles"
 						/>
 					</Form.Group>
-					<Form.Group controlId="availability">
+					{/* <Form.Group controlId="availability">
 						<Form.Label>What days and times are you available?</Form.Label>
 						<Form.Control
 							name={formVals[11]}
@@ -319,7 +319,7 @@ class DriverForm extends Component {
 							rows="3"
 							placeholder="ex. Fridays 9AM-4PM"
 						/>
-					</Form.Group>
+					</Form.Group> */}
 					<Form.Group controlId="notes">
 						<Form.Label>Additional Notes</Form.Label>
 						<Form.Control

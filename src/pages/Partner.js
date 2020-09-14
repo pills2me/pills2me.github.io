@@ -22,6 +22,8 @@ import LVScripts from "../images/partners/lasvegasscripts.jpg";
 import CityCenter from "../images/partners/citycenterpharmacy.jpg";
 import NewBritain from "../images/partners/newbritain.PNG";
 import Meriden from "../images/partners/meriden.PNG";
+import Just4Cancer from "../images/partners/just4cancer.png";
+import Roseman from "../images/partners/roseman.png";
 
 const Partner = () => (
   <div>
@@ -85,9 +87,6 @@ const Partner = () => (
           <Col className="my-container column-dir between">
             <Company src="http://www.berneysrx.com/" img={Berneys} />
           </Col>
-          <Col className="my-container column-dir between">
-            <Company src="http://www.newbritainrx.com/" img={NewBritain} />
-          </Col>
         </Row>
         <Row>
           <Col className="my-container column-dir between">
@@ -99,16 +98,26 @@ const Partner = () => (
           <Col className="my-container column-dir between">
             <Company src="https://www.vesperrx.com/" img={Vespar} />
           </Col>
+        </Row>
+        <Row>
           <Col className="my-container column-dir between">
-            <Company src="http://www.meridencommunityrx.com//" img={Meriden} />
+            <Company src="http://www.newbritainrx.com/" img={NewBritain} />
+          </Col>
+          <Col className="my-container column-dir between">
+            <Company src="http://www.meridencommunityrx.com/" img={Meriden} />
+          </Col>
+          <Col className="my-container column-dir between">
+            <Company src="https://www.just4cancer.com/" img={Just4Cancer} />
+          </Col>
+        </Row>
+        <Row>
+          <Col className="my-container column-dir between">
+            <Company src="https://rosemanmedicalgroup.com/" img={Roseman} />
           </Col>
         </Row>
         <h1 className="partner-heading">Official Pharmacy Partners</h1>
         <hr className="colored-line" />
         <Row>
-          {/* <Col className="my-container column-dir between">
-						<Company src="https://www.essentialsupply.org/" img={Essential} />
-					</Col> */}
           <Col className="my-container column-dir between">
             <Company src="http://www.albertsons.com" img={Albertsons} />
           </Col>

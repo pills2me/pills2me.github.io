@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
-  <meta name="theme-color" content="#000000" />
-  <meta name="description"
-    content="Pills2Me is a free same-day medication delivery service for the elderly and vulnerable" />
-    <meta name="google-site-verification" content="TPY0H6ddicOhlyFalX5t5sh5oI2q7diKVn4BnSyg-vw" />
-  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon-16x16.png" sizes="16x16">
-  <!--
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Pills2Me is a free same-day medication delivery service for the elderly and vulnerable"
+    />
+    <meta
+      name="google-site-verification"
+      content="TPY0H6ddicOhlyFalX5t5sh5oI2q7diKVn4BnSyg-vw"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="%PUBLIC_URL%/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="%PUBLIC_URL%/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="%PUBLIC_URL%/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="stylesheet" href="/css/video-react.css" />
 
-
-  <!--
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -32,23 +49,19 @@
     -->
     <title>Pills2Me | Bringing Your Pharmacy to You</title>
 
-  <!-- Script for connecting to EmailJS -->
+    <!-- Script for connecting to EmailJS -->
 
-  <!-- <script type="text/javascript">
+    <!-- <script type="text/javascript">
     (function () {
       emailjs.init('YOUR_USER_ID');
     })();
   </script> -->
+  </head>
 
-  
-
-
-</head>
-
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
-  <!--
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -58,15 +71,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
   <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
     onreadystatechange="if (this.readyState === 'complete') this.onload()">
     </script> -->
 
-
-  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
-  <!-- <script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+    <!-- <script>
     const firebaseConfig = {
       apiKey: "AIzaSyCL77U2-Ydsxi3MmPlQqZLfkTq7EBAhhic",
       authDomain: "pills2me-ac2b4.firebaseapp.com",
@@ -80,34 +92,57 @@
     firebase.initializeApp(firebaseConfig);
   </script> -->
 
-  <script async defer src="https://apis.google.com/js/api.js"
+    <script
+      async
+      defer
+      src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()">
+      onreadystatechange="if (this.readyState === 'complete') this.onload()"
+    ></script>
+
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=ATk11DvTmsfMOsG7wlJgOkTCGpuY0NH_JlaURBUgAkDUow_173zuya3OzNg_eOK_eo4Dba8JO1vXsPDP"
+      async
+    >
+      // Replace YOUR_SB_CLIENT_ID with your sandbox client ID
     </script>
+    <!--<script src="https://www.gstatic.com/firebase/init.js"></script> -->
 
-<script src="https://www.paypal.com/sdk/js?client-id=ATk11DvTmsfMOsG7wlJgOkTCGpuY0NH_JlaURBUgAkDUow_173zuya3OzNg_eOK_eo4Dba8JO1vXsPDP" async> // Replace YOUR_SB_CLIENT_ID with your sandbox client ID
-</script>
-  <!--<script src="https://www.gstatic.com/firebase/init.js"></script> -->
-
-
-  <!-- Facebook Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '676650016509645');
-  fbq('track', 'PageView'); 
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=676650016509645&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-
-</body>
-
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "676650016509645");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=676650016509645&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </body>
 </html>

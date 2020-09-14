@@ -56,8 +56,8 @@ const About = () => (
 								Dr. Asanga is an experienced pharmacist and recently graduated from Yale University with
 								a Master of Public Health degree. While at Yale, he took courses in Public Health
 								Entrepreneurship, Startup Founder Studies, and Sustainable Innovations in Healthcare at
-								the Yale School of Management. He is the CEO and co-founder of ePharmHub which won the
-								Thorne Prize at Startup Yale 2020. He also holds a Doctor of Pharmacy degree and an MBA
+								the Yale School of Management. He is the CEO and co-founder of UrPharm which won the
+								Thorne Prize at Startup Yale 2020. He also holds a Doctor of Pharmacy degree from Roseman University of Health Sciences and an MBA
 								with more than five years of healthcare experience. He is an innovator and passionate
 								about creating healthcare ventures that create impact in vulnerable communities.
 							</p>

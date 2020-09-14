@@ -659,7 +659,7 @@ class PatientForm extends Component {
           <Form.Check
             required
             type="checkbox"
-            label="By submitting the form, you are authorizing one of our volunteers to pick up and deliver your medication(s). We will do our best to deliver their medications as fast as we can (same day), but cannot guarantee that in all cases due to circumstances that might arise beyond our control."
+            label="By submitting the form, you are authorizing one of our drivers to act as your caregiver and pick-up/deliver your medication(s)."
           />
         </Form.Group>
         <Form.Group>
@@ -695,10 +695,11 @@ class PatientForm extends Component {
                 validated={this.state.validated}
               >
                 <h6 className="center-text" style={{ marginBottom: "20px" }}>
-                  Our delivery service is 100% free of charge. We deliver your
-                  medications right to your doorstep. Our goal is to promote
-                  public health and social distancing practices to prevent
-                  further spread of coronavirus (COVID-19).{" "}
+                  Our delivery service is 100% free of charge for seniors and
+                  immunocompromised. We deliver your medications right to your
+                  doorstep. Our goal is to promote public health and social
+                  distancing practices to prevent further spread of coronavirus
+                  (COVID-19).{" "}
                 </h6>
                 <h6 className="center-text bold">
                   We do not deliver controlled medications at this time
