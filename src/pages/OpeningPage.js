@@ -130,11 +130,11 @@ const OpeningPage = () => (
                 For Nevada patients, we have partnered with the Roseman Medical
                 Group to give you access to licensed doctors.
               </p>
-              <Link to="https://rosemanmedicalgroup.com/">
+              <a href="https://rosemanmedicalgroup.com/" target="_blank">
                 <Button className="blue-btn">
                   Visit Roseman Medical Group
                 </Button>
-              </Link>
+              </a>
             </div>
           </Col>
           <Col>
