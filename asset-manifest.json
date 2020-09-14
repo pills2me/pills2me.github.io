@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.b76d8dc4.chunk.css",
-    "main.js": "/static/js/main.e1cea2a6.chunk.js",
-    "main.js.map": "/static/js/main.e1cea2a6.chunk.js.map",
+    "main.js": "/static/js/main.51780808.chunk.js",
+    "main.js.map": "/static/js/main.51780808.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.65457b84.js",
     "runtime-main.js.map": "/static/js/runtime-main.65457b84.js.map",
-    "static/css/2.69121389.chunk.css": "/static/css/2.69121389.chunk.css",
-    "static/js/2.3feab4bf.chunk.js": "/static/js/2.3feab4bf.chunk.js",
-    "static/js/2.3feab4bf.chunk.js.map": "/static/js/2.3feab4bf.chunk.js.map",
+    "static/css/2.1ab3af22.chunk.css": "/static/css/2.1ab3af22.chunk.css",
+    "static/js/2.90792e35.chunk.js": "/static/js/2.90792e35.chunk.js",
+    "static/js/2.90792e35.chunk.js.map": "/static/js/2.90792e35.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f0ccd6cd4f5941114a9232ca3948aa23.js": "/precache-manifest.f0ccd6cd4f5941114a9232ca3948aa23.js",
+    "precache-manifest.179c812df7c65820c1c16cdc01f7084d.js": "/precache-manifest.179c812df7c65820c1c16cdc01f7084d.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.69121389.chunk.css.map": "/static/css/2.69121389.chunk.css.map",
+    "static/css/2.1ab3af22.chunk.css.map": "/static/css/2.1ab3af22.chunk.css.map",
     "static/css/main.b76d8dc4.chunk.css.map": "/static/css/main.b76d8dc4.chunk.css.map",
-    "static/js/2.3feab4bf.chunk.js.LICENSE.txt": "/static/js/2.3feab4bf.chunk.js.LICENSE.txt",
+    "static/js/2.90792e35.chunk.js.LICENSE.txt": "/static/js/2.90792e35.chunk.js.LICENSE.txt",
     "static/media/Kaveh.jpeg": "/static/media/Kaveh.82a83d17.jpeg",
     "static/media/albertsons.png": "/static/media/albertsons.112e20e8.png",
     "static/media/angela.jpeg": "/static/media/angela.59264022.jpeg",
@@ -46,6 +46,8 @@
     "static/media/patients.jpeg": "/static/media/patients.4355181d.jpeg",
     "static/media/pharmacies.jpeg": "/static/media/pharmacies.ac231fe2.jpeg",
     "static/media/publichealthyale.png": "/static/media/publichealthyale.f23c0dc4.png",
+    "static/media/roseman.png": "/static/media/roseman.74d4f10d.png",
+    "static/media/roseman_flyer.png": "/static/media/roseman_flyer.df5f1ab4.png",
     "static/media/safeway.png": "/static/media/safeway.051477d5.png",
     "static/media/vesper.jpg": "/static/media/vesper.794ee0f1.jpg",
     "static/media/vons.png": "/static/media/vons.fedd3108.png",
@@ -56,9 +58,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.65457b84.js",
-    "static/css/2.69121389.chunk.css",
-    "static/js/2.3feab4bf.chunk.js",
+    "static/css/2.1ab3af22.chunk.css",
+    "static/js/2.90792e35.chunk.js",
     "static/css/main.b76d8dc4.chunk.css",
-    "static/js/main.e1cea2a6.chunk.js"
+    "static/js/main.51780808.chunk.js"
   ]
 }
