@@ -64,11 +64,16 @@ const OpeningPage = () => (
           </div>
         </div>
       </div>
-      {/* <div className="section">
-        <Player>
-          <source src="/src/images/commercial.mov" />
-        </Player>
-      </div> */}
+      <div className="section">
+        <iframe
+          src="https://youtube.com/embed/wBpzBJFz_U8"
+          frameborder="0"
+          title="Pills2Me"
+          allow="autoplay; encrypted-media"
+          allowFullScreen
+          style={{ width: "70%", height: "400px" }}
+        />
+      </div>
 
       <div className="section" style={{ color: "#0084F4" }}>
         <h1 class="section-heading">Bringing Your Pharmacy to You</h1>
