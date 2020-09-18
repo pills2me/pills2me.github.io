@@ -115,7 +115,7 @@ const Partner = () => (
             <Company src="https://rosemanmedicalgroup.com/" img={Roseman} />
           </Col>
         </Row>
-        <h1 className="partner-heading">Official Pharmacy Partners</h1>
+        <h1 className="partner-heading">Official Participating Pharmacies</h1>
         <hr className="colored-line" />
         <Row>
           <Col className="my-container column-dir between">
