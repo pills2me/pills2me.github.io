@@ -35,26 +35,36 @@ const OpeningPage = () => (
         </h2>
 
         <div classname="container">
-          <img
-            src={iosApp}
-            style={{
-              width: "160px",
-              height: "62px;",
-              objectFit: "cover",
-              borderRadius: "10px",
-              margin: "10px"
-            }}
-          ></img>
-          <img
-            src={androidApp}
-            style={{
-              width: "160px",
-              height: "62px;",
-              objectFit: "cover",
-              margin: "10px",
-              borderRadius: "10px"
-            }}
-          ></img>
+          <a
+            href="https://apps.apple.com/us/app/pills2me/id1512849998"
+            target="_blank"
+          >
+            <img
+              src={iosApp}
+              style={{
+                width: "160px",
+                height: "62px;",
+                objectFit: "cover",
+                borderRadius: "10px",
+                margin: "10px"
+              }}
+            ></img>
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.apps.pills2me"
+            target="_blank"
+          >
+            <img
+              src={androidApp}
+              style={{
+                width: "160px",
+                height: "62px;",
+                objectFit: "cover",
+                borderRadius: "10px",
+                margin: "10px"
+              }}
+            ></img>
+          </a>
         </div>
 
         <div className="">
