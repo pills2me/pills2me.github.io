@@ -7,6 +7,8 @@ import "../../node_modules/video-react/dist/video-react.css";
 import Header from "../components/Header";
 import DetailedFooter from "../components/DetailedFooter";
 
+import iosApp from "../images/iosApp.png";
+import androidApp from "../images/androidApp.png";
 import Patient from "../images/patient.png";
 import Driver from "../images/driver.png";
 import { Player } from "video-react";
@@ -31,6 +33,29 @@ const OpeningPage = () => (
           Free on-demand medication pick-up and delivery from any pharmacy for
           the elderly and vulnerable during COVID-19.
         </h2>
+
+        <div classname="container">
+          <img
+            src={iosApp}
+            style={{
+              width: "160px",
+              height: "62px;",
+              objectFit: "cover",
+              borderRadius: "10px",
+              margin: "10px"
+            }}
+          ></img>
+          <img
+            src={androidApp}
+            style={{
+              width: "160px",
+              height: "62px;",
+              objectFit: "cover",
+              margin: "10px",
+              borderRadius: "10px"
+            }}
+          ></img>
+        </div>
 
         <div className="">
           <div className="container space">
