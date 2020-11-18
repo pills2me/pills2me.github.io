@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.b76d8dc4.chunk.css",
-    "main.js": "/static/js/main.bf702a8f.chunk.js",
-    "main.js.map": "/static/js/main.bf702a8f.chunk.js.map",
+    "main.js": "/static/js/main.12c57326.chunk.js",
+    "main.js.map": "/static/js/main.12c57326.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.65457b84.js",
     "runtime-main.js.map": "/static/js/runtime-main.65457b84.js.map",
     "static/css/2.1ab3af22.chunk.css": "/static/css/2.1ab3af22.chunk.css",
-    "static/js/2.90792e35.chunk.js": "/static/js/2.90792e35.chunk.js",
-    "static/js/2.90792e35.chunk.js.map": "/static/js/2.90792e35.chunk.js.map",
+    "static/js/2.2ebe0b6d.chunk.js": "/static/js/2.2ebe0b6d.chunk.js",
+    "static/js/2.2ebe0b6d.chunk.js.map": "/static/js/2.2ebe0b6d.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bea62496ef1290564cd4ea4f0785e736.js": "/precache-manifest.bea62496ef1290564cd4ea4f0785e736.js",
+    "precache-manifest.57e497413cc04e332b899964c53c0448.js": "/precache-manifest.57e497413cc04e332b899964c53c0448.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.1ab3af22.chunk.css.map": "/static/css/2.1ab3af22.chunk.css.map",
     "static/css/main.b76d8dc4.chunk.css.map": "/static/css/main.b76d8dc4.chunk.css.map",
-    "static/js/2.90792e35.chunk.js.LICENSE.txt": "/static/js/2.90792e35.chunk.js.LICENSE.txt",
+    "static/js/2.2ebe0b6d.chunk.js.LICENSE.txt": "/static/js/2.2ebe0b6d.chunk.js.LICENSE.txt",
     "static/media/Kaveh.jpeg": "/static/media/Kaveh.82a83d17.jpeg",
     "static/media/albertsons.png": "/static/media/albertsons.112e20e8.png",
+    "static/media/androidApp.png": "/static/media/androidApp.9adafe38.png",
     "static/media/angela.jpeg": "/static/media/angela.59264022.jpeg",
     "static/media/anna.png": "/static/media/anna.5b17249a.png",
     "static/media/berneys.png": "/static/media/berneys.2cf0a48e.png",
@@ -30,6 +31,7 @@
     "static/media/essential.png": "/static/media/essential.955b1a5d.png",
     "static/media/fatema.jpeg": "/static/media/fatema.8e2abe2c.jpeg",
     "static/media/hassaan.jpg": "/static/media/hassaan.9661d413.jpg",
+    "static/media/iosApp.png": "/static/media/iosApp.e363c436.png",
     "static/media/jessica.jpeg": "/static/media/jessica.33094440.jpeg",
     "static/media/jewelosco.png": "/static/media/jewelosco.c6754a86.png",
     "static/media/konstantine.jpeg": "/static/media/konstantine.5c579127.jpeg",
@@ -59,8 +61,8 @@
   "entrypoints": [
     "static/js/runtime-main.65457b84.js",
     "static/css/2.1ab3af22.chunk.css",
-    "static/js/2.90792e35.chunk.js",
+    "static/js/2.2ebe0b6d.chunk.js",
     "static/css/main.b76d8dc4.chunk.css",
-    "static/js/main.bf702a8f.chunk.js"
+    "static/js/main.12c57326.chunk.js"
   ]
 }
