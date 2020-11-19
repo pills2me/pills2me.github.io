@@ -167,6 +167,23 @@ class DriverForm extends Component {
 		this.setState({ validated: true });
 	}
 
+	renderMilesTravel() {
+		if (this.state.stateSelector !== 'Nevada') {
+			return (
+					<Form.Group controlId="milesTravel">
+						<Form.Label>How many miles are you willing to travel?</Form.Label>
+						<Form.Control
+							name={formVals[10]}
+							required
+							onChange={this.milesHandler}
+							type="text"
+							placeholder="ex. 10 miles"
+						/>
+					</Form.Group>
+			)
+		}
+	}
+
 	formHandler() {
 		if (this.state.stateSelector == '') {
 			return (
@@ -299,16 +316,8 @@ class DriverForm extends Component {
 
 					<h3 className="form-subheading">Driver Information</h3>
 
-					<Form.Group controlId="milesTravel">
-						<Form.Label>How many miles are you willing to travel?</Form.Label>
-						<Form.Control
-							name={formVals[10]}
-							required
-							onChange={this.milesHandler}
-							type="text"
-							placeholder="ex. 10 miles"
-						/>
-					</Form.Group>
+					{this.renderMilesTravel()}
+
 					{/* <Form.Group controlId="availability">
 						<Form.Label>What days and times are you available?</Form.Label>
 						<Form.Control
