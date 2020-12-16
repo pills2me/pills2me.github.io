@@ -20,6 +20,9 @@ const nvform =
 const ilform =
 	'https://docs.google.com/forms/u/0/d/e/1FAIpQLSclxIfwlqwzloJrNNFZL2w8vZo9Ki7y2JOXZYi7VzpTDGtlWA/formResponse';
 
+const txform = 
+	'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdjhdwazq0t8yL--2zEkaJanwBrhBIKETEYfFrBB9ABUW8G9Q/formResponse'
+
 const formVals = [
 	'',
 	'entry.82345234',
@@ -210,6 +213,13 @@ class DriverForm extends Component {
 							onClick={() => this.setState({ stateSelector: 'Illinois', formSelector: ilform })}
 						>
 							Illinois
+						</Button>
+						<Button
+							className="donation-btn"
+							variant="light"
+							onClick={() => this.setState({ stateSelector: 'Texas', formSelector: txform })}
+						>
+							Texas
 						</Button>
 					</div>
 				</div>
