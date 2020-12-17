@@ -171,7 +171,7 @@ class DriverForm extends Component {
 	}
 
 	renderMilesTravel() {
-		if (this.state.stateSelector !== 'Nevada') {
+		if (this.state.stateSelector !== 'Nevada' && this.state.stateSelector !== 'Houston') {
 			return (
 					<Form.Group controlId="milesTravel">
 						<Form.Label>How many miles are you willing to travel?</Form.Label>
@@ -217,7 +217,7 @@ class DriverForm extends Component {
 						<Button
 							className="donation-btn"
 							variant="light"
-							onClick={() => this.setState({ stateSelector: 'Texas', formSelector: txform })}
+							onClick={() => this.setState({ stateSelector: 'Houston', formSelector: txform })}
 						>
 							Texas
 						</Button>
@@ -230,7 +230,7 @@ class DriverForm extends Component {
 					<h3 className="form-subheading">Personal Information</h3>
 					<Form.Row>
 						<Form.Group as={Col} controlId="name">
-							<Form.Label>First Name</Form.Label>
+							<Form.Label required>First Name</Form.Label>
 							<Form.Control
 								name={formVals[1]}
 								required
@@ -326,7 +326,7 @@ class DriverForm extends Component {
 
 					<h3 className="form-subheading">Driver Information</h3>
 
-					{this.renderMilesTravel()}
+					{/* {this.renderMilesTravel()} */}
 
 					{/* <Form.Group controlId="availability">
 						<Form.Label>What days and times are you available?</Form.Label>
@@ -372,7 +372,7 @@ class DriverForm extends Component {
 							name="entry.1069442594_sentinel"
 							required
 							type="checkbox"
-							label="Please check this box when you have read and understood our instructions."
+							label="Please check this box when you have read and understood our instructions.*"
 						/>
 					</Form.Group>
 					<Form.Group>
@@ -391,7 +391,7 @@ class DriverForm extends Component {
 							name="entry.1914461429_sentinel"
 							required
 							type="checkbox"
-							label="“By submitting this form, I attest that I am at least 18 years old and below the age of 65 years and have no symptoms or risk factors of Covid-19 per the CDC guidelines. I have also read and accept the terms and conditions above.”"
+							label="“By submitting this form, I attest that I am at least 18 years old and below the age of 65 years and have no symptoms or risk factors of Covid-19 per the CDC guidelines. I have also read and accept the terms and conditions above.”*"
 						/>
 					</Form.Group>
 
